@@ -1,0 +1,48 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+
+  .center {
+  }
+
+/*bodyContour.js*/
+.body-container {
+  position: relative;
+}
+
+.body-contents {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#body-contour > path{
+}
+
+path {
+  fill:rgba(255, 0, 0, 0);
+  stroke:rgb(30, 131, 190, 0.8);
+  stroke-miterlimit:10;
+  stroke-width:8px;
+  pointer-events:all;
+  cursor: pointer;
+}
+
+path:hover {
+  fill: rgb(30, 131, 190, 0.2);
+  stroke-width:12px;
+}
+
+.path-selected-l1{
+  fill: rgb(30, 131, 190, 0.2);
+}
+
+.path-selected-l1:hover{
+  fill: rgb(30, 131, 190, 0.4);
+}
+
+.path-selected-l2{
+  fill: rgb(30, 131, 190, 0.4);
+}
