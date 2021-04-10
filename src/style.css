@@ -22,24 +22,41 @@ body {
 }
 
 path {
-  fill:rgba(255, 0, 0, 0);
-  stroke:rgb(30, 131, 190, 0.8);
+  /*fill:rgba(255, 0, 0, 0);
+  stroke:rgb(30, 131, 190);*/
+  fill: none;
+  stroke:rgba(255, 255, 255, 0);
   stroke-miterlimit:10;
-  stroke-width:8px;
+  stroke-width:6px;
   pointer-events:all;
   cursor: pointer;
 }
 
 path:hover {
   fill: rgb(30, 131, 190, 0.2);
-  stroke-width:12px;
 }
 
-.path-selected-l1{
+
+ellipse {
+  /*fill:rgba(255, 0, 0, 0);
+  stroke:rgb(30, 131, 190);*/
+  fill: none;
+  stroke:rgba(255, 255, 255, 0);
+  stroke-miterlimit:10;
+  stroke-width:6px;
+  pointer-events:all;
+  cursor: pointer;
+}
+
+ellipse:hover {
   fill: rgb(30, 131, 190, 0.2);
 }
 
-.path-selected-l1:hover{
+.path-selected{
+  fill: rgb(30, 131, 190, 0.2);
+}
+
+.path-selected:hover{
   fill: rgb(30, 131, 190, 0.4);
 }
 

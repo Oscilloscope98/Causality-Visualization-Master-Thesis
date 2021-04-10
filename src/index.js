@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
-import BodyContour from './bodyComponents/bodyContour';
+import BodyTemplate from './bodyComponents/BodyTemplate';
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            symptoms: []
+            symptoms: [],
         };
     }
 
@@ -35,14 +35,22 @@ class App extends React.Component {
 
 
     render() {
+        var symptomsUnifyFB = [];
+        var tempSyms = this.state.symptoms;
+        for (var i = 0; i < tempSyms.length; i++){
+            var tempSym = tempSyms[i].replace('F ', '').replace('B ', '').replace(' 2', '');
+            if (!symptomsUnifyFB.includes(tempSym)){
+                symptomsUnifyFB.push(tempSym);
+            }
+        }
         let symString = '';
-        this.state.symptoms.forEach(item => symString+=item+', ');
+        symptomsUnifyFB.forEach(item => symString+=item+', ');
         symString = symString.slice(0, -2); 
         return (
             <div className="center">
                 <p>Selected Symptoms: {symString}</p>
-                <BodyContour width={550} 
-                    onClick={symName => this.handleClick(symName)} 
+                <BodyTemplate width={600} 
+                    clickCallBack={symName => this.handleClick(symName)} 
                     deleteSym={symName => this.delectSym(symName)}
                     selectedSymptoms={this.state.symptoms}/>
             </div>
