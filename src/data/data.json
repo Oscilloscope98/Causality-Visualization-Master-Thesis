@@ -1,0 +1,2477 @@
+{
+    "nodes": [
+        {
+            "id": "Headache",
+            "group": 1
+        },
+        {
+            "id": "L Forehead Headache",
+            "group": 1
+        },
+        {
+            "id": "R Forehead Headache",
+            "group": 1
+        },
+        {
+            "id": "L Back Headache",
+            "group": 1
+        },
+        {
+            "id": "R Back Headache",
+            "group": 1
+        },
+        {
+            "id": "L Eye Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Eye Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Ear Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Ear Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Tinnitus",
+            "group": 1
+        },
+        {
+            "id": "R Tinnitus",
+            "group": 1
+        },
+        {
+            "id": "L Jaw Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Jaw Discomfort",
+            "group": 1
+        },
+        {
+            "id": "Mouth Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Neck Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Neck Discomfort",
+            "group": 1
+        },
+        {
+            "id": "Pharyngeal Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Collarbone Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Collarbone Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Front Axle Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Front Axle Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Shoulder Impingement",
+            "group": 1
+        },
+        {
+            "id": "R Shoulder Impingement",
+            "group": 1
+        },
+        {
+            "id": "L Shoulder Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Shoulder Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Central Chest Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Central Chest Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Chest Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Chest Discomfort",
+            "group": 1
+        },
+        {
+            "id": "Thoracidic Dysfunction",
+            "group": 1
+        },
+        {
+            "id": "Upper Back Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L interscapular Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R interscapular Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Lateral Arm Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Lateral Arm Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Upper Arm Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Upper Arm Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Upper Elbow Discomport",
+            "group": 1
+        },
+        {
+            "id": "R Upper Elbow Discomport",
+            "group": 1
+        },
+        {
+            "id": "L Lateral Elbow Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Lateral Elbow Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Medial Elbow Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Medial Elbow Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Arm Bend Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Arm Bend Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Lower Arm Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Lower Arm Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Wrist Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Wrist Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Hand Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Hand Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Finger Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Finger Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Little Finger Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Little Finger Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Thumb Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Thumb Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Lower Back Pain",
+            "group": 1
+        },
+        {
+            "id": "R Lower Back Pain",
+            "group": 1
+        },
+        {
+            "id": "Lateral Abdominal Discomfort",
+            "group": 1
+        },
+        {
+            "id": "Upper Abdominal Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Lower Abdominal discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Lower Abdominal discomfort",
+            "group": 1
+        },
+        {
+            "id": "IBS",
+            "group": 1
+        },
+        {
+            "id": "L Groin Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Groin Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Buttocks Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Buttocks Discomfort",
+            "group": 1
+        },
+        {
+            "id": "Tailbone Pain",
+            "group": 1
+        },
+        {
+            "id": "L Hip Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Hip Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Hip Joint Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Hip Joint Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Adductor Tendon Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Adductor Tendon Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Anterior Thigh Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Anterior Thigh Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Back Thigh Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Back Thigh Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Anterior Knee Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Anterior Knee Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Medial Knee Joint Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Medial Knee Joint Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Dorsal Knee Joint Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Dorsal Knee Joint Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Lateral Knee Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Lateral Knee Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Shin Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Shin Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Medial Calf Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Medial Calf Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Lateral Calf Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Lateral Calf Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Lateral Foot Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Lateral Foot Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Ankle Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Ankle Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Arch Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Arch Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Toe Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Toe Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Toe Joint Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Toe Joint Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Big Toe Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Big Toe Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L Little Toe Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Little Toe Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Forefoot",
+            "group": 1
+        },
+        {
+            "id": "L Forefoot",
+            "group": 1
+        },
+        {
+            "id": "L Heel Discomfort",
+            "group": 1
+        },
+        {
+            "id": "R Heel Discomfort",
+            "group": 1
+        },
+        {
+            "id": "L C2",
+            "group": 2
+        },
+        {
+            "id": "R C2",
+            "group": 2
+        },
+        {
+            "id": "L C3",
+            "group": 2
+        },
+        {
+            "id": "R C3",
+            "group": 2
+        },
+        {
+            "id": "L C4",
+            "group": 2
+        },
+        {
+            "id": "R C4",
+            "group": 2
+        },
+        {
+            "id": "L C5",
+            "group": 2
+        },
+        {
+            "id": "R C5",
+            "group": 2
+        },
+        {
+            "id": "L C6",
+            "group": 2
+        },
+        {
+            "id": "R C6",
+            "group": 2
+        },
+        {
+            "id": "L C7",
+            "group": 2
+        },
+        {
+            "id": "R C7",
+            "group": 2
+        },
+        {
+            "id": "L C8",
+            "group": 2
+        },
+        {
+            "id": "R C8",
+            "group": 2
+        },
+        {
+            "id": "L T1",
+            "group": 2
+        },
+        {
+            "id": "R T1",
+            "group": 2
+        },
+        {
+            "id": "L T2",
+            "group": 2
+        },
+        {
+            "id": "R T2",
+            "group": 2
+        },
+        {
+            "id": "L T3",
+            "group": 2
+        },
+        {
+            "id": "R T3",
+            "group": 2
+        },
+        {
+            "id": "L T4",
+            "group": 2
+        },
+        {
+            "id": "R T4",
+            "group": 2
+        },
+        {
+            "id": "L T5",
+            "group": 2
+        },
+        {
+            "id": "R T5",
+            "group": 2
+        },
+        {
+            "id": "L T6",
+            "group": 2
+        },
+        {
+            "id": "R T6",
+            "group": 2
+        },
+        {
+            "id": "L T7",
+            "group": 2
+        },
+        {
+            "id": "R T7",
+            "group": 2
+        },
+        {
+            "id": "L T8",
+            "group": 2
+        },
+        {
+            "id": "R T8",
+            "group": 2
+        },
+        {
+            "id": "L T9",
+            "group": 2
+        },
+        {
+            "id": "R T9",
+            "group": 2
+        },
+        {
+            "id": "L T10",
+            "group": 2
+        },
+        {
+            "id": "R T10",
+            "group": 2
+        },
+        {
+            "id": "L T11",
+            "group": 2
+        },
+        {
+            "id": "R T11",
+            "group": 2
+        },
+        {
+            "id": "L T12",
+            "group": 2
+        },
+        {
+            "id": "R T12",
+            "group": 2
+        },
+        {
+            "id": "L L1",
+            "group": 2
+        },
+        {
+            "id": "R L1",
+            "group": 2
+        },
+        {
+            "id": "L L2",
+            "group": 2
+        },
+        {
+            "id": "R L2",
+            "group": 2
+        },
+        {
+            "id": "L L3",
+            "group": 2
+        },
+        {
+            "id": "R L3",
+            "group": 2
+        },
+        {
+            "id": "L L4",
+            "group": 2
+        },
+        {
+            "id": "R L4",
+            "group": 2
+        },
+        {
+            "id": "L L5",
+            "group": 2
+        },
+        {
+            "id": "R L5",
+            "group": 2
+        },
+        {
+            "id": "L S1",
+            "group": 2
+        },
+        {
+            "id": "R S1",
+            "group": 2
+        },
+        {
+            "id": "L S2",
+            "group": 2
+        },
+        {
+            "id": "R S2",
+            "group": 2
+        },
+        {
+            "id": "DLS C1-C2",
+            "group": 3
+        },
+        {
+            "id": "DLS C2-C3",
+            "group": 3
+        },
+        {
+            "id": "DLS C3-C4",
+            "group": 3
+        },
+        {
+            "id": "DLS C4-C5",
+            "group": 3
+        },
+        {
+            "id": "DLS C5-C6",
+            "group": 3
+        },
+        {
+            "id": "DLS C6-C7",
+            "group": 3
+        },
+        {
+            "id": "DLS C7-C8",
+            "group": 3
+        },
+        {
+            "id": "DLS C8-T1",
+            "group": 3
+        },
+        {
+            "id": "DLS T1-T2",
+            "group": 3
+        },
+        {
+            "id": "DLS T2-T3",
+            "group": 3
+        },
+        {
+            "id": "DLS T3-T4",
+            "group": 3
+        },
+        {
+            "id": "DLS T4-T5",
+            "group": 3
+        },
+        {
+            "id": "DLS T5-T6",
+            "group": 3
+        },
+        {
+            "id": "DLS T6-T7",
+            "group": 3
+        },
+        {
+            "id": "DLS T7-T8",
+            "group": 3
+        },
+        {
+            "id": "DLS T8-T9",
+            "group": 3
+        },
+        {
+            "id": "DLS T9-T10",
+            "group": 3
+        },
+        {
+            "id": "DLS T10-T11",
+            "group": 3
+        },
+        {
+            "id": "DLS T11-T12",
+            "group": 3
+        },
+        {
+            "id": "DLS T12-L1",
+            "group": 3
+        },
+        {
+            "id": "DLS L1-L2",
+            "group": 3
+        },
+        {
+            "id": "DLS L2-L3",
+            "group": 3
+        },
+        {
+            "id": "DLS L3-L4",
+            "group": 3
+        },
+        {
+            "id": "DLS L4-L5",
+            "group": 3
+        },
+        {
+            "id": "DLS L5-S1",
+            "group": 3
+        },
+        {
+            "id": "DLS S1-S2",
+            "group": 3
+        }
+    ],
+    "links": [
+        {
+            "source": "Headache",
+            "target": "L C2",
+            "value": 1
+        },
+        {
+            "source": "Headache",
+            "target": "R C2",
+            "value": 1
+        },
+        {
+            "source": "L Forehead Headache",
+            "target": "L C2",
+            "value": 1
+        },
+        {
+            "source": "L Forehead Headache",
+            "target": "L C3",
+            "value": 1
+        },
+        {
+            "source": "R Forehead Headache",
+            "target": "R C2",
+            "value": 1
+        },
+        {
+            "source": "R Forehead Headache",
+            "target": "R C3",
+            "value": 1
+        },
+        {
+            "source": "L Back Headache",
+            "target": "L L2",
+            "value": 1
+        },
+        {
+            "source": "L Back Headache",
+            "target": "L L3",
+            "value": 1
+        },
+        {
+            "source": "L Back Headache",
+            "target": "L L4",
+            "value": 1
+        },
+        {
+            "source": "L Back Headache",
+            "target": "L L5",
+            "value": 1
+        },
+        {
+            "source": "L Back Headache",
+            "target": "L S1",
+            "value": 1
+        },
+        {
+            "source": "R Back Headache",
+            "target": "R C3",
+            "value": 1
+        },
+        {
+            "source": "L Eye Discomfort",
+            "target": "L C2",
+            "value": 1
+        },
+        {
+            "source": "R Eye Discomfort",
+            "target": "R C2",
+            "value": 1
+        },
+        {
+            "source": "L Ear Discomfort",
+            "target": "L C2",
+            "value": 1
+        },
+        {
+            "source": "R Ear Discomfort",
+            "target": "R C2",
+            "value": 1
+        },
+        {
+            "source": "L Tinnitus",
+            "target": "L C2",
+            "value": 1
+        },
+        {
+            "source": "R Tinnitus",
+            "target": "R C2",
+            "value": 1
+        },
+        {
+            "source": "L Jaw Discomfort",
+            "target": "L C2",
+            "value": 1
+        },
+        {
+            "source": "R Jaw Discomfort",
+            "target": "R C2",
+            "value": 1
+        },
+        {
+            "source": "R Jaw Discomfort",
+            "target": "R C3",
+            "value": 1
+        },
+        {
+            "source": "Mouth Discomfort",
+            "target": "L C2",
+            "value": 1
+        },
+        {
+            "source": "Mouth Discomfort",
+            "target": "R C2",
+            "value": 1
+        },
+        {
+            "source": "Mouth Discomfort",
+            "target": "L C3",
+            "value": 1
+        },
+        {
+            "source": "Mouth Discomfort",
+            "target": "R C3",
+            "value": 1
+        },
+        {
+            "source": "L Neck Discomfort",
+            "target": "L C2",
+            "value": 1
+        },
+        {
+            "source": "L Neck Discomfort",
+            "target": "L C3",
+            "value": 1
+        },
+        {
+            "source": "L Neck Discomfort",
+            "target": "L C4",
+            "value": 1
+        },
+        {
+            "source": "L Neck Discomfort",
+            "target": "L C5",
+            "value": 1
+        },
+        {
+            "source": "L Neck Discomfort",
+            "target": "L C6",
+            "value": 1
+        },
+        {
+            "source": "L Neck Discomfort",
+            "target": "L C7",
+            "value": 1
+        },
+        {
+            "source": "R Neck Discomfort",
+            "target": "R C2",
+            "value": 1
+        },
+        {
+            "source": "R Neck Discomfort",
+            "target": "R C3",
+            "value": 1
+        },
+        {
+            "source": "R Neck Discomfort",
+            "target": "R C4",
+            "value": 1
+        },
+        {
+            "source": "R Neck Discomfort",
+            "target": "R C5",
+            "value": 1
+        },
+        {
+            "source": "R Neck Discomfort",
+            "target": "R C6",
+            "value": 1
+        },
+        {
+            "source": "R Neck Discomfort",
+            "target": "R C7",
+            "value": 1
+        },
+        {
+            "source": "Pharyngeal Discomfort",
+            "target": "L C2",
+            "value": 1
+        },
+        {
+            "source": "Pharyngeal Discomfort",
+            "target": "R C2",
+            "value": 1
+        },
+        {
+            "source": "Pharyngeal Discomfort",
+            "target": "L C3",
+            "value": 1
+        },
+        {
+            "source": "Pharyngeal Discomfort",
+            "target": "R C3",
+            "value": 1
+        },
+        {
+            "source": "L Collarbone Discomfort",
+            "target": "L C3",
+            "value": 1
+        },
+        {
+            "source": "L Collarbone Discomfort",
+            "target": "L C4",
+            "value": 1
+        },
+        {
+            "source": "R Collarbone Discomfort",
+            "target": "R C3",
+            "value": 1
+        },
+        {
+            "source": "R Collarbone Discomfort",
+            "target": "R C4",
+            "value": 1
+        },
+        {
+            "source": "L Front Axle Discomfort",
+            "target": "L C4",
+            "value": 1
+        },
+        {
+            "source": "L Front Axle Discomfort",
+            "target": "L C5",
+            "value": 1
+        },
+        {
+            "source": "L Front Axle Discomfort",
+            "target": "L C6",
+            "value": 1
+        },
+        {
+            "source": "R Front Axle Discomfort",
+            "target": "R C4",
+            "value": 1
+        },
+        {
+            "source": "R Front Axle Discomfort",
+            "target": "R C5",
+            "value": 1
+        },
+        {
+            "source": "R Front Axle Discomfort",
+            "target": "R C6",
+            "value": 1
+        },
+        {
+            "source": "L Shoulder Impingement",
+            "target": "L C4",
+            "value": 1
+        },
+        {
+            "source": "L Shoulder Impingement",
+            "target": "L C5",
+            "value": 1
+        },
+        {
+            "source": "L Shoulder Impingement",
+            "target": "L C6",
+            "value": 1
+        },
+        {
+            "source": "R Shoulder Impingement",
+            "target": "R C4",
+            "value": 1
+        },
+        {
+            "source": "R Shoulder Impingement",
+            "target": "R C5",
+            "value": 1
+        },
+        {
+            "source": "R Shoulder Impingement",
+            "target": "R C6",
+            "value": 1
+        },
+        {
+            "source": "L Shoulder Discomfort",
+            "target": "L C4",
+            "value": 1
+        },
+        {
+            "source": "L Shoulder Discomfort",
+            "target": "L C5",
+            "value": 1
+        },
+        {
+            "source": "L Shoulder Discomfort",
+            "target": "L C6",
+            "value": 1
+        },
+        {
+            "source": "L Shoulder Discomfort",
+            "target": "L C7",
+            "value": 1
+        },
+        {
+            "source": "L Shoulder Discomfort",
+            "target": "L C8",
+            "value": 1
+        },
+        {
+            "source": "R Shoulder Discomfort",
+            "target": "R C4",
+            "value": 1
+        },
+        {
+            "source": "R Shoulder Discomfort",
+            "target": "R C5",
+            "value": 1
+        },
+        {
+            "source": "R Shoulder Discomfort",
+            "target": "R C6",
+            "value": 1
+        },
+        {
+            "source": "R Shoulder Discomfort",
+            "target": "R C7",
+            "value": 1
+        },
+        {
+            "source": "R Shoulder Discomfort",
+            "target": "R C8",
+            "value": 1
+        },
+        {
+            "source": "L Central Chest Discomfort",
+            "target": "L C3",
+            "value": 1
+        },
+        {
+            "source": "L Central Chest Discomfort",
+            "target": "L C4",
+            "value": 1
+        },
+        {
+            "source": "R Central Chest Discomfort",
+            "target": "R C3",
+            "value": 1
+        },
+        {
+            "source": "R Central Chest Discomfort",
+            "target": "R C4",
+            "value": 1
+        },
+        {
+            "source": "L Chest Discomfort",
+            "target": "L T3",
+            "value": 1
+        },
+        {
+            "source": "L Chest Discomfort",
+            "target": "L T4",
+            "value": 1
+        },
+        {
+            "source": "L Chest Discomfort",
+            "target": "L T5",
+            "value": 1
+        },
+        {
+            "source": "R Chest Discomfort",
+            "target": "R T3",
+            "value": 1
+        },
+        {
+            "source": "R Chest Discomfort",
+            "target": "R T4",
+            "value": 1
+        },
+        {
+            "source": "R Chest Discomfort",
+            "target": "R T5",
+            "value": 1
+        },
+        {
+            "source": "Thoracidic Dysfunction",
+            "target": "L T3",
+            "value": 1
+        },
+        {
+            "source": "Thoracidic Dysfunction",
+            "target": "R T3",
+            "value": 1
+        },
+        {
+            "source": "Thoracidic Dysfunction",
+            "target": "L T4",
+            "value": 1
+        },
+        {
+            "source": "Thoracidic Dysfunction",
+            "target": "R T4",
+            "value": 1
+        },
+        {
+            "source": "Thoracidic Dysfunction",
+            "target": "L T5",
+            "value": 1
+        },
+        {
+            "source": "Thoracidic Dysfunction",
+            "target": "R T5",
+            "value": 1
+        },
+        {
+            "source": "Thoracidic Dysfunction",
+            "target": "L T6",
+            "value": 1
+        },
+        {
+            "source": "Thoracidic Dysfunction",
+            "target": "R T6",
+            "value": 1
+        },
+        {
+            "source": "Thoracidic Dysfunction",
+            "target": "L T7",
+            "value": 1
+        },
+        {
+            "source": "Thoracidic Dysfunction",
+            "target": "R T7",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "L T1",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "R T1",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "L T2",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "R T2",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "L T3",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "R T3",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "L T4",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "R T4",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "L T5",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "R T5",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "L T6",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "R T6",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "L T7",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "R T7",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "L T8",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "R T8",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "L T9",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "R T9",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "L T10",
+            "value": 1
+        },
+        {
+            "source": "Upper Back Discomfort",
+            "target": "R T10",
+            "value": 1
+        },
+        {
+            "source": "L interscapular Discomfort",
+            "target": "L C5",
+            "value": 1
+        },
+        {
+            "source": "L interscapular Discomfort",
+            "target": "L C6",
+            "value": 1
+        },
+        {
+            "source": "R interscapular Discomfort",
+            "target": "R C5",
+            "value": 1
+        },
+        {
+            "source": "R interscapular Discomfort",
+            "target": "R C6",
+            "value": 1
+        },
+        {
+            "source": "L Lateral Arm Discomfort",
+            "target": "L C5",
+            "value": 1
+        },
+        {
+            "source": "L Lateral Arm Discomfort",
+            "target": "L C6",
+            "value": 1
+        },
+        {
+            "source": "R Lateral Arm Discomfort",
+            "target": "R C5",
+            "value": 1
+        },
+        {
+            "source": "R Lateral Arm Discomfort",
+            "target": "R C6",
+            "value": 1
+        },
+        {
+            "source": "L Upper Arm Discomfort",
+            "target": "L C5",
+            "value": 1
+        },
+        {
+            "source": "R Upper Arm Discomfort",
+            "target": "R C5",
+            "value": 1
+        },
+        {
+            "source": "L Upper Elbow Discomport",
+            "target": "L C5",
+            "value": 1
+        },
+        {
+            "source": "R Upper Elbow Discomport",
+            "target": "R C5",
+            "value": 1
+        },
+        {
+            "source": "L Lateral Elbow Discomfort",
+            "target": "L C5",
+            "value": 1
+        },
+        {
+            "source": "L Lateral Elbow Discomfort",
+            "target": "L C6",
+            "value": 1
+        },
+        {
+            "source": "R Lateral Elbow Discomfort",
+            "target": "R C5",
+            "value": 1
+        },
+        {
+            "source": "R Lateral Elbow Discomfort",
+            "target": "R C6",
+            "value": 1
+        },
+        {
+            "source": "L Medial Elbow Discomfort",
+            "target": "L C7",
+            "value": 1
+        },
+        {
+            "source": "L Medial Elbow Discomfort",
+            "target": "L C8",
+            "value": 1
+        },
+        {
+            "source": "R Medial Elbow Discomfort",
+            "target": "R C7",
+            "value": 1
+        },
+        {
+            "source": "R Medial Elbow Discomfort",
+            "target": "R C8",
+            "value": 1
+        },
+        {
+            "source": "L Arm Bend Discomfort",
+            "target": "L C6",
+            "value": 1
+        },
+        {
+            "source": "L Arm Bend Discomfort",
+            "target": "L C7",
+            "value": 1
+        },
+        {
+            "source": "L Arm Bend Discomfort",
+            "target": "L C8",
+            "value": 1
+        },
+        {
+            "source": "L Arm Bend Discomfort",
+            "target": "L T1",
+            "value": 1
+        },
+        {
+            "source": "R Arm Bend Discomfort",
+            "target": "R C6",
+            "value": 1
+        },
+        {
+            "source": "R Arm Bend Discomfort",
+            "target": "R C7",
+            "value": 1
+        },
+        {
+            "source": "R Arm Bend Discomfort",
+            "target": "R C8",
+            "value": 1
+        },
+        {
+            "source": "R Arm Bend Discomfort",
+            "target": "R T1",
+            "value": 1
+        },
+        {
+            "source": "L Lower Arm Discomfort",
+            "target": "L C6",
+            "value": 1
+        },
+        {
+            "source": "L Lower Arm Discomfort",
+            "target": "L C7",
+            "value": 1
+        },
+        {
+            "source": "L Lower Arm Discomfort",
+            "target": "L C8",
+            "value": 1
+        },
+        {
+            "source": "R Lower Arm Discomfort",
+            "target": "R C6",
+            "value": 1
+        },
+        {
+            "source": "R Lower Arm Discomfort",
+            "target": "R C7",
+            "value": 1
+        },
+        {
+            "source": "R Lower Arm Discomfort",
+            "target": "R C8",
+            "value": 1
+        },
+        {
+            "source": "L Wrist Discomfort",
+            "target": "L C6",
+            "value": 1
+        },
+        {
+            "source": "L Wrist Discomfort",
+            "target": "L C7",
+            "value": 1
+        },
+        {
+            "source": "R Wrist Discomfort",
+            "target": "R C6",
+            "value": 1
+        },
+        {
+            "source": "R Wrist Discomfort",
+            "target": "R C7",
+            "value": 1
+        },
+        {
+            "source": "L Hand Discomfort",
+            "target": "L C6",
+            "value": 1
+        },
+        {
+            "source": "L Hand Discomfort",
+            "target": "L C7",
+            "value": 1
+        },
+        {
+            "source": "L Hand Discomfort",
+            "target": "L C8",
+            "value": 1
+        },
+        {
+            "source": "R Hand Discomfort",
+            "target": "R C6",
+            "value": 1
+        },
+        {
+            "source": "R Hand Discomfort",
+            "target": "R C7",
+            "value": 1
+        },
+        {
+            "source": "R Hand Discomfort",
+            "target": "R C8",
+            "value": 1
+        },
+        {
+            "source": "L Finger Discomfort",
+            "target": "L C7",
+            "value": 1
+        },
+        {
+            "source": "L Finger Discomfort",
+            "target": "L C8",
+            "value": 1
+        },
+        {
+            "source": "R Finger Discomfort",
+            "target": "R C7",
+            "value": 1
+        },
+        {
+            "source": "R Finger Discomfort",
+            "target": "R C8",
+            "value": 1
+        },
+        {
+            "source": "L Little Finger Discomfort",
+            "target": "L C8",
+            "value": 1
+        },
+        {
+            "source": "R Little Finger Discomfort",
+            "target": "R C8",
+            "value": 1
+        },
+        {
+            "source": "L Thumb Discomfort",
+            "target": "L C6",
+            "value": 1
+        },
+        {
+            "source": "R Thumb Discomfort",
+            "target": "R C6",
+            "value": 1
+        },
+        {
+            "source": "L Lower Back Pain",
+            "target": "L L2",
+            "value": 1
+        },
+        {
+            "source": "L Lower Back Pain",
+            "target": "L L3",
+            "value": 1
+        },
+        {
+            "source": "L Lower Back Pain",
+            "target": "L L4",
+            "value": 1
+        },
+        {
+            "source": "L Lower Back Pain",
+            "target": "L L5",
+            "value": 1
+        },
+        {
+            "source": "L Lower Back Pain",
+            "target": "L S1",
+            "value": 1
+        },
+        {
+            "source": "R Lower Back Pain",
+            "target": "R L2",
+            "value": 1
+        },
+        {
+            "source": "R Lower Back Pain",
+            "target": "R L3",
+            "value": 1
+        },
+        {
+            "source": "R Lower Back Pain",
+            "target": "R L4",
+            "value": 1
+        },
+        {
+            "source": "R Lower Back Pain",
+            "target": "R L5",
+            "value": 1
+        },
+        {
+            "source": "R Lower Back Pain",
+            "target": "R S1",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "L T6",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "R T6",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "L T7",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "R T7",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "L T8",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "R T8",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "L T9",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "R T9",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "L T10",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "R T10",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "L T11",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "R T11",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "L T12",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "R T12",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "L L1",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "R L1",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "L L2",
+            "value": 1
+        },
+        {
+            "source": "Lateral Abdominal Discomfort",
+            "target": "R L2",
+            "value": 1
+        },
+        {
+            "source": "Upper Abdominal Discomfort",
+            "target": "L T6",
+            "value": 1
+        },
+        {
+            "source": "Upper Abdominal Discomfort",
+            "target": "R T6",
+            "value": 1
+        },
+        {
+            "source": "Upper Abdominal Discomfort",
+            "target": "L T7",
+            "value": 1
+        },
+        {
+            "source": "Upper Abdominal Discomfort",
+            "target": "R T7",
+            "value": 1
+        },
+        {
+            "source": "Upper Abdominal Discomfort",
+            "target": "L T8",
+            "value": 1
+        },
+        {
+            "source": "Upper Abdominal Discomfort",
+            "target": "R T8",
+            "value": 1
+        },
+        {
+            "source": "L Lower Abdominal discomfort",
+            "target": "L T9",
+            "value": 1
+        },
+        {
+            "source": "L Lower Abdominal discomfort",
+            "target": "L T10",
+            "value": 1
+        },
+        {
+            "source": "L Lower Abdominal discomfort",
+            "target": "L T11",
+            "value": 1
+        },
+        {
+            "source": "L Lower Abdominal discomfort",
+            "target": "L T12",
+            "value": 1
+        },
+        {
+            "source": "L Lower Abdominal discomfort",
+            "target": "L L1",
+            "value": 1
+        },
+        {
+            "source": "L Lower Abdominal discomfort",
+            "target": "L L2",
+            "value": 1
+        },
+        {
+            "source": "R Lower Abdominal discomfort",
+            "target": "R T9",
+            "value": 1
+        },
+        {
+            "source": "R Lower Abdominal discomfort",
+            "target": "R T10",
+            "value": 1
+        },
+        {
+            "source": "R Lower Abdominal discomfort",
+            "target": "R T11",
+            "value": 1
+        },
+        {
+            "source": "R Lower Abdominal discomfort",
+            "target": "R T12",
+            "value": 1
+        },
+        {
+            "source": "R Lower Abdominal discomfort",
+            "target": "R L1",
+            "value": 1
+        },
+        {
+            "source": "R Lower Abdominal discomfort",
+            "target": "R L2",
+            "value": 1
+        },
+        {
+            "source": "IBS",
+            "target": "L T10",
+            "value": 1
+        },
+        {
+            "source": "IBS",
+            "target": "R T10",
+            "value": 1
+        },
+        {
+            "source": "IBS",
+            "target": "L T11",
+            "value": 1
+        },
+        {
+            "source": "IBS",
+            "target": "R T11",
+            "value": 1
+        },
+        {
+            "source": "IBS",
+            "target": "L T12",
+            "value": 1
+        },
+        {
+            "source": "IBS",
+            "target": "R T12",
+            "value": 1
+        },
+        {
+            "source": "IBS",
+            "target": "L L1",
+            "value": 1
+        },
+        {
+            "source": "IBS",
+            "target": "R L1",
+            "value": 1
+        },
+        {
+            "source": "IBS",
+            "target": "L L2",
+            "value": 1
+        },
+        {
+            "source": "IBS",
+            "target": "R L2",
+            "value": 1
+        },
+        {
+            "source": "L Groin Discomfort",
+            "target": "L L1",
+            "value": 1
+        },
+        {
+            "source": "L Groin Discomfort",
+            "target": "L L2",
+            "value": 1
+        },
+        {
+            "source": "R Groin Discomfort",
+            "target": "R L1",
+            "value": 1
+        },
+        {
+            "source": "R Groin Discomfort",
+            "target": "R L2",
+            "value": 1
+        },
+        {
+            "source": "L Buttocks Discomfort",
+            "target": "L L5",
+            "value": 1
+        },
+        {
+            "source": "L Buttocks Discomfort",
+            "target": "L S1",
+            "value": 1
+        },
+        {
+            "source": "R Buttocks Discomfort",
+            "target": "R L5",
+            "value": 1
+        },
+        {
+            "source": "R Buttocks Discomfort",
+            "target": "R S1",
+            "value": 1
+        },
+        {
+            "source": "Tailbone Pain",
+            "target": "L S1",
+            "value": 1
+        },
+        {
+            "source": "Tailbone Pain",
+            "target": "R S1",
+            "value": 1
+        },
+        {
+            "source": "L Hip Discomfort",
+            "target": "L L2",
+            "value": 1
+        },
+        {
+            "source": "L Hip Discomfort",
+            "target": "L L3",
+            "value": 1
+        },
+        {
+            "source": "R Hip Discomfort",
+            "target": "R L4",
+            "value": 1
+        },
+        {
+            "source": "R Hip Discomfort",
+            "target": "R L5",
+            "value": 1
+        },
+        {
+            "source": "L Hip Joint Discomfort",
+            "target": "L L4",
+            "value": 1
+        },
+        {
+            "source": "L Hip Joint Discomfort",
+            "target": "L L5",
+            "value": 1
+        },
+        {
+            "source": "R Hip Joint Discomfort",
+            "target": "R L4",
+            "value": 1
+        },
+        {
+            "source": "R Hip Joint Discomfort",
+            "target": "R L5",
+            "value": 1
+        },
+        {
+            "source": "L Adductor Tendon Discomfort",
+            "target": "L L1",
+            "value": 1
+        },
+        {
+            "source": "L Adductor Tendon Discomfort",
+            "target": "L L2",
+            "value": 1
+        },
+        {
+            "source": "L Adductor Tendon Discomfort",
+            "target": "L S1",
+            "value": 1
+        },
+        {
+            "source": "L Adductor Tendon Discomfort",
+            "target": "L S2",
+            "value": 1
+        },
+        {
+            "source": "R Adductor Tendon Discomfort",
+            "target": "R L1",
+            "value": 1
+        },
+        {
+            "source": "R Adductor Tendon Discomfort",
+            "target": "R L2",
+            "value": 1
+        },
+        {
+            "source": "R Adductor Tendon Discomfort",
+            "target": "R S1",
+            "value": 1
+        },
+        {
+            "source": "R Adductor Tendon Discomfort",
+            "target": "R S2",
+            "value": 1
+        },
+        {
+            "source": "L Anterior Thigh Discomfort",
+            "target": "L L3",
+            "value": 1
+        },
+        {
+            "source": "L Anterior Thigh Discomfort",
+            "target": "L L4",
+            "value": 1
+        },
+        {
+            "source": "R Anterior Thigh Discomfort",
+            "target": "R L3",
+            "value": 1
+        },
+        {
+            "source": "R Anterior Thigh Discomfort",
+            "target": "R L4",
+            "value": 1
+        },
+        {
+            "source": "L Back Thigh Discomfort",
+            "target": "L S1",
+            "value": 1
+        },
+        {
+            "source": "R Back Thigh Discomfort",
+            "target": "R S1",
+            "value": 1
+        },
+        {
+            "source": "L Anterior Knee Discomfort",
+            "target": "L L4",
+            "value": 1
+        },
+        {
+            "source": "L Anterior Knee Discomfort",
+            "target": "L L5",
+            "value": 1
+        },
+        {
+            "source": "R Anterior Knee Discomfort",
+            "target": "R L4",
+            "value": 1
+        },
+        {
+            "source": "R Anterior Knee Discomfort",
+            "target": "R L5",
+            "value": 1
+        },
+        {
+            "source": "L Medial Knee Joint Discomfort",
+            "target": "L L4",
+            "value": 1
+        },
+        {
+            "source": "L Medial Knee Joint Discomfort",
+            "target": "L L5",
+            "value": 1
+        },
+        {
+            "source": "R Medial Knee Joint Discomfort",
+            "target": "R L4",
+            "value": 1
+        },
+        {
+            "source": "R Medial Knee Joint Discomfort",
+            "target": "R L5",
+            "value": 1
+        },
+        {
+            "source": "L Dorsal Knee Joint Discomfort",
+            "target": "L S1",
+            "value": 1
+        },
+        {
+            "source": "R Dorsal Knee Joint Discomfort",
+            "target": "R S1",
+            "value": 1
+        },
+        {
+            "source": "L Lateral Knee Discomfort",
+            "target": "L S1",
+            "value": 1
+        },
+        {
+            "source": "R Lateral Knee Discomfort",
+            "target": "R S1",
+            "value": 1
+        },
+        {
+            "source": "L Shin Discomfort",
+            "target": "L L4",
+            "value": 1
+        },
+        {
+            "source": "L Shin Discomfort",
+            "target": "L L5",
+            "value": 1
+        },
+        {
+            "source": "R Shin Discomfort",
+            "target": "R L4",
+            "value": 1
+        },
+        {
+            "source": "R Shin Discomfort",
+            "target": "R L5",
+            "value": 1
+        },
+        {
+            "source": "L Medial Calf Discomfort",
+            "target": "L L4",
+            "value": 1
+        },
+        {
+            "source": "R Medial Calf Discomfort",
+            "target": "R L4",
+            "value": 1
+        },
+        {
+            "source": "L Lateral Calf Discomfort",
+            "target": "L L4",
+            "value": 1
+        },
+        {
+            "source": "L Lateral Calf Discomfort",
+            "target": "L L5",
+            "value": 1
+        },
+        {
+            "source": "L Lateral Calf Discomfort",
+            "target": "L S1",
+            "value": 1
+        },
+        {
+            "source": "R Lateral Calf Discomfort",
+            "target": "R L4",
+            "value": 1
+        },
+        {
+            "source": "R Lateral Calf Discomfort",
+            "target": "R L5",
+            "value": 1
+        },
+        {
+            "source": "R Lateral Calf Discomfort",
+            "target": "R S1",
+            "value": 1
+        },
+        {
+            "source": "L Lateral Foot Discomfort",
+            "target": "L S1",
+            "value": 1
+        },
+        {
+            "source": "R Lateral Foot Discomfort",
+            "target": "R S1",
+            "value": 1
+        },
+        {
+            "source": "L Ankle Discomfort",
+            "target": "L L5",
+            "value": 1
+        },
+        {
+            "source": "R Ankle Discomfort",
+            "target": "R L5",
+            "value": 1
+        },
+        {
+            "source": "L Arch Discomfort",
+            "target": "L L5",
+            "value": 1
+        },
+        {
+            "source": "R Arch Discomfort",
+            "target": "R L5",
+            "value": 1
+        },
+        {
+            "source": "L Toe Discomfort",
+            "target": "L L5",
+            "value": 1
+        },
+        {
+            "source": "L Toe Discomfort",
+            "target": "L S1",
+            "value": 1
+        },
+        {
+            "source": "R Toe Discomfort",
+            "target": "R L5",
+            "value": 1
+        },
+        {
+            "source": "R Toe Discomfort",
+            "target": "R S1",
+            "value": 1
+        },
+        {
+            "source": "L Toe Joint Discomfort",
+            "target": "L L5",
+            "value": 1
+        },
+        {
+            "source": "R Toe Joint Discomfort",
+            "target": "R L5",
+            "value": 1
+        },
+        {
+            "source": "L Big Toe Discomfort",
+            "target": "L L5",
+            "value": 1
+        },
+        {
+            "source": "R Big Toe Discomfort",
+            "target": "R L5",
+            "value": 1
+        },
+        {
+            "source": "L Little Toe Discomfort",
+            "target": "L S1",
+            "value": 1
+        },
+        {
+            "source": "R Little Toe Discomfort",
+            "target": "R S1",
+            "value": 1
+        },
+        {
+            "source": "R Forefoot",
+            "target": "R L5",
+            "value": 1
+        },
+        {
+            "source": "L Forefoot",
+            "target": "L L5",
+            "value": 1
+        },
+        {
+            "source": "L Heel Discomfort",
+            "target": "L S1",
+            "value": 1
+        },
+        {
+            "source": "R Heel Discomfort",
+            "target": "R S1",
+            "value": 1
+        },
+        {
+            "source": "L C2",
+            "target": "DLS C1-C2",
+            "value": 1
+        },
+        {
+            "source": "R C2",
+            "target": "DLS C1-C2",
+            "value": 1
+        },
+        {
+            "source": "L C3",
+            "target": "DLS C2-C3",
+            "value": 1
+        },
+        {
+            "source": "R C3",
+            "target": "DLS C2-C3",
+            "value": 1
+        },
+        {
+            "source": "L C4",
+            "target": "DLS C3-C4",
+            "value": 1
+        },
+        {
+            "source": "R C4",
+            "target": "DLS C3-C4",
+            "value": 1
+        },
+        {
+            "source": "L C5",
+            "target": "DLS C4-C5",
+            "value": 1
+        },
+        {
+            "source": "R C5",
+            "target": "DLS C4-C5",
+            "value": 1
+        },
+        {
+            "source": "L C6",
+            "target": "DLS C5-C6",
+            "value": 1
+        },
+        {
+            "source": "R C6",
+            "target": "DLS C5-C6",
+            "value": 1
+        },
+        {
+            "source": "L C7",
+            "target": "DLS C6-C7",
+            "value": 1
+        },
+        {
+            "source": "R C7",
+            "target": "DLS C6-C7",
+            "value": 1
+        },
+        {
+            "source": "L C8",
+            "target": "DLS C7-C8",
+            "value": 1
+        },
+        {
+            "source": "R C8",
+            "target": "DLS C7-C8",
+            "value": 1
+        },
+        {
+            "source": "L T1",
+            "target": "DLS C8-T1",
+            "value": 1
+        },
+        {
+            "source": "R T1",
+            "target": "DLS C8-T1",
+            "value": 1
+        },
+        {
+            "source": "L T2",
+            "target": "DLS T1-T2",
+            "value": 1
+        },
+        {
+            "source": "R T2",
+            "target": "DLS T1-T2",
+            "value": 1
+        },
+        {
+            "source": "L T3",
+            "target": "DLS T2-T3",
+            "value": 1
+        },
+        {
+            "source": "R T3",
+            "target": "DLS T2-T3",
+            "value": 1
+        },
+        {
+            "source": "L T4",
+            "target": "DLS T3-T4",
+            "value": 1
+        },
+        {
+            "source": "R T4",
+            "target": "DLS T3-T4",
+            "value": 1
+        },
+        {
+            "source": "L T5",
+            "target": "DLS T4-T5",
+            "value": 1
+        },
+        {
+            "source": "R T5",
+            "target": "DLS T4-T5",
+            "value": 1
+        },
+        {
+            "source": "L T6",
+            "target": "DLS T5-T6",
+            "value": 1
+        },
+        {
+            "source": "R T6",
+            "target": "DLS T5-T6",
+            "value": 1
+        },
+        {
+            "source": "L T7",
+            "target": "DLS T6-T7",
+            "value": 1
+        },
+        {
+            "source": "R T7",
+            "target": "DLS T6-T7",
+            "value": 1
+        },
+        {
+            "source": "L T8",
+            "target": "DLS T7-T8",
+            "value": 1
+        },
+        {
+            "source": "R T8",
+            "target": "DLS T7-T8",
+            "value": 1
+        },
+        {
+            "source": "L T9",
+            "target": "DLS T8-T9",
+            "value": 1
+        },
+        {
+            "source": "R T9",
+            "target": "DLS T8-T9",
+            "value": 1
+        },
+        {
+            "source": "L T10",
+            "target": "DLS T9-T10",
+            "value": 1
+        },
+        {
+            "source": "R T10",
+            "target": "DLS T9-T10",
+            "value": 1
+        },
+        {
+            "source": "L T11",
+            "target": "DLS T10-T11",
+            "value": 1
+        },
+        {
+            "source": "R T11",
+            "target": "DLS T10-T11",
+            "value": 1
+        },
+        {
+            "source": "L T12",
+            "target": "DLS T11-T12",
+            "value": 1
+        },
+        {
+            "source": "R T12",
+            "target": "DLS T11-T12",
+            "value": 1
+        },
+        {
+            "source": "L L1",
+            "target": "DLS T12-L1",
+            "value": 1
+        },
+        {
+            "source": "R L1",
+            "target": "DLS T12-L1",
+            "value": 1
+        },
+        {
+            "source": "L L2",
+            "target": "DLS L1-L2",
+            "value": 1
+        },
+        {
+            "source": "R L2",
+            "target": "DLS L1-L2",
+            "value": 1
+        },
+        {
+            "source": "L L3",
+            "target": "DLS L2-L3",
+            "value": 1
+        },
+        {
+            "source": "R L3",
+            "target": "DLS L2-L3",
+            "value": 1
+        },
+        {
+            "source": "L L4",
+            "target": "DLS L3-L4",
+            "value": 1
+        },
+        {
+            "source": "R L4",
+            "target": "DLS L3-L4",
+            "value": 1
+        },
+        {
+            "source": "L L5",
+            "target": "DLS L4-L5",
+            "value": 1
+        },
+        {
+            "source": "R L5",
+            "target": "DLS L4-L5",
+            "value": 1
+        },
+        {
+            "source": "L S1",
+            "target": "DLS L5-S1",
+            "value": 1
+        },
+        {
+            "source": "R S1",
+            "target": "DLS L5-S1",
+            "value": 1
+        },
+        {
+            "source": "L S2",
+            "target": "DLS S1-S2",
+            "value": 1
+        },
+        {
+            "source": "R S2",
+            "target": "DLS S1-S2",
+            "value": 1
+        }
+    ]
+}

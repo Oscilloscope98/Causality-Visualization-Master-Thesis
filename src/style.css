@@ -6,6 +6,19 @@ body {
   .center {
   }
 
+  .flex-container {
+    display: flex;
+    width:100%;
+  }
+  
+  .flex-container > .graph{
+    width:40%;
+  }
+  
+  .flex-container > .pd{
+    width:60%;
+  }
+
 /*bodyContour.js*/
 .body-container {
   position: relative;
@@ -33,7 +46,7 @@ path {
 }
 
 path:hover {
-  fill: rgb(30, 131, 190, 0.2);
+  fill: rgba(255, 0, 0, 0.2);
 }
 
 
@@ -49,17 +62,17 @@ ellipse {
 }
 
 ellipse:hover {
-  fill: rgb(30, 131, 190, 0.2);
+  fill: rgba(255, 0, 0, 0.2);
 }
 
 .path-selected{
-  fill: rgb(30, 131, 190, 0.2);
+  fill: rgba(255, 0, 0, 0.2);
 }
 
 .path-selected:hover{
-  fill: rgb(30, 131, 190, 0.4);
+  fill: rgba(255, 0, 0, 0.4);
 }
 
 .path-selected-l2{
-  fill: rgb(30, 131, 190, 0.4);
+  fill: rgba(255, 0, 0, 0.4);
 }
