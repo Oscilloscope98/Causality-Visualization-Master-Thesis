@@ -1,5 +1,5 @@
 import { useD3 } from './useD3';
-import React from 'react';
+import React, { useState } from 'react';
 import * as d3 from 'd3';
 
 /*
@@ -8,7 +8,8 @@ https://observablehq.com/@d3/force-directed-graph
 https://observablehq.com/@turuibo/the-complete-causal-graph-of-neuropathic-pain-diagnosis
 */
 
-function CausalGraph({ data, width, height }) {
+function CausalGraph({ data, width, height, selectedCauses, selectCause, selectedSyms }) {
+    //const [clickedCause, setClickedCause] = useState([]);
     function color(d) {
         //const scale = d3.scaleOrdinal(d3.schemeCategory10);
         const colorList = d3.schemeCategory10;
@@ -37,11 +38,21 @@ function CausalGraph({ data, width, height }) {
             .on("drag", dragged)
             .on("end", dragended);
     }
+
+    function ifIncludes(d){
+        if (d.group == 3){
+            //console.log("group 3");
+            //console.log(selectedCauses);
+            //console.log(selectedCauses.includes(d.id));
+            if (selectedCauses.includes(d.id)) return true;
+            else return false;
+        }
+    }
     const ref = useD3(
         (svg) => {
             svg.selectAll('*').remove();
 
-            console.log(data);
+            //console.log(data);
 
             const links = data.links.map(d => Object.assign(d));
             const nodes = data.nodes.map(d => Object.assign(d));
@@ -50,13 +61,13 @@ function CausalGraph({ data, width, height }) {
             const simulation = d3.forceSimulation(nodes)
                 .force("x", d3.forceX(d => {
                     if (d.group === 1) {
-                        return width; // width/5 - 50 - 400;
+                        return 3*width/4; // width/5 - 50 - 400;
                     }
                     if (d.group === 2) {
-                        return width / 2; // width/5 - 50 - 400;
+                        return 2*width/4; // width/5 - 50 - 400;
                     }
                     if (d.group === 3) {
-                        return width / 3; // width/5 - 50 - 400;
+                        return width/4; // width/5 - 50 - 400;
                     }
                 }).strength(0.95))
                 .force("link", d3.forceLink(links).id(d => d.id))
@@ -65,8 +76,8 @@ function CausalGraph({ data, width, height }) {
                 .force("collide", d3.forceCollide().radius(d => 35).iterations(5));
 
             svg.attr("viewBox", [0, 0, width, height])
-            
-            /*zoon
+
+            /*zoom
           
             const zoom = d3.zoom()
               .scaleExtent([0.2, 8])
@@ -92,7 +103,31 @@ function CausalGraph({ data, width, height }) {
 
             node.append('circle')
                 .attr("r", 10)
-                .attr("fill", color);
+                .attr("fill", color)
+                .style("opacity", function(d){
+                    if (d.potential) return 0.5;
+                    else return 1.0;
+                })
+                .attr("stroke", function(d){
+                    if (ifIncludes(d)){
+                        return "rgb(29, 116, 8)";
+                    }
+                    else return "rgba(29, 116, 8, 0)";
+                })
+                .attr("stroke-width", 5)
+                .on("click", function (event, d) {
+                    if (d.group == 3) {
+                        selectCause(d.id);
+                    }
+                })
+                .style("cursor", function(d){
+                    if (d.group == 3){
+                        d3.select(this).attr("cursor", "pointer")
+                    }
+                    else{
+                        d3.select(this).attr("cursor", "move")
+                    }
+                });
 
             node.append("text")
                 .text(function (d) {
@@ -113,15 +148,15 @@ function CausalGraph({ data, width, height }) {
                 node
                     .attr("transform", d => `translate(${d.x}, ${d.y})`);
             });
-        }, [data]
+        }, [data.nodes.length, selectedCauses.length, selectedSyms.length]
     );
 
     return (
         <svg
             ref={ref}
             style={{
-                height: 700,
-                width: 400,
+                height: 650,
+                width: 650,
                 marginRight: "0px",
                 marginLeft: "0px",
             }}

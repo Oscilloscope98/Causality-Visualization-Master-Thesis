@@ -5,38 +5,67 @@ import BodyTemplate from './bodyComponents/BodyTemplate';
 import CausalGraph from './causalGraph/CausalGraph';
 
 const data = require('./data/data.json');
-const dataRe = require('./data/data_reconstructed.json');
+const symsData = require('./data/symsToCause.json');
+const causeData = require('./data/causeToSyms.json');
 
-//reconstruct json file for graph according to the selected data
-function dataReformat(data, selectedData) {
+//reconstruct json file for causal graph according to the selected symptoms on body template
+function dataReformat(symsData, selectedSyms, causeData, selectedCauses) {
     var newData = {};
     newData["nodes"] = [];
     newData["links"] = [];
-    selectedData.forEach(d => {
-        newData.nodes.push({ "id": d, "group": 1 });
-        data[d].forEach(r => {
-            newData.links.push({ "source": d, "target": r.pattern, "value": 1 });
+    selectedSyms.forEach(s => {
+        newData.nodes.push({ "id": s, "group": 1, "potential": false });
+        symsData[s].forEach(r => {
+            newData.links.push({ "source": s, "target": r.pattern, "value": 1, "potential": false });
             if (!newData.nodes.some(node => node.id === r.pattern)) {
-                newData.nodes.push({ "id": r.pattern, "group": 2 });
-                newData.links.push({ "source": r.pattern, "target": r.cause, "value": 1 });
+                newData.nodes.push({ "id": r.pattern, "group": 2, "potential": false });
+                newData.links.push({ "source": r.pattern, "target": r.cause, "value": 1, "potential": false });
             }
             if (!newData.nodes.some(node => node.id === r.cause)) {
-                newData.nodes.push({ "id": r.cause, "group": 3 });
+                newData.nodes.push({ "id": r.cause, "group": 3, "potential": false });
             }
         });
     });
+    selectedCauses.forEach(c => {
+        causeData[c].forEach(r => {
+            if (!newData.nodes.some(node => node.id === r.pattern)) {
+                newData.nodes.push({ "id": r.pattern, "group": 2, "potential": true });
+                newData.links.push({ "source": r.pattern, "target": c, "value": 1, "potential": true });
+            }
+            r.symptoms.forEach(s =>{
+                if (!newData.nodes.some(node => node.id === s)) {
+                    newData.nodes.push({ "id": s, "group": 1, "potential": true });
+                    newData.links.push({ "source": s, "target": r.pattern, "value": 1, "potential": true });
+                }
+            });
+        });
+    });
     return newData;
+}
+
+//get potential symptoms from cause, with the name same as the one in causal graph
+function getPotentialSyms(causeData, selectedCauses) {
+    var potentialSyms = [];
+    selectedCauses.forEach(c => {
+        causeData[c].forEach(r => {
+            potentialSyms = potentialSyms.concat(r.symptoms.filter((item) => potentialSyms.indexOf(item) < 0));
+        });
+    });
+    return potentialSyms;
 }
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            symptoms: [],
+            symptoms: [], //selected symptoms on body template (shown in original path id with _, FB, Or, 2)
+            causes: [], //selected causes on causal graph
+            //potentialSyms: [] //potential symptoms according to selected cause
         };
     }
 
-    delectSym(symName) {
+    //delect symptoms on body template
+    deleteSym(symName) {
         let tempSyms = this.state.symptoms;
         const index = tempSyms.indexOf(symName);
         if (index > -1) {
@@ -45,7 +74,8 @@ class App extends React.Component {
         this.setState({ symptoms: tempSyms });
     }
 
-    handleClick(symName) {
+    //select symptoms on body template
+    selectSym(symName) {
         let tempSyms = this.state.symptoms;
         if (!tempSyms.includes(symName)) {
             tempSyms.push(symName);
@@ -53,14 +83,37 @@ class App extends React.Component {
         }
         else {
             //double click to disable a symptom
-            this.delectSym(symName);
+            this.deleteSym(symName);
         }
-        console.log(this.state.symptoms);
+        //console.log(this.state.symptoms);
     }
 
+    //delect causes on causal graph
+    deleteCause(causeName) {
+        let tempCauses = this.state.causes;
+        const index = tempCauses.indexOf(causeName);
+        if (index > -1) {
+            tempCauses.splice(index, 1);
+        }
+        this.setState({ causes: tempCauses });
+    }
+
+    //select cause on causal graph
+    selectCause(causeName) {
+        let tempCauses = this.state.causes;
+        if (!tempCauses.includes(causeName)) {
+            tempCauses.push(causeName);
+            this.setState({ causes: tempCauses });
+        }
+        else {
+            //double click to deselect a cause
+            this.deleteCause(causeName);
+        }
+        //console.log(this.state.causes)
+    }
 
     render() {
-        var symptomsUnifyFB = [];
+        var symptomsUnifyFB = []; //symptom list with the name same as the one in causal graph
         var tempSyms = this.state.symptoms;
         for (var i = 0; i < tempSyms.length; i++) {
             var tempSym = tempSyms[i].replace('F ', '').replace('B ', '').replace(' 2', '');
@@ -75,20 +128,33 @@ class App extends React.Component {
         let symString = '';
         symptomsUnifyFB.forEach(item => symString += item + ', ');
         symString = symString.slice(0, -2);
-        console.log(symptomsUnifyFB)
-        //console.log(dataReformat(dataRe, symptomsUnifyFB));
+        //console.log(symptomsUnifyFB)
+
+        //potential symptom list with the name same as the one in causal graph
+        var potentialSyms = getPotentialSyms(causeData, this.state.causes);
+        let potentialSymString = '';
+        potentialSyms.forEach(item => potentialSymString += item + ', ');
+        potentialSymString = potentialSymString.slice(0, -2);
+        console.log(dataReformat(symsData, symptomsUnifyFB, causeData, this.state.causes));
         return (
             <div>
                 <p>Selected Symptoms: {symString}</p>
+                <p>Potential Symptoms: {potentialSymString}</p>
                 <div className="flex-container">
                     <div className="graph">
-                        <CausalGraph data={dataReformat(dataRe, symptomsUnifyFB)} width={800} height={1000} />
+                        <CausalGraph data={dataReformat(symsData, symptomsUnifyFB, causeData, this.state.causes)} 
+                            width={800} height={1000}
+                            selectedCauses={this.state.causes}
+                            selectCause={causeName => this.selectCause(causeName)}
+                            selectedSyms={this.state.symptoms} />
                     </div>
                     <div className="pd">
                         <BodyTemplate width={600}
-                            clickCallBack={symName => this.handleClick(symName)}
-                            deleteSym={symName => this.delectSym(symName)}
-                            selectedSymptoms={this.state.symptoms} />
+                            clickCallBack={symName => this.selectSym(symName)}
+                            deleteSym={symName => this.deleteSym(symName)}
+                            selectedSyms={this.state.symptoms} 
+                            potentialSyms={potentialSyms}
+                            />
                     </div>
                 </div>
             </div>

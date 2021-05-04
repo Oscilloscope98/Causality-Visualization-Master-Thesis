@@ -19,6 +19,10 @@ body {
     width:60%;
   }
 
+p{
+  height: 20px;
+}
+
 /*bodyContour.js*/
 .body-container {
   position: relative;
@@ -75,4 +79,13 @@ ellipse:hover {
 
 .path-selected-l2{
   fill: rgba(255, 0, 0, 0.4);
+}
+
+/*Path*/
+.path-potential{
+  fill: rgba(0, 102, 255, 0.2);
+}
+
+.path-potential:hover{
+  fill:rgba(0, 102, 255, 0.4);
 }
