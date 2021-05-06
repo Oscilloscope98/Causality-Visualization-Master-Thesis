@@ -1,8 +1,8 @@
 import React from 'react';
 import '../style.css';
 
-function Path({pathId, d, transform, onClick, potentialSyms, selectedSyms}) {
-    function getClassName(pathId, potentialSyms, selectedSyms){
+function BodyPath({pathId, d, transform, onClick, potentialSyms, selectedSyms}) {
+    function getClassName(){
         var tempId = pathId.replaceAll('_', ' ');
         if(selectedSyms.includes(tempId)){
             return 'path-selected';
@@ -17,8 +17,8 @@ function Path({pathId, d, transform, onClick, potentialSyms, selectedSyms}) {
     }
 
     return (
-        <path id={pathId} d={d} transform={transform} onClick={onClick} className={getClassName(pathId, potentialSyms, selectedSyms)}/>
+        <path id={pathId} d={d} transform={transform} onClick={onClick} className={getClassName()}/>
     );
 }
 
-export default Path;
+export default BodyPath;

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './style.css';
 import BodyTemplate from './bodyComponents/BodyTemplate';
 import CausalGraph from './causalGraph/CausalGraph';
+import SpinalNerves from './bodyComponents/SpinalNerves';
 
 const data = require('./data/data.json');
 const symsData = require('./data/symsToCause.json');
@@ -54,11 +55,22 @@ function getPotentialSyms(causeData, selectedCauses) {
     return potentialSyms;
 }
 
+//get patterns from symptoms, with the name same as the one in causal graph (i.e. with L & R)
+function getPatterns(symsData, selectedSyms) {
+    var patterns = [];
+    selectedSyms.forEach(s => {
+        symsData[s].forEach(r => {
+            if (patterns.indexOf(r.pattern) < 0) patterns.push(r.pattern);
+        });
+    });
+    return patterns;
+}
+
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            symptoms: [], //selected symptoms on body template (shown in original path id with _, FB, Or, 2)
+            symptoms: [], //selected symptoms on body template (with FB, Or, 2)
             causes: [], //selected causes on causal graph
             //potentialSyms: [] //potential symptoms according to selected cause
         };
@@ -135,18 +147,21 @@ class App extends React.Component {
         let potentialSymString = '';
         potentialSyms.forEach(item => potentialSymString += item + ', ');
         potentialSymString = potentialSymString.slice(0, -2);
-        console.log(dataReformat(symsData, symptomsUnifyFB, causeData, this.state.causes));
+        //console.log(dataReformat(symsData, symptomsUnifyFB, causeData, this.state.causes));
+        //console.log(getPatterns(symsData, this.state.symptoms));
+        console.log(this.state.symptoms);
         return (
             <div>
                 <p>Selected Symptoms: {symString}</p>
                 <p>Potential Symptoms: {potentialSymString}</p>
                 <div className="flex-container">
                     <div className="graph">
-                        <CausalGraph data={dataReformat(symsData, symptomsUnifyFB, causeData, this.state.causes)} 
-                            width={800} height={1000}
+                        <SpinalNerves width={450}
+                            patterns={getPatterns(symsData, symptomsUnifyFB)}
                             selectedCauses={this.state.causes}
                             selectCause={causeName => this.selectCause(causeName)}
-                            selectedSyms={this.state.symptoms} />
+                            deleteCause={causeName => this.deleteCause(causeName)}
+                        />
                     </div>
                     <div className="pd">
                         <BodyTemplate width={600}
@@ -168,3 +183,11 @@ ReactDOM.render(
     <App />,
     document.getElementById('root')
 );
+
+/*
+<CausalGraph data={dataReformat(symsData, symptomsUnifyFB, causeData, this.state.causes)} 
+                            width={800} height={1000}
+                            selectedCauses={this.state.causes}
+                            selectCause={causeName => this.selectCause(causeName)}
+                            selectedSyms={this.state.symptoms} />
+*/
