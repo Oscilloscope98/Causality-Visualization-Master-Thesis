@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import bodyTemplatePNG from '../figures/body_templates/body_template_adjusted.png'
+import bodyTemplatePNG from '../figures/body_templates/body_template_new.png'
 import BodyPath from './BodyPath'
 import Ellipse from './Ellipse'
+import ReactTooltip from 'react-tooltip';
 import '../style.css';
 
 class BodyTemplate extends React.Component {
@@ -554,6 +555,7 @@ class BodyTemplate extends React.Component {
                             transform="translate(-108.06 -42.73)" />
                     </g>
                 </svg>
+                <ReactTooltip id='symSvgs' place="right" />
             </div>
         );
     }

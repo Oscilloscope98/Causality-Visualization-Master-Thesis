@@ -1,8 +1,8 @@
 import React from 'react'
-import bodyTemplateBackPartPNG from '../figures/body_templates/body_template_back_part.png'
-import SpinePath from './SpinePath'
-import Ellipse from './Ellipse'
-import '../style.css'
+import bodyTemplateBackPartPNG from '../figures/body_templates/body_template_back_part_new.png'
+import SpinePath from './SpinePath';
+import ReactTooltip from 'react-tooltip';
+import '../style.css';
 
 class SpinalNerves extends React.Component {
     constructor(props) {
@@ -1496,6 +1496,7 @@ class SpinalNerves extends React.Component {
                             transform="translate(-31.03 -18.52)" style={{fill:"#333"}} />
                     </g>
                 </svg>
+                <ReactTooltip id='spineSvgs' place="right" />
             </div>
         )
     }

@@ -33,7 +33,7 @@ function dataReformat(symsData, selectedSyms, causeData, selectedCauses) {
                 newData.nodes.push({ "id": r.pattern, "group": 2, "potential": true });
                 newData.links.push({ "source": r.pattern, "target": c, "value": 1, "potential": true });
             }
-            r.symptoms.forEach(s =>{
+            r.symptoms.forEach(s => {
                 if (!newData.nodes.some(node => node.id === s)) {
                     newData.nodes.push({ "id": s, "group": 1, "potential": true });
                     newData.links.push({ "source": s, "target": r.pattern, "value": 1, "potential": true });
@@ -167,9 +167,9 @@ class App extends React.Component {
                         <BodyTemplate width={600}
                             clickCallBack={symName => this.selectSym(symName)}
                             deleteSym={symName => this.deleteSym(symName)}
-                            selectedSyms={this.state.symptoms} 
+                            selectedSyms={this.state.symptoms}
                             potentialSyms={potentialSyms}
-                            />
+                        />
                     </div>
                 </div>
             </div>
@@ -185,7 +185,7 @@ ReactDOM.render(
 );
 
 /*
-<CausalGraph data={dataReformat(symsData, symptomsUnifyFB, causeData, this.state.causes)} 
+<CausalGraph data={dataReformat(symsData, symptomsUnifyFB, causeData, this.state.causes)}
                             width={800} height={1000}
                             selectedCauses={this.state.causes}
                             selectCause={causeName => this.selectCause(causeName)}
