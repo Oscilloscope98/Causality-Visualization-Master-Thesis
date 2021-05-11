@@ -37,7 +37,7 @@ function SpinePath({ pathId, d, transform, patterns, selectedCauses, selectCause
 
     function onHover() {
         //if (ifInPatterns()){
-        console.log(tempCause);
+        //console.log(tempCause);
         selectCause(tempCause);
         //}
     }

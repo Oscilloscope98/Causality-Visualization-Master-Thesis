@@ -1,27 +1,37 @@
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
+    /*margin: 20px;*/
   }
 
-  .center {
+  .text-center {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-size: 16px;
+    /*border: 1px solid red;*/
   }
 
   .flex-container {
     display: flex;
     width:100%;
   }
-  
-  .flex-container > .graph{
-    width:40%;
-  }
-  
-  .flex-container > .pd{
-    width:60%;
+
+  .flex-container > .effect{
+    width:45%;
   }
 
-p{
-  height: 20px;
-}
+  .flex-container > .middle-reason{
+    width:25%;
+    /*border: 1px solid red;*/
+  }
+
+  .flex-container > .cause{
+    width:30%;
+  }
+  
+  /*
+  .flex-container > .graph{
+    width:40%;
+  }*/
 
 /*bodyContour.js*/
 .body-container {
@@ -29,13 +39,11 @@ p{
 }
 
 .body-contents {
+  /*border: 1px solid red;*/
   position: absolute;
-  top: 0;
+  top: 0%;
   left: 50%;
-  transform: translate(-50%, 0);
-}
-
-#body-contour > path{
+  transform: translate(-50%, 0%);
 }
 
 .front-back-body path {
@@ -117,4 +125,44 @@ p{
   stroke: #333;
   stroke-width: 1.25px;
   fill: rgb(116, 116, 116);
+}
+
+/* PatternNodes.js*/
+.pattern-list{
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  /*border: 1px solid black;*/
+}
+
+.pattern-list > li{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2px;
+  align-items: center;
+  /*border: 1px solid red;*/
+}
+
+.pattern-list > li > .contents{
+  /*border: 1px solid red;*/
+  background-color: rgba(25, 20, 20, 0.3);
+  flex: 0.5;
+  border-radius: 25px;
+}
+
+.pattern-list > li > .left{
+  margin-left: 40px;
+  margin-right: 10px;
+}
+
+.pattern-list > li > .right{
+  margin-left: 10px;
+  margin-right: 40px;
+}
+
+
+.pattern-list > li > .contents:hover{
+  background-color: rgba(25, 20, 20, 0.4);
 }

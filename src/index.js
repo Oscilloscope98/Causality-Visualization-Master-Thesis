@@ -4,10 +4,29 @@ import './style.css';
 import BodyTemplate from './bodyComponents/BodyTemplate';
 import CausalGraph from './causalGraph/CausalGraph';
 import SpinalNerves from './bodyComponents/SpinalNerves';
+import Patterns from './causalGraph/Patterns';
 
 const data = require('./data/data.json');
 const symsData = require('./data/symsToCause.json');
 const causeData = require('./data/causeToSyms.json');
+
+var patternStrInitial = {};
+Array.from(Array(7).keys()).forEach(c => {
+    patternStrInitial["L C" + (c+2)] =  0;
+    patternStrInitial["R C" + (c+2)] =  0;
+});
+Array.from(Array(12).keys()).forEach(t => {
+    patternStrInitial["L T" + (t+1)] = 0;
+    patternStrInitial["R T" + (t+1)] = 0;
+});
+Array.from(Array(5).keys()).forEach(l => {
+    patternStrInitial["L L" + (l+1)] = 0;
+    patternStrInitial["R L" + (l+1)] = 0;
+});
+Array.from(Array(2).keys()).forEach(s => {
+    patternStrInitial["L S" + (s+1)] = 0;
+    patternStrInitial["R S" + (s+1)] = 0;
+});
 
 //reconstruct json file for causal graph according to the selected symptoms on body template
 function dataReformat(symsData, selectedSyms, causeData, selectedCauses) {
@@ -66,12 +85,32 @@ function getPatterns(symsData, selectedSyms) {
     return patterns;
 }
 
+//change symptoms name on body template to the ones causal graoh
+//Specially, for the ones with "Or", only keeps the former part for calculating the strength purpose
+function simplifySymName(symName){
+    var tempSym = symName.replace('F ', '').replace('B ', '').replace(' 2', '');
+    if (tempSym.includes(' Or ')){
+        tempSym = tempSym.split(' Or ')[0];
+    }
+    return tempSym;
+}
+
+//get related patterns according to input symptoms on causal graph
+function getRelatedPatterns(symName, symsData){
+    var patterns = [];
+    symsData[symName].forEach(r => {
+        patterns.push(r.pattern);
+    });
+    return patterns;
+}
+
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             symptoms: [], //selected symptoms on body template (with FB, Or, 2)
             causes: [], //selected causes on causal graph
+            patternStr: patternStrInitial, //strength (related nums) of each symptoms according to selected symptoms
             //potentialSyms: [] //potential symptoms according to selected cause
         };
     }
@@ -84,6 +123,14 @@ class App extends React.Component {
             tempSyms.splice(index, 1);
         }
         this.setState({ symptoms: tempSyms });
+
+        //deal with related patterns
+        let tempPatternStr = this.state.patternStr;
+        let tempPatterns = getRelatedPatterns(simplifySymName(symName), symsData);
+        tempPatterns.forEach(p => {
+            tempPatternStr[p]--;
+        });
+        this.setState({ patternStr: tempPatternStr});
     }
 
     //select symptoms on body template
@@ -92,6 +139,13 @@ class App extends React.Component {
         if (!tempSyms.includes(symName)) {
             tempSyms.push(symName);
             this.setState({ symptoms: tempSyms });
+            //deal with related patterns
+            let tempPatternStr = this.state.patternStr;
+            let tempPatterns = getRelatedPatterns(simplifySymName(symName), symsData);
+                tempPatterns.forEach(p => {
+                tempPatternStr[p]++;
+            });
+            this.setState({ patternStr: tempPatternStr});
         }
         else {
             //double click to disable a symptom
@@ -148,22 +202,28 @@ class App extends React.Component {
         potentialSyms.forEach(item => potentialSymString += item + ', ');
         potentialSymString = potentialSymString.slice(0, -2);
         //console.log(dataReformat(symsData, symptomsUnifyFB, causeData, this.state.causes));
-        //console.log(getPatterns(symsData, this.state.symptoms));
-        console.log(this.state.symptoms);
+        //console.log(this.state.symptoms);
+        console.log(this.state.patternStr);
         return (
             <div>
-                <p>Selected Symptoms: {symString}</p>
-                <p>Potential Symptoms: {potentialSymString}</p>
                 <div className="flex-container">
-                    <div className="graph">
-                        <SpinalNerves width={450}
+                    <div className="cause text-center"> Cause: Pathophysiological Diagnosis</div>
+                    <div className="middle-reason text-center"> Middle Reason: Pattern Diagnosis </div>
+                    <div className="effect text-center"> Effect: Symptom diagnosis </div>
+                </div>
+                <div className="flex-container">
+                    <div className="cause">
+                        <SpinalNerves width={430}
                             patterns={getPatterns(symsData, symptomsUnifyFB)}
                             selectedCauses={this.state.causes}
                             selectCause={causeName => this.selectCause(causeName)}
                             deleteCause={causeName => this.deleteCause(causeName)}
                         />
                     </div>
-                    <div className="pd">
+                    <div className="middle-reason text-center"> 
+                        <Patterns patternStr={this.state.patternStr}/> 
+                    </div>
+                    <div className="effect">
                         <BodyTemplate width={600}
                             clickCallBack={symName => this.selectSym(symName)}
                             deleteSym={symName => this.deleteSym(symName)}
@@ -185,6 +245,9 @@ ReactDOM.render(
 );
 
 /*
+<p>Selected Symptoms: {symString}</p>
+<p>Potential Symptoms: {potentialSymString}</p>
+
 <CausalGraph data={dataReformat(symsData, symptomsUnifyFB, causeData, this.state.causes)}
                             width={800} height={1000}
                             selectedCauses={this.state.causes}

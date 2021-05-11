@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import bodyTemplatePNG from '../figures/body_templates/body_template_new.png'
 import BodyPath from './BodyPath'
 import Ellipse from './Ellipse'
@@ -19,14 +18,6 @@ class BodyTemplate extends React.Component {
             if (attr.name === "id") {
                 var tempSymName = attr.value.replaceAll('_', ' '); //change name style
                 this.props.clickCallBack(tempSymName);
-                //deal with style for selected path
-                /*
-                if (this.props.selectedSyms.includes(tempSymName)) {
-                    event.target.classList.add("path-selected");
-                }
-                else {
-                    event.target.classList.remove("path-selected");
-                }*/
             }
             continue;
         }
@@ -562,62 +553,3 @@ class BodyTemplate extends React.Component {
 }
 
 export default BodyTemplate;
-
-/*
-<g id="neck">
-                    <BodyPath pathId="neck-back"
-                        onClick={handleClick}
-                        className={props.selectedSymptoms.includes('Neck Pain') ? 'path-selected-l1' : 'nothing'}
-                        d="M2150.19,508.75s-35.75-16.22-133.41-16.22c14.82-12.45,32.7-30.85,34-32.13a.24.24,0,0,0,.07-.18c-.79-22.18-.32-75.42-.79-87.88-1-25.95-4.68-57.72-4.68-57.72,39.9,27.34,85.57,39.16,104.86,39.9s81.36-19.95,98.36-35.47c-3.89,31.38-5,53.39-5,53.39-.42,3.84-5.75,70.71,7.2,91.09,10.46,16,15.69,23.27,25.28,29C2184.22,492.53,2150.19,508.75,2150.19,508.75Z" transform="translate(-105.28 -42.73)"/>
-                    <BodyPath pathId="neck-front"
-                        onClick={handleClick}
-                        className={props.selectedSymptoms.includes('Neck Pain') ? 'path-selected-l1' : 'nothing'}
-                        d="M975.16,492.53c-2.26-.92-4.65-1.86-7.21-2.83-112.27-40.32-92.42-97.39-87.46-120.85,0,0-49.21,54.5-60.51,57s-46.44,0-56.48-1.26-49-25.1-74.94-82.75c4,11.85,0,71.87.79,94,0,0-5.53-3.16-17.37,16.58-23.7,3.16-15.8,20.54-26.07,21.32-14.25.71-29.89,5.35-45.56,12-5,2.1-9.93,4.39-14.85,6.82,96.73,0,200.75,16.22,200.75,16.22C882.49,492.53,975.16,492.53,975.16,492.53Z" transform="translate(-105.28 -42.73)"/>
-                    <Neck selectedSymptoms={props.selectedSymptoms}
-                        onClick={props.onClick}
-                        deleteSym={props.deleteSym}
-                    />
-                </g>
-function Neck(props) {
-    const upperString = 'Neck Pain';
-    var ifUpperSelected = props.selectedSymptoms.includes(upperString);
-    var labels = ['L Neck problems', 'pharyngeal discomfort', 'R neck'];
-    var ifSelected = false;
-    labels.forEach(item => {
-        if (props.selectedSymptoms.includes(item)) {
-            ifSelected = true;
-        }
-    });
-    var ifUpperToDelete = true;
-    if (ifSelected) {
-        labels.forEach(item => {
-            if (props.selectedSymptoms.indexOf(item) < props.selectedSymptoms.indexOf(upperString)) {
-                ifSelected = true;
-            }
-            ifUpperToDelete = false;
-        });
-    }
-
-    if (ifUpperSelected || ifSelected) {
-        return (
-            <g>
-                <BodyPath pathId="left-neck"
-                    onClick={() => { props.onClick(labels[0]); if (ifUpperToDelete) { props.deleteSym(upperString) } }}
-                    className={props.selectedSymptoms.includes(labels[0]) ? 'path-selected-l2' : 'nothing'}
-                    d="M817.45,504a1309.47,1309.47,0,0,1,157.71-11.48c-2.26-.92-4.65-1.86-7.21-2.83-112.27-40.32-92.42-97.39-87.46-120.85,0,0-49.21,54.5-60.51,57-.73.16-1.57.3-2.5.43,0,0,5.32,29,5.46,36.18C823.08,470.14,817.45,504,817.45,504Z" transform="translate(-105.28 -42.73)" />
-                <BodyPath pathId="pharyngeal-discomfort"
-                    onClick={() => { props.onClick(labels[1]); if (ifUpperToDelete) { props.deleteSym(upperString) } }}
-                    className={props.selectedSymptoms.includes(labels[1]) ? 'path-selected-l2' : 'nothing'}
-                    d="M820,425.86c-.73.16-1.57.3-2.5.43-13.27,1.76-44.59-.51-54-1.69a28.23,28.23,0,0,1-8.57-3.24s-5.56,33.75-5.76,40.82,5.53,42.24,5.53,42.24c19.58,2.46,31.55,4.33,31.55,4.33,10.48-1.77,20.92-3.34,31.2-4.74,0,0,5.63-33.87,5.49-41.54-.14-7.2-5.46-36.18-5.46-36.18" transform="translate(-105.28 -42.73)" />
-                <BodyPath pathId="right-neck"
-                    onClick={() => { props.onClick(labels[2]); if (ifUpperToDelete) { props.deleteSym(upperString) } }}
-                    className={props.selectedSymptoms.includes(labels[2]) ? 'path-selected-l2' : 'nothing'}
-                    d="M754.7,504.42c-38.17-4.81-105.28-11.89-169.2-11.89,4.92-2.43,9.89-4.72,14.85-6.82,15.67-6.62,31.31-11.26,45.56-12,10.27-.78,2.37-18.16,26.07-21.32,11.84-19.74,17.37-16.58,17.37-16.58-.79-22.12,3.16-82.14-.79-94,21.05,46.69,50.57,71.21,66.37,79.51,0,0-5.56,33.75-5.76,40.82S754.7,504.42,754.7,504.42Z" transform="translate(-105.28 -42.73)" />
-            </g>
-        );
-    }
-    else {
-        return (<div />)
-    }
-}
-*/
