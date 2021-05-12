@@ -1,62 +1,41 @@
+import { render } from '@testing-library/react';
 import React from 'react';
 import '../style.css';
 
-function SpinePath({ pathId, d, transform, patterns, selectedCauses, selectCause, deleteCause }) {
-    var tempId = pathId.replace('V_', '');
-    var tempNum = tempId.substring(1);
-    var tempCause = "DLS ";
-    //current no deal with C1
-    if (tempNum == '1') {
-        if (tempId[0] == 'T') {
-            tempCause += 'C8-' + tempId;
-        }
-        else if (tempId[0] == 'L') {
-            tempCause += 'T12-' + tempId;
-        }
-        else if (tempId[0] == 'S') {
-            tempCause += 'L5-' + tempId;
-        }
-    }
-    else {
-        tempCause += tempId[0] + (tempNum - 1) + '-' + tempId;
+class SpinePath extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            //colorTransFactor: 0,
+            isHovered: false,
+        };
     }
 
-    function ifInPatterns() {
-        if (patterns.includes('R ' + tempId) || patterns.includes('L ' + tempId)) return true;
-        else return false;
+    onHover() {
+        this.props.selectCause(this.props.pathId.replace('V_', '').replace('_', ' '));
+        this.setState({isHovered: true});
     }
 
-    function getClassName() {
-        if (ifInPatterns()) {
-            return 'spinal-path-related';
-        }
-        else {
-            return 'spinal-path';
-        }
+    onLeave() {
+        this.props.deleteCause(this.props.pathId.replace('V_', '').replace('_', ' '));
+        this.setState({isHovered: false});
     }
 
-    function onHover() {
-        //if (ifInPatterns()){
-        //console.log(tempCause);
-        selectCause(tempCause);
-        //}
+    render(){
+        var tempId = this.props.pathId.replace('V_', '').replace('_', ' ');
+        var fillColor = "rgba(255,0,0," + this.props.causeStr[tempId].fromSym*0.2 + ")";
+        var strokeWidth = (this.props.causeStr[tempId].fromPattern > 0 || this.state.isHovered)? "2px" : "1.25px";
+        var StorkeColor = (this.props.causeStr[tempId].fromPattern > 0 || this.state.isHovered)? "rgb(0,0,255)" : "#333";
+        return (
+            <path id={this.props.pathId} d={this.props.d} transform={this.props.transform}
+                className="spinal-path"
+                style={{fill: fillColor, strokeWidth: strokeWidth, stroke: StorkeColor}}
+                onMouseEnter={() => this.onHover()}
+                onMouseLeave={() => this.onLeave()}
+                data-tip={this.props.tempId}
+                data-for="spineSvgs"/>
+        );
     }
-
-    function onLeave() {
-        //if (ifInPatterns()){
-        deleteCause(tempCause);
-        //}
-    }
-
-    return (
-        <path id={pathId} d={d} transform={transform}
-            className={getClassName()}
-            onMouseEnter={() => onHover()}
-            onMouseLeave={() => onLeave()}
-            data-tip={tempCause}
-            data-for="spineSvgs"
-        />
-    );
 }
 
 export default SpinePath;

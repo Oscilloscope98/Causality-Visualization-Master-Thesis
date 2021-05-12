@@ -23,9 +23,13 @@ class Patterns extends React.Component {
                     {patternList.map(p => {
                         return <li key={p}>
                             <PatternNode patternName={"L "+p} 
-                                patternStr={this.props.patternStr["L "+p]}/>
+                                patternStr={this.props.patternStr["L "+p]}
+                                selectPattern={this.props.selectPattern}
+                                deletePattern={this.props.deletePattern}/>
                             <PatternNode patternName={"R "+p} 
-                                patternStr={this.props.patternStr["R "+p]}/>
+                                patternStr={this.props.patternStr["R "+p]}
+                                selectPattern={this.props.selectPattern}
+                                deletePattern={this.props.deletePattern}/>
                         </li>
                     })}
                 </ul>

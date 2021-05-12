@@ -91,25 +91,27 @@ body {
 
 /*Body Path*/
 .front-back-body .path-potential{
-  fill: rgba(0, 102, 255, 0.2);
+  fill: rgba(0, 0, 255, 0.2);
 }
 
 .front-back-body .path-potential:hover{
-  fill:rgba(0, 102, 255, 0.4);
+  fill:rgba(0, 0, 255, 0.4);
 }
 
 /*Spinal Path*/
 .spinal-path{
-  stroke: #333;
-  stroke-width: 1.25px;
-  fill: rgb(255, 255, 255);
   cursor: pointer;
+  stroke-width: 1.25px;
+  stroke: #333;
 }
 
+/*
 .spinal-path:hover{
-  fill: rgb(0, 102, 255);
-}
+  stroke: rgba(0,0,255);
+  stroke-width: 2px;
+}*/
 
+/*
 .spinal-path-related{
   stroke: #333;
   stroke-width: 1.25px;
@@ -119,12 +121,16 @@ body {
 
 .spinal-path-related:hover{
   fill: rgb(74, 54, 128);
-}
+}*/
 
 .spinal-path-disabled{
   stroke: #333;
   stroke-width: 1.25px;
-  fill: rgb(116, 116, 116);
+  fill: rgb(160, 160, 160);
+}
+
+.spinal-path-background{
+  fill: rgb(255, 255, 255);
 }
 
 /* PatternNodes.js*/
@@ -133,7 +139,7 @@ body {
   padding: 0; /* Remove padding */
   margin: 0;
   font-size: 14px;
-  color: rgb(255, 255, 255);
+  /*color: rgb(255, 255, 255);*/
   /*border: 1px solid black;*/
 }
 
@@ -142,22 +148,28 @@ body {
   flex-direction: row;
   margin-bottom: 2px;
   align-items: center;
+  cursor: pointer;
   /*border: 1px solid red;*/
 }
 
 .pattern-list > li > .contents{
-  /*border: 1px solid red;*/
-  background-color: rgba(25, 20, 20, 0.3);
+  /*background-color: rgba(25, 20, 20, 0.3);*/
   flex: 0.5;
-  border-radius: 25px;
+}
+
+.pattern-list > li > .contents:hover{
+  box-shadow: 0px 0px 0px 2px rgba(0,0,255,0.5) inset;
+  color: rgba(0,0,255,0.5);
 }
 
 .pattern-list > li > .left{
+  border-radius: 25px 50px 50px 25px;
   margin-left: 40px;
   margin-right: 10px;
 }
 
 .pattern-list > li > .right{
+  border-radius: 50px 25px 25px 50px;
   margin-left: 10px;
   margin-right: 40px;
 }
