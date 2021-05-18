@@ -3,52 +3,66 @@ body {
     /*margin: 20px;*/
   }
 
-  .text-center {
-    text-align: center;
-    padding: 10px 0px 10px 0px;
-    font-size: 16px;
-    /*border: 1px solid red;*/
-  }
+/*delete blue border when clicking on body template*/
+:focus {outline:0 !important;}
+
+.middle-font{
+  font-size: 1.2vw;
+}
+
+.small-font{
+  font-size: 1vw;
+}
 
   .flex-container {
     display: flex;
     width:100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title{
+    margin-top: 2.5vh;
+    height:5vh;
+    text-align: center;
+  }
+
+  .visual{
+    height:90vh;
   }
 
   .flex-container > .effect{
-    width:45%;
+    width:40%;
   }
 
   .flex-container > .middle-reason{
-    width:25%;
-    /*border: 1px solid red;*/
+    width:27.2%;
   }
 
   .flex-container > .cause{
-    width:30%;
+    width:32.8%;
   }
   
-  /*
-  .flex-container > .graph{
-    width:40%;
-  }*/
 
 /*bodyContour.js*/
-.body-container {
+.svg-image-container {/*https://stackoverflow.com/questions/43806515/position-svg-elements-over-an-image*/
   position: relative;
+  display: inline-block; /* <= shrinks container to image size */
 }
 
-.body-contents {
-  /*border: 1px solid red;*/
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, 0%);
+.svg-image-container img { /* <= optional, for responsiveness */
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.svg-image-container svg {
+ position: absolute;
+ top: 0;
+ left: 0;
 }
 
 .front-back-body path {
-  /*fill:rgba(255, 0, 0, 0);
-  stroke:rgb(30, 131, 190);*/
   fill: none;
   stroke:rgba(255, 255, 255, 0);
   stroke-miterlimit:10;
@@ -61,22 +75,7 @@ body {
   fill: rgba(255, 0, 0, 0.2);
 }
 
-
-.front-back-body ellipse {
-  /*fill:rgba(255, 0, 0, 0);
-  stroke:rgb(30, 131, 190);*/
-  fill: none;
-  stroke:rgba(255, 255, 255, 0);
-  stroke-miterlimit:10;
-  stroke-width:6px;
-  pointer-events:all;
-  cursor: pointer;
-}
-
-.front-back-body ellipse:hover {
-  fill: rgba(255, 0, 0, 0.2);
-}
-
+/*Body Path*/
 .front-back-body .path-selected{
   fill: rgba(255, 0, 0, 0.2);
 }
@@ -85,11 +84,12 @@ body {
   fill: rgba(255, 0, 0, 0.4);
 }
 
-.front-back-body .path-selected-l2{
-  fill: rgba(255, 0, 0, 0.4);
+.front-back-body .potential{
+  stroke: rgba(0,0,255,0.5);
+  stroke-width: 8px;
+  /*fill: rgba(51, 0, 204, 0.2);*/
 }
 
-/*Body Path*/
 .front-back-body .path-potential{
   fill: rgba(0, 0, 255, 0.2);
 }
@@ -104,24 +104,6 @@ body {
   stroke-width: 1.25px;
   stroke: #333;
 }
-
-/*
-.spinal-path:hover{
-  stroke: rgba(0,0,255);
-  stroke-width: 2px;
-}*/
-
-/*
-.spinal-path-related{
-  stroke: #333;
-  stroke-width: 1.25px;
-  fill: rgb(255, 0, 0);
-  cursor: pointer;
-}
-
-.spinal-path-related:hover{
-  fill: rgb(74, 54, 128);
-}*/
 
 .spinal-path-disabled{
   stroke: #333;
@@ -138,9 +120,6 @@ body {
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
   margin: 0;
-  font-size: 14px;
-  /*color: rgb(255, 255, 255);*/
-  /*border: 1px solid black;*/
 }
 
 .pattern-list > li{
@@ -154,6 +133,7 @@ body {
 
 .pattern-list > li > .contents{
   /*background-color: rgba(25, 20, 20, 0.3);*/
+  text-align: center;
   flex: 0.5;
 }
 

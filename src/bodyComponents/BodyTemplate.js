@@ -1,7 +1,6 @@
 import React from 'react';
-import bodyTemplatePNG from '../figures/body_templates/body_template_new.png'
+import bodyTemplatePNG from '../figures/body_components/body_template_new.png'
 import BodyPath from './BodyPath'
-import Ellipse from './Ellipse'
 import ReactTooltip from 'react-tooltip';
 import '../style.css';
 
@@ -25,9 +24,9 @@ class BodyTemplate extends React.Component {
 
     render() {
         return (
-            <div className='body-container'>
-                <img src={bodyTemplatePNG} alt='' width={this.props.width} className='body-contents' />
-                <svg width={this.props.width} className='body-contents front-back-body'
+            <div className='svg-image-container'>
+                <img src={bodyTemplatePNG} alt=''/>
+                <svg className='front-back-body'
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2699.9 2909.13">
                     <g id="F_Head">
@@ -111,10 +110,12 @@ class BodyTemplate extends React.Component {
                         <BodyPath pathId="F_R_Shoulder_Discomfort" onClick={this.handleClick} potentialSyms={this.props.potentialSyms} selectedSyms={this.props.selectedSyms}
                             d="M379.31,757.48s100.27,0,126.73-41.68c0,0,0-104.33,104.83-176.19-27.47-2.09-59-4-95.29-5.43-3.49,2.23-6.66,4.23-9.45,5.91-37.12-4.74-32.39,18.16-42.65,19.74-104.25,25.27-97.93,161.9-89.25,173.75C377.31,737.77,378.8,747,379.31,757.48Z"
                             transform="translate(-108.06 -42.73)" />
-                        <Ellipse pathId="F_L_Front_Axle_Discomfort_Or_L_Shoulder_Impingement" onClick={this.handleClick} potentialSyms={this.props.potentialSyms} selectedSyms={this.props.selectedSyms} cx="1123.39" cy="635.28"
-                            rx="43.82" ry="53.86" transform="translate(-274.04 648.31) rotate(-31.96)" />
-                        <Ellipse pathId="F_R_Front_Axle_Discomfort_Or_R_Shoulder_Impingement" onClick={this.handleClick} potentialSyms={this.props.potentialSyms} selectedSyms={this.props.selectedSyms} cx="446.11" cy="632.28" rx="53.86"
-                            ry="43.82" transform="translate(-434.53 633.3) rotate(-58.04)" />
+                        <BodyPath pathId="F_L_Front_Axle_Discomfort_Or_L_Shoulder_Impingement" onClick={this.handleClick} potentialSyms={this.props.potentialSyms} selectedSyms={this.props.selectedSyms}
+                            d="M1151.9,681c-20.53,12.81-49.94,2.74-65.68-22.5s-11.87-56.08,8.66-68.89,49.94-2.74,65.69,22.5S1172.44,668.17,1151.9,681Z"
+                            transform="translate(-108.06 -42.73)" />
+                        <BodyPath pathId="F_R_Front_Axle_Discomfort_Or_R_Shoulder_Impingement" onClick={this.handleClick} potentialSyms={this.props.potentialSyms} selectedSyms={this.props.selectedSyms}
+                            d="M483.28,655.48c-15.74,25.24-45.15,35.31-65.68,22.5s-24.41-43.66-8.67-68.89,45.16-35.31,65.69-22.5S499,630.24,483.28,655.48Z"
+                            transform="translate(-108.06 -42.73)" />
                     </g>
                     <g id="B_Shoulder">
                         <BodyPath pathId="B_L_Shoulder_Discomfort" onClick={this.handleClick} potentialSyms={this.props.potentialSyms} selectedSyms={this.props.selectedSyms}
@@ -123,10 +124,12 @@ class BodyTemplate extends React.Component {
                         <BodyPath pathId="B_R_Shoulder_Discomfort" onClick={this.handleClick} potentialSyms={this.props.potentialSyms} selectedSyms={this.props.selectedSyms}
                             d="M2558.05,843.64c-12.05-20.54-10.8-58-5.07-76.34,0-.12,0-.25.17-.29,1.84-.6,11.53-24.6,4.67-70.57-11.61-77.76-33.09-81.41-50.19-90.53A181.52,181.52,0,0,0,2470.87,591c-4.57-1.14-8.76-18.7-27.11-21.79-19.57-3.3-21.63-6.05-45.46-15.94-24.82-11.16-28.17-24.59-70.9-41.08-15.41-5.38-26.57-9.07-35.08-12.25.43.23,146.63,77.4,146.63,280h.05c6.06,26.43,22.2,41.77,61.65,48,41.94,6.56,64,35.59,64,35.59C2562.88,855,2560.72,848.18,2558.05,843.64Z"
                             transform="translate(-108.06 -42.73)" />
-                        <Ellipse pathId="B_L_Front_Axle_Discomfort_Or_L_Shoulder_Impingement" onClick={this.handleClick} potentialSyms={this.props.potentialSyms} selectedSyms={this.props.selectedSyms} cx="1815.9" cy="661.9" rx="53.86"
-                            ry="43.82" transform="translate(184.98 1809.34) rotate(-58.04)" />
-                        <Ellipse pathId="B_R_Front_Axle_Discomfort_Or_R_Shoulder_Impingement" onClick={this.handleClick} potentialSyms={this.props.potentialSyms} selectedSyms={this.props.selectedSyms} cx="2484.48" cy="661.9" rx="43.82"
-                            ry="53.86" transform="matrix(0.85, -0.53, 0.53, 0.85, -81.76, 1372.89)" />
+                        <BodyPath pathId="B_L_Front_Axle_Discomfort_Or_L_Shoulder_Impingement" onClick={this.handleClick} potentialSyms={this.props.potentialSyms} selectedSyms={this.props.selectedSyms}
+                            d="M1853.08,685.1c-15.75,25.23-45.16,35.31-65.69,22.5s-24.41-43.66-8.66-68.9,45.16-35.3,65.69-22.49S1868.83,659.86,1853.08,685.1Z"
+                            transform="translate(-108.06 -42.73)" />
+                        <BodyPath pathId="B_R_Front_Axle_Discomfort_Or_R_Shoulder_Impingement" onClick={this.handleClick} potentialSyms={this.props.potentialSyms} selectedSyms={this.props.selectedSyms}
+                            d="M2513,707.6c-20.53,12.81-49.94,2.73-65.69-22.5S2435.43,629,2456,616.21s49.94-2.74,65.69,22.49S2533.52,694.78,2513,707.6Z"
+                            transform="translate(-108.06 -42.73)" />
                     </g>
                     <g id="Chest">
                         <BodyPath pathId="L_Central_Chest_Discomfort" onClick={this.handleClick} potentialSyms={this.props.potentialSyms} selectedSyms={this.props.selectedSyms}

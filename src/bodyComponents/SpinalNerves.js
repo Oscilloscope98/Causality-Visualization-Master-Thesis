@@ -1,5 +1,5 @@
 import React from 'react'
-import bodyTemplateBackPartPNG from '../figures/body_templates/body_template_back_part_new.png'
+import bodyTemplateBackPartPNG from '../figures/body_components/body_template_back_part_new.png'
 import SpinePath from './SpinePath';
 import ReactTooltip from 'react-tooltip';
 import '../style.css';
@@ -14,9 +14,9 @@ class SpinalNerves extends React.Component {
 
     render() {
         return (
-            <div className='body-container'>
-                <img src={bodyTemplateBackPartPNG} alt='' width={this.props.width} className='body-contents' />
-                <svg id="Spinal_Nerves" width={this.props.width} className='body-contents'
+            <div className='svg-image-container'>
+                <img src={bodyTemplateBackPartPNG} alt=''/>
+                <svg id="Spinal_Nerves"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 366 479.83">
                     <rect id="Border" width="366" height="479.83" style={{ fill: "none" }} />

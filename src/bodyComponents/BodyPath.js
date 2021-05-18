@@ -3,14 +3,23 @@ import '../style.css';
 
 function BodyPath({pathId, d, transform, onClick, potentialSyms, selectedSyms}) {
     var tempId = pathId.replaceAll('_', ' ');
-    var tempSymName = tempId.replace('F ', '').replace('B ', '').replace(' 2', '').split(' Or ')[0];
+    var tempSymName = tempId.replace('F ', '').replace('B ', '').replace(' 2', '');
+    var tempSymName0 = tempSymName.split(' Or ')[0];
+    var ifInSyms = selectedSyms.includes(tempId);
+    var ifInPoSyms = potentialSyms.includes(tempSymName0);
+
 
     function getClassName(){
-        if(selectedSyms.includes(tempId)){
-            return 'path-selected';
+        if(ifInSyms){
+            if (!ifInPoSyms){
+                return 'path-selected';
+            }
+            else{
+                return 'path-selected potential';
+            }
         }
         else{
-            if (potentialSyms.includes(tempSymName)){
+            if (potentialSyms.includes(tempSymName0)){
                 return 'path-potential';
             }
             else return '';
