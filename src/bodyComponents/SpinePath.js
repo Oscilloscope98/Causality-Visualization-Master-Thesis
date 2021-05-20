@@ -24,7 +24,7 @@ class SpinePath extends React.Component {
         var tempId = this.props.pathId.replace('V_', '').replace('_', ' ');
         var fillColor = "rgba(255,0,0," + this.props.causeStr[tempId].fromSym*0.2 + ")";
         var strokeWidth = (this.props.causeStr[tempId].fromPattern > 0 || this.state.isHovered)? "2px" : "1.25px";
-        var storkeColor = (this.props.causeStr[tempId].fromPattern > 0 || this.state.isHovered)? "rgb(0,0,255)" : "#333";
+        var storkeColor = (this.props.causeStr[tempId].fromPattern > 0 || this.state.isHovered)? "rgba(0,0,255)" : "#333";
         return (
             <path id={this.props.pathId} d={this.props.d} transform={this.props.transform}
                 className="spinal-path"

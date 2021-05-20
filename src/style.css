@@ -11,7 +11,7 @@ body {
 }
 
 .small-font{
-  font-size: 1vw;
+  font-size: 1vw !important;
 }
 
   .flex-container {
@@ -27,8 +27,12 @@ body {
     text-align: center;
   }
 
+  .legends{
+    height:5vh;
+  }
+
   .visual{
-    height:90vh;
+    height:85vh;
   }
 
   .flex-container > .effect{
@@ -66,7 +70,6 @@ body {
   fill: none;
   stroke:rgba(255, 255, 255, 0);
   stroke-miterlimit:10;
-  stroke-width:6px;
   pointer-events:all;
   cursor: pointer;
 }
@@ -100,7 +103,7 @@ body {
 
 /*Spinal Path*/
 .spinal-path{
-  cursor: pointer;
+  pointer-events:all;
   stroke-width: 1.25px;
   stroke: #333;
 }
@@ -127,7 +130,6 @@ body {
   flex-direction: row;
   margin-bottom: 2px;
   align-items: center;
-  cursor: pointer;
   /*border: 1px solid red;*/
 }
 
@@ -138,23 +140,66 @@ body {
 }
 
 .pattern-list > li > .contents:hover{
-  box-shadow: 0px 0px 0px 2px rgba(0,0,255,0.5) inset;
+  box-shadow: 0px 0px 0px 0.15vw rgba(0,0,255,0.5) inset;
   color: rgba(0,0,255,0.5);
 }
 
 .pattern-list > li > .left{
-  border-radius: 25px 50px 50px 25px;
-  margin-left: 40px;
-  margin-right: 10px;
+  border-radius: 0.4vw 1vw 1vw 0.4vw;
+  margin-left: 10%;
+  margin-right: 2.5%;
 }
 
 .pattern-list > li > .right{
-  border-radius: 50px 25px 25px 50px;
-  margin-left: 10px;
-  margin-right: 40px;
+  border-radius: 1vw 0.4vw 0.4vw 1vw;
+  margin-left: 2.5%;
+  margin-right: 10%;
 }
 
 
 .pattern-list > li > .contents:hover{
   background-color: rgba(25, 20, 20, 0.4);
+}
+
+/*common components*/
+/*legend*/
+.legend-or-scale-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.legend{
+  height: 1.1vw;
+  width: 1.1vw;
+  border-radius: 0.2vw;
+  background-color: grey;
+  font-size: 0.6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.legend-or-scale-text{
+  padding-left: 0.5vw;
+  font-size: 1vw;
+}
+
+.not-left{
+  padding-right: 1.5vw;
+}
+
+/*color scale*/
+.scale{
+  height: 1.1vw;
+  width: 1.1vw;
+  background-color: grey;
+}
+
+.start{
+  border-radius: 0.2vw 0px 0px 0.2vw;
+}
+
+.end{
+  border-radius: 0px 0.2vw 0.2vw 0px;
 }
