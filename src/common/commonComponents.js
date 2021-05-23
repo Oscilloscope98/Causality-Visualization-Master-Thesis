@@ -23,7 +23,7 @@ export const Legend = ({ id, inText = "", textColor, bkgColor, borderColor, ifLe
     return (
         <div className='legend-or-scale-flex'>
             <div className='legend' style={updateStyle}>{inText}</div>
-            <div className={'legend-or-scale-text '+ tempTextClass}>{id}</div>
+            <div className={'legend-or-scale-text small-font '+ tempTextClass}>{id}</div>
         </div>
     );
 }
@@ -45,7 +45,7 @@ export const ColorScale = ({ id, baseColor, increaseFactor, colorNum, ifLeft=fal
                 return <div key={id+n} className={tempClass} style={{backgroundColor: tempColor}}/>
             })
             }
-            <div className={'legend-or-scale-text '+ tempTextClass}>{id}</div>
+            <div className={'legend-or-scale-text small-font '+ tempTextClass}>{id}</div>
         </div>
     );
 }

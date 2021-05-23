@@ -31,24 +31,8 @@
     ],
     "L Back Headache": [
         {
-            "pattern": "L L2",
-            "cause": "DLS L1-L2"
-        },
-        {
-            "pattern": "L L3",
-            "cause": "DLS L2-L3"
-        },
-        {
-            "pattern": "L L4",
-            "cause": "DLS L3-L4"
-        },
-        {
-            "pattern": "L L5",
-            "cause": "DLS L4-L5"
-        },
-        {
-            "pattern": "L S1",
-            "cause": "DLS L5-S1"
+            "pattern": "L C3",
+            "cause": "DLS C2-C3"
         }
     ],
     "R Back Headache": [

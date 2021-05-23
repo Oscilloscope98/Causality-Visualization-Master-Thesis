@@ -40,7 +40,7 @@ class PatternNode extends React.Component {
         var bkgColor = (this.props.patternStr.normal > 0) ? 
         "rgba(255,0,0," + 0.2*this.props.patternStr.normal +")":
         "rgba(160, 160, 160, 0.2)";
-        var border = (this.props.patternStr.potential > 0 || this.state.isHovered) ? "0px 0px 0px 2px rgba(0,0,255,0.5) inset" : "none";
+        var border = (this.props.patternStr.potential > 0 || this.state.isHovered) ? "0px 0px 0px 0.3vmin rgba(0,0,255,0.5) inset" : "none";
         var fontColor = (this.props.patternStr.potential > 0 || this.state.isHovered) ? "rgba(0,0,255,0.5)" : "white";
         return (
             <div className={this.getClassName()} 

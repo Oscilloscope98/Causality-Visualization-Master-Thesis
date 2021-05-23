@@ -6,6 +6,7 @@ import SpinalNerves from './bodyComponents/SpinalNerves';
 import Patterns from './causalGraph/Patterns';
 import { Legend } from './common/commonComponents'
 import { ColorScale } from './common/commonComponents'
+import ReactTooltip from 'react-tooltip';
 
 const symsData = require('./data/symsToCause.json');
 const causeData = require('./data/causeToSyms.json');
@@ -227,9 +228,21 @@ class App extends React.Component {
         return (
             <div>
                 <div className="flex-container title">
-                    <div className="cause middle-font"> Cause: Pathophysiological Diagnosis</div>
-                    <div className="middle-reason middle-font"> Middle Reason: Pattern Diagnosis </div>
-                    <div className="effect middle-font"> Effect: Symptom diagnosis </div>
+                    <div className="cause middle-font"
+                        data-tip data-for="causeInfo"> Cause: Pathophysiological Diagnosis</div>
+                    <div className="middle-reason middle-font"
+                        data-tip data-for="middeReasonInfo"> Middle Reason: Pattern Diagnosis </div>
+                    <div className="effect middle-font"
+                        data-tip data-for="effectInfo"> Effect: Symptom diagnosis </div>
+                    <ReactTooltip id='causeInfo' place="bottom" className='small-font info-tooltip'>
+                        This part presents a spinal cord diagram for showing the original cause of discomforts. 
+                    </ReactTooltip>
+                    <ReactTooltip id='middeReasonInfo' place="bottom" className='small-font info-tooltip'>
+                        This part presents a list of pattern nodes showing a set of problematic spinal nerves.
+                    </ReactTooltip>
+                    <ReactTooltip id='effectInfo' place="bottom" className='small-font info-tooltip'>
+                        This part presents a body template for selecting discomfort areas or symptoms.
+                    </ReactTooltip>
                 </div>
                 <div className="flex-container legends">
                     <div className="cause flex-container">

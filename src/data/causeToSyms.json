@@ -34,6 +34,7 @@
             "pattern": "L C3",
             "symptoms": [
                 "L Forehead Headache",
+                "L Back Headache",
                 "Mouth Discomfort",
                 "L Neck Discomfort",
                 "Pharyngeal Discomfort",
@@ -441,7 +442,6 @@
         {
             "pattern": "L L2",
             "symptoms": [
-                "L Back Headache",
                 "L Lower Back Pain",
                 "Lateral Abdominal Discomfort",
                 "L Lower Abdominal Discomfort",
@@ -467,7 +467,6 @@
         {
             "pattern": "L L3",
             "symptoms": [
-                "L Back Headache",
                 "L Lower Back Pain",
                 "L Hip Discomfort",
                 "L Anterior Thigh Discomfort"
@@ -485,7 +484,6 @@
         {
             "pattern": "L L4",
             "symptoms": [
-                "L Back Headache",
                 "L Lower Back Pain",
                 "L Hip Joint Discomfort",
                 "L Anterior Thigh Discomfort",
@@ -515,7 +513,6 @@
         {
             "pattern": "L L5",
             "symptoms": [
-                "L Back Headache",
                 "L Lower Back Pain",
                 "L Buttocks Discomfort",
                 "L Hip Joint Discomfort",
@@ -555,7 +552,6 @@
         {
             "pattern": "L S1",
             "symptoms": [
-                "L Back Headache",
                 "L Lower Back Pain",
                 "L Buttocks Discomfort",
                 "Tailbone Pain",
