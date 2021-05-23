@@ -1,65 +1,211 @@
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
+    /*margin: 20px;*/
   }
 
-  .center {
+/*delete blue border when clicking on body template*/
+:focus {outline:0 !important;}
+
+.middle-font{
+  font-size: 2.4vmin
+}
+
+.small-font{
+  font-size: 2vmin !important;
+}
+
+  .flex-container {
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
   }
+
+  .title{
+    margin-top: 2.5vh;
+    height:5vh;
+    text-align: center;
+  }
+
+  .legends{
+    height:5vh;
+  }
+
+  .visual{
+    height:85vh;
+  }
+
+  .flex-container > .effect{
+    width:40%;
+    text-align: center;
+  }
+
+  .flex-container > .middle-reason{
+    width:27.2%;
+  }
+
+  .flex-container > .cause{
+    width:32.8%;
+    text-align: center;
+  }
+
+  .info-tooltip{
+    width: 15%;
+  }
+  
 
 /*bodyContour.js*/
-.body-container {
+.svg-image-container {/*https://stackoverflow.com/questions/43806515/position-svg-elements-over-an-image*/
   position: relative;
+  display: inline-block; /* <= shrinks container to image size */
 }
 
-.body-contents {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
+.svg-image-container img { /* <= optional, for responsiveness */
+  display: block;
+  max-width: 100%;
+  max-height: 85vh;
+  height: auto;
 }
 
-#body-contour > path{
+.svg-image-container svg {
+ position: absolute;
+ top: 0;
+ left: 0;
 }
 
-path {
-  /*fill:rgba(255, 0, 0, 0);
-  stroke:rgb(30, 131, 190);*/
+.front-back-body path {
   fill: none;
   stroke:rgba(255, 255, 255, 0);
   stroke-miterlimit:10;
-  stroke-width:6px;
   pointer-events:all;
   cursor: pointer;
 }
 
-path:hover {
-  fill: rgb(30, 131, 190, 0.2);
+.front-back-body path:hover {
+  fill: rgba(255, 0, 0, 0.2);
 }
 
+/*Body Path*/
+.front-back-body .path-selected{
+  fill: rgba(255, 0, 0, 0.2);
+}
 
-ellipse {
-  /*fill:rgba(255, 0, 0, 0);
-  stroke:rgb(30, 131, 190);*/
-  fill: none;
-  stroke:rgba(255, 255, 255, 0);
-  stroke-miterlimit:10;
-  stroke-width:6px;
+.front-back-body .path-selected:hover{
+  fill: rgba(255, 0, 0, 0.4);
+}
+
+.front-back-body .potential{
+  stroke: rgba(0,0,255,0.5);
+  stroke-width: 8px;
+  /*fill: rgba(51, 0, 204, 0.2);*/
+}
+
+.front-back-body .path-potential{
+  fill: rgba(0, 0, 255, 0.2);
+}
+
+.front-back-body .path-potential:hover{
+  fill:rgba(0, 0, 255, 0.4);
+}
+
+/*Spinal Path*/
+.spinal-path{
   pointer-events:all;
-  cursor: pointer;
+  stroke-width: 1.25px;
+  stroke: #333;
 }
 
-ellipse:hover {
-  fill: rgb(30, 131, 190, 0.2);
+.spinal-path-disabled{
+  stroke: #333;
+  stroke-width: 1.25px;
+  fill: rgb(160, 160, 160);
 }
 
-.path-selected{
-  fill: rgb(30, 131, 190, 0.2);
+.spinal-path-background{
+  fill: rgb(255, 255, 255);
 }
 
-.path-selected:hover{
-  fill: rgb(30, 131, 190, 0.4);
+/* PatternNodes.js*/
+.pattern-list{
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0;
 }
 
-.path-selected-l2{
-  fill: rgb(30, 131, 190, 0.4);
+.pattern-list > li{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2px;
+  align-items: center;
+  /*border: 1px solid red;*/
+}
+
+.pattern-list > li > .contents{
+  /*background-color: rgba(25, 20, 20, 0.3);*/
+  text-align: center;
+  flex: 0.5;
+}
+
+.pattern-list > li > .contents:hover{
+  box-shadow: 0px 0px 0px 0.3vmin rgba(0,0,255,0.5) inset;
+  color: rgba(0,0,255,0.5);
+}
+
+.pattern-list > li > .left{
+  border-radius: 0.6vmin 2vmin 2vmin 0.6vmin;
+  margin-left: 10%;
+  margin-right: 2.5%;
+}
+
+.pattern-list > li > .right{
+  border-radius: 2vmin 0.6vmin 0.6vmin 2vmin;
+  margin-left: 2.5%;
+  margin-right: 10%;
+}
+
+
+.pattern-list > li > .contents:hover{
+  background-color: rgba(25, 20, 20, 0.4);
+}
+
+/*common components*/
+/*legend*/
+.legend-or-scale-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.legend{
+  height: 2.2vmin;
+  width: 2.2vmin;
+  border-radius: 0.4vmin;
+  background-color: grey;
+  font-size: 1.2vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.legend-or-scale-text{
+  padding-left: 1.0vmin;
+}
+
+.not-left{
+  padding-right: 3.0vmin;
+}
+
+/*color scale*/
+.scale{
+  height: 2.2vmin;
+  width: 2.2vmin;
+  background-color: grey;
+}
+
+.start{
+  border-radius: 0.4vmin 0px 0px 0.4vmin;
+}
+
+.end{
+  border-radius: 0px 0.4vmin 0.4vmin 0px;
 }
