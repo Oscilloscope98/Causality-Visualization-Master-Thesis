@@ -81,6 +81,10 @@
         {
             "pattern": "L C2",
             "cause": "DLS C1-C2"
+        },
+        {
+            "pattern": "L C3",
+            "cause": "DLS C2-C3"
         }
     ],
     "R Jaw Discomfort": [
@@ -1033,12 +1037,12 @@
     ],
     "R Hip Discomfort": [
         {
-            "pattern": "R L4",
-            "cause": "DLS L3-L4"
+            "pattern": "R L2",
+            "cause": "DLS L1-L2"
         },
         {
-            "pattern": "R L5",
-            "cause": "DLS L4-L5"
+            "pattern": "R L3",
+            "cause": "DLS L2-L3"
         }
     ],
     "L Hip Joint Discomfort": [

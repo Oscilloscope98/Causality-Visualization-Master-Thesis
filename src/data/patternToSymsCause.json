@@ -31,6 +31,7 @@
         "symptoms": [
             "L Forehead Headache",
             "L Back Headache",
+            "L Jaw Discomfort",
             "Mouth Discomfort",
             "L Neck Discomfort",
             "Pharyngeal Discomfort",
@@ -417,6 +418,7 @@
             "R Lower Abdominal Discomfort",
             "IBS",
             "R Groin Discomfort",
+            "R Hip Discomfort",
             "R Adductor Tendon Discomfort"
         ],
         "cause": "DLS L1-L2"
@@ -432,6 +434,7 @@
     "R L3": {
         "symptoms": [
             "R Lower Back Pain",
+            "R Hip Discomfort",
             "R Anterior Thigh Discomfort"
         ],
         "cause": "DLS L2-L3"
@@ -452,7 +455,6 @@
     "R L4": {
         "symptoms": [
             "R Lower Back Pain",
-            "R Hip Discomfort",
             "R Hip Joint Discomfort",
             "R Anterior Thigh Discomfort",
             "R Anterior Knee Discomfort",
@@ -485,7 +487,6 @@
         "symptoms": [
             "R Lower Back Pain",
             "R Buttocks Discomfort",
-            "R Hip Discomfort",
             "R Hip Joint Discomfort",
             "R Anterior Knee Discomfort",
             "R Medial Knee Joint Discomfort",

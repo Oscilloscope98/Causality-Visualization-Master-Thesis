@@ -235,13 +235,13 @@ class App extends React.Component {
                     <div className="effect middle-font"
                         data-tip data-for="effectInfo"> Effect: Symptom diagnosis </div>
                     <ReactTooltip id='causeInfo' place="bottom" className='small-font info-tooltip'>
-                        This part presents a spinal cord diagram for showing the original cause of discomforts. 
+                        This part includes a spinal cord diagram for showing the original cause of discomforts. DLS refers to discoligamentous injury, which is the most common cause of neuropathic pain diagnosis.
                     </ReactTooltip>
                     <ReactTooltip id='middeReasonInfo' place="bottom" className='small-font info-tooltip'>
-                        This part presents a list of pattern nodes showing a set of problematic spinal nerves.
+                        This part includes a list of pattern nodes for showing the set of spinal nerves that do not work properly. This condition is often referred to as a radiculopathy.
                     </ReactTooltip>
                     <ReactTooltip id='effectInfo' place="bottom" className='small-font info-tooltip'>
-                        This part presents a body template for selecting discomfort areas or symptoms.
+                        This part includes a body template for selecting discomfort areas or symptoms.
                     </ReactTooltip>
                 </div>
                 <div className="flex-container legends">
