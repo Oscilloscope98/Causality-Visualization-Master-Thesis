@@ -20,6 +20,7 @@ class PatternNode extends React.Component {
     }
 
     //color range?
+    /*
     onHover() {
         this.props.selectPattern(this.props.patternName);
         //this.setState({ colorTransFactor: 0.3 });
@@ -30,7 +31,7 @@ class PatternNode extends React.Component {
         this.props.deletePattern(this.props.patternName);
         //this.setState({ colorTransFactor: 0.2 });
         this.setState({ isHovered: false });
-    }
+    }*/
 
     render(){
         /*
@@ -44,8 +45,9 @@ class PatternNode extends React.Component {
         var fontColor = (this.props.patternStr.potential > 0 || this.state.isHovered) ? "rgba(0,0,255,0.5)" : "white";
         return (
             <div className={this.getClassName()} 
+                /*
                 onMouseEnter={() => this.onHover()}
-                onMouseLeave={() => this.onLeave()} 
+                onMouseLeave={() => this.onLeave()}*/
                 style={{backgroundColor: bkgColor, boxShadow: border, color: fontColor}}>
                 {this.props.patternName} 
             </div>

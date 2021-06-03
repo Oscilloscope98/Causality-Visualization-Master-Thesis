@@ -108,11 +108,31 @@ body {
   fill:rgba(0, 0, 255, 0.4);
 }
 
+.front-back-body .path-adjust{
+  stroke:rgba(0, 0, 255, 0.6);
+  stroke-width: 4px;
+}
+
+.front-back-body .path-adjust:hover{
+  fill:rgba(0, 0, 255, 0.2);
+}
+
+.front-back-body .path-adjust-selected{
+  stroke:rgba(0, 0, 255, 0.6);
+  stroke-width: 4px;
+  fill:rgba(0, 0, 255, 0.2);
+}
+
+.front-back-body .path-adjust-selected:hover{
+  fill:rgba(0, 0, 255, 0.4);
+}
+
 /*Spinal Path*/
 .spinal-path{
   pointer-events:all;
   stroke-width: 1.25px;
   stroke: #333;
+  cursor: pointer;
 }
 
 .spinal-path-disabled{

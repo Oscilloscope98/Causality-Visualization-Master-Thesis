@@ -4,13 +4,13 @@ import './style.css';
 import BodyTemplate from './bodyComponents/BodyTemplate';
 import SpinalNerves from './bodyComponents/SpinalNerves';
 import Patterns from './causalGraph/Patterns';
-import { Legend } from './common/commonComponents'
-import { ColorScale } from './common/commonComponents'
+/*import { Legend } from './common/commonComponents'
+import { ColorScale } from './common/commonComponents'*/
 import ReactTooltip from 'react-tooltip';
 
-const symsData = require('./data/symsToCause.json');
+//const symsData = require('./data/symsToCause.json');
 const causeData = require('./data/causeToSyms.json');
-const patternData = require('./data/patternToSymsCause.json');
+//const patternData = require('./data/patternToSymsCause.json');
 
 var patternStrInitial = {};
 var patternLRList = []
@@ -39,7 +39,15 @@ Object.keys(causeData).forEach(c => {
     causeStrInitial[c] = { fromSym: 0, fromPattern: 0 };
 });
 
+//for setting of new causal relations
+var causeToSymsExpInitial = {};
+Object.keys(causeData).forEach(c => {
+    causeToSymsExpInitial[c] = [];
+});
+causeToSymsExpInitial[""] = []; //deal with the case when no cause is selected
+
 //get potential symptoms from cause, with the name same as the one in causal graph
+/*
 function getPotentialSyms(causeData, selectedCauses, patternData, selectedPatterns) {
     var potentialSyms = [];
     selectedCauses.forEach(c => {
@@ -53,18 +61,19 @@ function getPotentialSyms(causeData, selectedCauses, patternData, selectedPatter
         });
     });
     return potentialSyms;
-}
+}*/
 
 //change symptoms name on body template to the ones causal graoh
 //specially, for the ones with "Or", index is used to get the former or later one
 //only keeps the former part for calculating the strength purpose
+/*
 function simplifySymName(symName, index = 0) {
     var tempSym = symName.replace('F ', '').replace('B ', '').replace(' 2', '');
     if (tempSym.includes(' Or ')) {
         tempSym = tempSym.split(' Or ')[index];
     }
     return tempSym;
-}
+}*/
 
 //get related nodes according to input nodes on causal graph
 function getRelatedNodes(inputNodeName, data, outputNodeType) {
@@ -74,6 +83,24 @@ function getRelatedNodes(inputNodeName, data, outputNodeType) {
     });
     return outputs;
 }
+
+//for setting of new causal relations
+/*
+function unifySyms(newSyms) {
+    var symptomsUnifyFB = []; //symptom list with the name same as the one in causal graph
+    var tempSyms = newSyms;
+    for (var i = 0; i < tempSyms.length; i++) {
+        var tempSym = tempSyms[i].replace('F ', '').replace('B ', '').replace(' 2', '');
+        //deal with " Or "
+        var tempSymSplits = tempSym.split(' Or ');
+        tempSymSplits.forEach(s => {
+            if (!symptomsUnifyFB.includes(s)) {
+                symptomsUnifyFB.push(s);
+            }
+        });
+    }
+    return symptomsUnifyFB;
+}*/
 
 class App extends React.Component {
     constructor(props) {
@@ -85,9 +112,67 @@ class App extends React.Component {
             patternStr: patternStrInitial, //strength (related nums) of each pattern according to selected symptoms/causes
             causeStr: causeStrInitial, //strength (related nums) of each cause according to selected symptoms
             //potentialSyms: [], //potential symptoms according to selected cause, with name the same on the causal graph
+            //for setting of new causal relations
+            causeToSymsExp: causeToSymsExpInitial, //store the cuase to symptoms causal relations according to the expert's experience
+            currentCauseName: "", //store the current cause name that is selected
         };
     }
 
+    //for setting of new causal relations
+    confirmSelection() {
+        var savedJson = JSON.stringify(this.state.causeToSymsExp);
+        var fs = require('fs');
+        fs.writeFile("thing.json", savedJson);
+    }
+
+    clearSelection() {
+        this.setState({ newSyms: [] });
+    }
+
+    deleteSymNew(symName) {
+        var tempCause = this.state.currentCauseName;
+        var tempData = this.state.causeToSymsExp;
+        if (tempCause !== "") {
+            let tempSyms = tempData[tempCause];
+            const index = tempSyms.indexOf(symName);
+            if (index > -1) {
+                tempSyms.splice(index, 1);
+            }
+            this.setState({ causeToSymsExp: tempData });
+        }
+    }
+
+    selectSymNew(symName) {
+        var tempCause = this.state.currentCauseName;
+        var tempData = this.state.causeToSymsExp;
+        if (tempCause !== "") {
+            let tempSyms = tempData[tempCause];
+            if (!tempSyms.includes(symName)) {
+                tempSyms.push(symName);
+                this.setState({ causeToSymsExp: tempData });
+            }
+            else {
+                //double click to disable a symptom
+                this.deleteSymNew(symName);
+            }
+        }
+    }
+
+    selectCauseNew(causeName) {
+        this.setState({ currentCauseName: causeName });
+
+        let tempPoPatternStr = this.state.patternStr;
+        Object.keys(tempPoPatternStr).forEach(c => {
+            if (tempPoPatternStr[c].potential > 0) tempPoPatternStr[c].potential = 0;
+        });
+        let tempPoPatterns = getRelatedNodes(causeName, causeData, "pattern");
+        tempPoPatterns.forEach(p => {
+            tempPoPatternStr[p].potential++;
+        });
+        this.setState({ patternStr: tempPoPatternStr });
+    }
+
+    /*
     //delect symptoms on body template
     deleteSym(symName) {
         let tempSyms = this.state.symptoms;
@@ -121,6 +206,7 @@ class App extends React.Component {
         if (!tempSyms.includes(symName)) {
             tempSyms.push(symName);
             this.setState({ symptoms: tempSyms });
+
             //deal with related patterns
             let simpliedSymName = simplifySymName(symName);
 
@@ -210,18 +296,22 @@ class App extends React.Component {
             let tempCauseStr2 = this.state.causeStr;
             let tempCause2 = patternData[patternName].cause;
             tempCauseStr2[tempCause2].fromPattern++;
-            console.log(tempCauseStr2[tempCause2].fromPattern);
+            //console.log(tempCauseStr2[tempCause2].fromPattern);
             this.setState({ causeStr: tempCauseStr2 });
         }
         else {
             //double click to deselect a cause
             this.deletePattern(patternName);
         }
-    }
+    }*/
 
     render() {
         //potential symptom list with the name same as the one in causal graph
-        var potentialSyms = getPotentialSyms(causeData, this.state.causes, patternData, this.state.patterns);
+        //var potentialSyms = getPotentialSyms(causeData, this.state.causes, patternData, this.state.patterns);
+        var potentialSyms = [];
+        //console.log(this.state.symptoms);
+        //console.log(this.state.currentCauseName);
+        console.log(this.state.causeToSymsExp);
 
         //console.log(this.state.patternStr);
         //console.log(this.state.causeStr);
@@ -246,6 +336,7 @@ class App extends React.Component {
                 </div>
                 <div className="flex-container legends">
                     <div className="cause flex-container">
+                        {/* 
                         <ColorScale id="related to symptom"
                             baseColor={{ r: 255, g: 0, b: 0 }}
                             increaseFactor={0.2}
@@ -254,9 +345,10 @@ class App extends React.Component {
                         <Legend id="related to middle reason"
                             bkgColor="rgba(255,0,0,0)"
                             borderColor="0px 0px 0px 0.15vw rgb(0,0,255) inset"
-                            ifLeft={true} />
+                            ifLeft={true} />*/}
                     </div>
                     <div className="middle-reason flex-container">
+                        {/* 
                         <ColorScale id="related to symptom"
                             baseColor={{ r: 255, g: 0, b: 0 }}
                             increaseFactor={0.2}
@@ -267,35 +359,45 @@ class App extends React.Component {
                             borderColor="0px 0px 0px 0.15vw rgba(0,0,255,0.5) inset"
                             inText="T"
                             textColor="rgba(0,0,255,0.5)"
-                            ifLeft={true} />
+                            ifLeft={true} />*/}
                     </div>
                     <div className="effect flex-container">
+                        <a
+                            href={`data:text/json;charset=utf-8,${encodeURIComponent(
+                                JSON.stringify(this.state.causeToSymsExp)
+                            )}`}
+                            download="newRelation.json"
+                        >
+                            {`Download Json`}
+                        </a>
+                        {/* 
                         <Legend id="selected" bkgColor="rgba(255,0,0,0.2)" />
                         <Legend id="potential" bkgColor="rgba(0,0,255,0.2)" />
                         <Legend id="selected & potential" bkgColor="rgba(255,0,0,0.2)"
                             borderColor="0px 0px 0px 0.15vw rgba(0,0,255,0.5) inset"
-                            ifLeft={true} />
+                            ifLeft={true} />*/}
                     </div>
                 </div>
                 <div className="flex-container visual">
                     <div className="cause">
                         <SpinalNerves
-                            causeStr={this.state.causeStr}
-                            selectedCauses={this.state.causes}
-                            selectCause={causeName => this.selectCause(causeName)}
-                            deleteCause={causeName => this.deleteCause(causeName)}
+                            causeStr={this.state.causeToSymsExp}
+                            /*selectedCauses={this.state.causes}*/
+                            currentCause={this.state.currentCauseName}
+                            selectCause={causeName => this.selectCauseNew(causeName)}
+                        /*deleteCause={causeName => this.deleteCause(causeName)}*/
                         />
                     </div>
                     <div className="middle-reason">
                         <Patterns patternStr={this.state.patternStr}
-                            selectPattern={patternName => this.selectPattern(patternName)}
-                            deletePattern={patternName => this.deletePattern(patternName)}
+                        /*selectPattern={patternName => this.selectPattern(patternName)}
+                        deletePattern={patternName => this.deletePattern(patternName)}*/
                         />
                     </div>
                     <div className="effect">
                         <BodyTemplate
-                            clickCallBack={symName => this.selectSym(symName)}
-                            selectedSyms={this.state.symptoms}
+                            clickCallBack={symName => this.selectSymNew(symName)}
+                            selectedSyms={this.state.causeToSymsExp[this.state.currentCauseName]}
                             potentialSyms={potentialSyms}
                         />
                     </div>

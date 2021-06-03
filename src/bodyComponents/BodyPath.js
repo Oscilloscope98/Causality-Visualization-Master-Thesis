@@ -4,12 +4,17 @@ import '../style.css';
 function BodyPath({pathId, d, transform, onClick, potentialSyms, selectedSyms}) {
     var tempId = pathId.replaceAll('_', ' ');
     var tempSymName = tempId.replace('F ', '').replace('B ', '').replace(' 2', '');
-    var tempSymName0 = tempSymName.split(' Or ')[0];
+    //var tempSymName0 = tempSymName.split(' Or ')[0];
     var ifInSyms = selectedSyms.includes(tempId);
-    var ifInPoSyms = potentialSyms.includes(tempSymName0);
+    //var ifInPoSyms = potentialSyms.includes(tempSymName0);
 
 
     function getClassName(){
+        if (ifInSyms){
+            return 'path-adjust-selected';
+        }
+        else return 'path-adjust';
+        /*
         if(ifInSyms){
             if (!ifInPoSyms){
                 return 'path-selected';
@@ -22,13 +27,13 @@ function BodyPath({pathId, d, transform, onClick, potentialSyms, selectedSyms}) 
             if (potentialSyms.includes(tempSymName0)){
                 return 'path-potential';
             }
-            else return '';
-        }
+            else return 'path-adjust';
+        }*/
     }
 
     return (
         <path id={pathId} d={d} transform={transform} 
-            onClick={onClick} 
+            onClick={onClick}
             className={getClassName()}
             data-tip={tempSymName}
             data-for="symSvgs"
