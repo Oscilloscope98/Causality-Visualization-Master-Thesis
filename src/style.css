@@ -14,6 +14,18 @@ body {
   font-size: 2vmin !important;
 }
 
+.main-title{
+  margin-top: 1vh;
+  height:3vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-title .explain{
+  padding-right: 1vmin;
+}
+
   .flex-container {
     display: flex;
     width:100%;
@@ -22,7 +34,6 @@ body {
   }
 
   .title{
-    margin-top: 2.5vh;
     height:5vh;
     text-align: center;
   }
@@ -164,10 +175,6 @@ body {
 }
 
 
-.pattern-list > li > .contents:hover{
-  background-color: rgba(25, 20, 20, 0.4);
-}
-
 /*common components*/
 /*legend*/
 .legend-or-scale-flex{
@@ -209,3 +216,34 @@ body {
 .end{
   border-radius: 0px 0.4vmin 0.4vmin 0px;
 }
+
+/*toggle*/
+.toggle-container {
+  width: 10vmin;
+  height: 3vmin;
+  background-color: rgba(160, 160, 160, 0.2);
+  border-radius: 3vmin;
+  cursor: pointer;
+  position: relative;
+}
+
+.dialog-button {
+  width:5vmin;
+  height: 3vmin;
+  border-radius: 0 3vmin 3vmin 0;
+  background-color: rgba(255,0,0,0.2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 5vmin;
+  transition: all 0.3s ease;
+}
+
+.disabled {
+  border-radius: 3vmin 0 0 3vmin;
+  background-color: rgba(0,0,255,0.2);
+  left: 0;
+}
+

@@ -1,0 +1,1520 @@
+{
+    "Headache": [
+        {
+            "pattern": "L C2",
+            "cause": "DLS C1-C2"
+        },
+        {
+            "pattern": "R C2",
+            "cause": "DLS C1-C2"
+        },
+        {
+            "pattern": "L C3",
+            "cause": "DLS C2-C3"
+        },
+        {
+            "pattern": "R C3",
+            "cause": "DLS C2-C3"
+        }
+    ],
+    "L Forehead Headache": [
+        {
+            "pattern": "L C2",
+            "cause": "DLS C1-C2"
+        }
+    ],
+    "R Forehead Headache": [
+        {
+            "pattern": "R C2",
+            "cause": "DLS C1-C2"
+        }
+    ],
+    "L Back Headache": [
+        {
+            "pattern": "L C2",
+            "cause": "DLS C1-C2"
+        },
+        {
+            "pattern": "L C3",
+            "cause": "DLS C2-C3"
+        }
+    ],
+    "R Back Headache": [
+        {
+            "pattern": "R C2",
+            "cause": "DLS C1-C2"
+        },
+        {
+            "pattern": "R C3",
+            "cause": "DLS C2-C3"
+        }
+    ],
+    "L Eye Discomfort": [
+        {
+            "pattern": "L C2",
+            "cause": "DLS C1-C2"
+        }
+    ],
+    "R Eye Discomfort": [
+        {
+            "pattern": "R C2",
+            "cause": "DLS C1-C2"
+        }
+    ],
+    "L Ear Discomfort": [
+        {
+            "pattern": "L C2",
+            "cause": "DLS C1-C2"
+        },
+        {
+            "pattern": "L C3",
+            "cause": "DLS C2-C3"
+        }
+    ],
+    "R Ear Discomfort": [
+        {
+            "pattern": "R C2",
+            "cause": "DLS C1-C2"
+        },
+        {
+            "pattern": "R C3",
+            "cause": "DLS C2-C3"
+        }
+    ],
+    "L Tinnitus": [
+        {
+            "pattern": "L C2",
+            "cause": "DLS C1-C2"
+        },
+        {
+            "pattern": "L C3",
+            "cause": "DLS C2-C3"
+        }
+    ],
+    "R Tinnitus": [
+        {
+            "pattern": "R C2",
+            "cause": "DLS C1-C2"
+        },
+        {
+            "pattern": "R C3",
+            "cause": "DLS C2-C3"
+        }
+    ],
+    "L Jaw Discomfort": [
+        {
+            "pattern": "L C2",
+            "cause": "DLS C1-C2"
+        },
+        {
+            "pattern": "L C3",
+            "cause": "DLS C2-C3"
+        }
+    ],
+    "R Jaw Discomfort": [
+        {
+            "pattern": "R C2",
+            "cause": "DLS C1-C2"
+        },
+        {
+            "pattern": "R C3",
+            "cause": "DLS C2-C3"
+        }
+    ],
+    "Mouth Discomfort": [
+        {
+            "pattern": "L C2",
+            "cause": "DLS C1-C2"
+        },
+        {
+            "pattern": "R C2",
+            "cause": "DLS C1-C2"
+        },
+        {
+            "pattern": "L C3",
+            "cause": "DLS C2-C3"
+        },
+        {
+            "pattern": "R C3",
+            "cause": "DLS C2-C3"
+        }
+    ],
+    "L Neck Discomfort": [
+        {
+            "pattern": "L C3",
+            "cause": "DLS C2-C3"
+        },
+        {
+            "pattern": "L C4",
+            "cause": "DLS C3-C4"
+        },
+        {
+            "pattern": "L C5",
+            "cause": "DLS C4-C5"
+        },
+        {
+            "pattern": "L C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "L C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "L C8",
+            "cause": "DLS C7-C8"
+        }
+    ],
+    "R Neck Discomfort": [
+        {
+            "pattern": "R C3",
+            "cause": "DLS C2-C3"
+        },
+        {
+            "pattern": "R C4",
+            "cause": "DLS C3-C4"
+        },
+        {
+            "pattern": "R C5",
+            "cause": "DLS C4-C5"
+        },
+        {
+            "pattern": "R C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "R C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "R C8",
+            "cause": "DLS C7-C8"
+        }
+    ],
+    "Pharyngeal Discomfort": [
+        {
+            "pattern": "L C2",
+            "cause": "DLS C1-C2"
+        },
+        {
+            "pattern": "R C2",
+            "cause": "DLS C1-C2"
+        },
+        {
+            "pattern": "L C3",
+            "cause": "DLS C2-C3"
+        },
+        {
+            "pattern": "R C3",
+            "cause": "DLS C2-C3"
+        }
+    ],
+    "L Collarbone Discomfort": [
+        {
+            "pattern": "L C4",
+            "cause": "DLS C3-C4"
+        }
+    ],
+    "R Collarbone Discomfort": [
+        {
+            "pattern": "R C4",
+            "cause": "DLS C3-C4"
+        }
+    ],
+    "L Front Axle Discomfort": [
+        {
+            "pattern": "L C4",
+            "cause": "DLS C3-C4"
+        },
+        {
+            "pattern": "L C5",
+            "cause": "DLS C4-C5"
+        },
+        {
+            "pattern": "L C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "L C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "L C8",
+            "cause": "DLS C7-C8"
+        }
+    ],
+    "R Front Axle Discomfort": [
+        {
+            "pattern": "R C4",
+            "cause": "DLS C3-C4"
+        },
+        {
+            "pattern": "R C5",
+            "cause": "DLS C4-C5"
+        },
+        {
+            "pattern": "R C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "R C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "R C8",
+            "cause": "DLS C7-C8"
+        }
+    ],
+    "L Shoulder Impingement": [
+        {
+            "pattern": "L C4",
+            "cause": "DLS C3-C4"
+        },
+        {
+            "pattern": "L C5",
+            "cause": "DLS C4-C5"
+        },
+        {
+            "pattern": "L C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "L C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "L C8",
+            "cause": "DLS C7-C8"
+        }
+    ],
+    "R Shoulder Impingement": [
+        {
+            "pattern": "R C4",
+            "cause": "DLS C3-C4"
+        },
+        {
+            "pattern": "R C5",
+            "cause": "DLS C4-C5"
+        },
+        {
+            "pattern": "R C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "R C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "R C8",
+            "cause": "DLS C7-C8"
+        }
+    ],
+    "L Shoulder Discomfort": [
+        {
+            "pattern": "L C4",
+            "cause": "DLS C3-C4"
+        },
+        {
+            "pattern": "L C5",
+            "cause": "DLS C4-C5"
+        },
+        {
+            "pattern": "L C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "L C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "L C8",
+            "cause": "DLS C7-C8"
+        }
+    ],
+    "R Shoulder Discomfort": [
+        {
+            "pattern": "R C4",
+            "cause": "DLS C3-C4"
+        },
+        {
+            "pattern": "R C5",
+            "cause": "DLS C4-C5"
+        },
+        {
+            "pattern": "R C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "R C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "R C8",
+            "cause": "DLS C7-C8"
+        }
+    ],
+    "L Central Chest Discomfort": [
+        {
+            "pattern": "L T1",
+            "cause": "DLS C8-T1"
+        },
+        {
+            "pattern": "L T2",
+            "cause": "DLS T1-T2"
+        }
+    ],
+    "R Central Chest Discomfort": [
+        {
+            "pattern": "R T1",
+            "cause": "DLS C8-T1"
+        },
+        {
+            "pattern": "R T2",
+            "cause": "DLS T1-T2"
+        }
+    ],
+    "L Chest Discomfort": [
+        {
+            "pattern": "L T3",
+            "cause": "DLS T2-T3"
+        },
+        {
+            "pattern": "L T4",
+            "cause": "DLS T3-T4"
+        },
+        {
+            "pattern": "L T5",
+            "cause": "DLS T4-T5"
+        }
+    ],
+    "R Chest Discomfort": [
+        {
+            "pattern": "R T3",
+            "cause": "DLS T2-T3"
+        },
+        {
+            "pattern": "R T4",
+            "cause": "DLS T3-T4"
+        },
+        {
+            "pattern": "R T5",
+            "cause": "DLS T4-T5"
+        }
+    ],
+    "Thoracidic Dysfunction": [
+        {
+            "pattern": "L T6",
+            "cause": "DLS T5-T6"
+        },
+        {
+            "pattern": "R T6",
+            "cause": "DLS T5-T6"
+        },
+        {
+            "pattern": "L T7",
+            "cause": "DLS T6-T7"
+        },
+        {
+            "pattern": "R T7",
+            "cause": "DLS T6-T7"
+        }
+    ],
+    "Upper Back Discomfort": [
+        {
+            "pattern": "L T2",
+            "cause": "DLS T1-T2"
+        },
+        {
+            "pattern": "R T2",
+            "cause": "DLS T1-T2"
+        },
+        {
+            "pattern": "L T3",
+            "cause": "DLS T2-T3"
+        },
+        {
+            "pattern": "R T3",
+            "cause": "DLS T2-T3"
+        },
+        {
+            "pattern": "L T4",
+            "cause": "DLS T3-T4"
+        },
+        {
+            "pattern": "R T4",
+            "cause": "DLS T3-T4"
+        },
+        {
+            "pattern": "L T5",
+            "cause": "DLS T4-T5"
+        },
+        {
+            "pattern": "R T5",
+            "cause": "DLS T4-T5"
+        },
+        {
+            "pattern": "L T6",
+            "cause": "DLS T5-T6"
+        },
+        {
+            "pattern": "R T6",
+            "cause": "DLS T5-T6"
+        }
+    ],
+    "L Interscapular Discomfort": [
+        {
+            "pattern": "L C5",
+            "cause": "DLS C4-C5"
+        },
+        {
+            "pattern": "L C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "L C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "L C8",
+            "cause": "DLS C7-C8"
+        },
+        {
+            "pattern": "L T1",
+            "cause": "DLS C8-T1"
+        },
+        {
+            "pattern": "L T2",
+            "cause": "DLS T1-T2"
+        },
+        {
+            "pattern": "L T3",
+            "cause": "DLS T2-T3"
+        },
+        {
+            "pattern": "L T4",
+            "cause": "DLS T3-T4"
+        },
+        {
+            "pattern": "L T5",
+            "cause": "DLS T4-T5"
+        }
+    ],
+    "R Interscapular Discomfort": [
+        {
+            "pattern": "R C5",
+            "cause": "DLS C4-C5"
+        },
+        {
+            "pattern": "R C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "R C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "R C8",
+            "cause": "DLS C7-C8"
+        },
+        {
+            "pattern": "R T1",
+            "cause": "DLS C8-T1"
+        },
+        {
+            "pattern": "R T2",
+            "cause": "DLS T1-T2"
+        },
+        {
+            "pattern": "R T3",
+            "cause": "DLS T2-T3"
+        },
+        {
+            "pattern": "R T4",
+            "cause": "DLS T3-T4"
+        },
+        {
+            "pattern": "R T5",
+            "cause": "DLS T4-T5"
+        }
+    ],
+    "L Lateral Arm Discomfort": [
+        {
+            "pattern": "L C5",
+            "cause": "DLS C4-C5"
+        },
+        {
+            "pattern": "L C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "L C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "L C8",
+            "cause": "DLS C7-C8"
+        }
+    ],
+    "R Lateral Arm Discomfort": [
+        {
+            "pattern": "R C5",
+            "cause": "DLS C4-C5"
+        },
+        {
+            "pattern": "R C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "R C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "R C8",
+            "cause": "DLS C7-C8"
+        }
+    ],
+    "L Upper Arm Discomfort": [
+        {
+            "pattern": "L T1",
+            "cause": "DLS C8-T1"
+        }
+    ],
+    "R Upper Arm Discomfort": [
+        {
+            "pattern": "R T1",
+            "cause": "DLS C8-T1"
+        }
+    ],
+    "L Upper Elbow Discomport": [
+        {
+            "pattern": "L C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "L C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "L C8",
+            "cause": "DLS C7-C8"
+        },
+        {
+            "pattern": "L T1",
+            "cause": "DLS C8-T1"
+        }
+    ],
+    "R Upper Elbow Discomport": [
+        {
+            "pattern": "R C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "R C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "R C8",
+            "cause": "DLS C7-C8"
+        },
+        {
+            "pattern": "R T1",
+            "cause": "DLS C8-T1"
+        }
+    ],
+    "L Lateral Elbow Discomfort": [
+        {
+            "pattern": "L C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "L C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "L C8",
+            "cause": "DLS C7-C8"
+        }
+    ],
+    "R Lateral Elbow Discomfort": [
+        {
+            "pattern": "R C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "R C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "R C8",
+            "cause": "DLS C7-C8"
+        }
+    ],
+    "L Medial Elbow Discomfort": [
+        {
+            "pattern": "L C8",
+            "cause": "DLS C7-C8"
+        },
+        {
+            "pattern": "L T1",
+            "cause": "DLS C8-T1"
+        }
+    ],
+    "R Medial Elbow Discomfort": [
+        {
+            "pattern": "R C8",
+            "cause": "DLS C7-C8"
+        },
+        {
+            "pattern": "R T1",
+            "cause": "DLS C8-T1"
+        }
+    ],
+    "L Arm Bend Discomfort": [
+        {
+            "pattern": "L C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "L C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "L C8",
+            "cause": "DLS C7-C8"
+        },
+        {
+            "pattern": "L T1",
+            "cause": "DLS C8-T1"
+        }
+    ],
+    "R Arm Bend Discomfort": [
+        {
+            "pattern": "R C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "R C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "R C8",
+            "cause": "DLS C7-C8"
+        },
+        {
+            "pattern": "R T1",
+            "cause": "DLS C8-T1"
+        }
+    ],
+    "L Lower Arm Discomfort": [
+        {
+            "pattern": "L C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "L C8",
+            "cause": "DLS C7-C8"
+        },
+        {
+            "pattern": "L T1",
+            "cause": "DLS C8-T1"
+        }
+    ],
+    "R Lower Arm Discomfort": [
+        {
+            "pattern": "R C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "R C8",
+            "cause": "DLS C7-C8"
+        },
+        {
+            "pattern": "R T1",
+            "cause": "DLS C8-T1"
+        }
+    ],
+    "L Wrist Discomfort": [
+        {
+            "pattern": "L C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "L C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "L C8",
+            "cause": "DLS C7-C8"
+        },
+        {
+            "pattern": "L T1",
+            "cause": "DLS C8-T1"
+        }
+    ],
+    "R Wrist Discomfort": [
+        {
+            "pattern": "R C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "R C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "R C8",
+            "cause": "DLS C7-C8"
+        },
+        {
+            "pattern": "R T1",
+            "cause": "DLS C8-T1"
+        }
+    ],
+    "L Hand Discomfort": [
+        {
+            "pattern": "L C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "L C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "L C8",
+            "cause": "DLS C7-C8"
+        },
+        {
+            "pattern": "L T1",
+            "cause": "DLS C8-T1"
+        }
+    ],
+    "R Hand Discomfort": [
+        {
+            "pattern": "R C6",
+            "cause": "DLS C5-C6"
+        },
+        {
+            "pattern": "R C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "R C8",
+            "cause": "DLS C7-C8"
+        },
+        {
+            "pattern": "R T1",
+            "cause": "DLS C8-T1"
+        }
+    ],
+    "L Finger Discomfort": [
+        {
+            "pattern": "L C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "L C8",
+            "cause": "DLS C7-C8"
+        }
+    ],
+    "R Finger Discomfort": [
+        {
+            "pattern": "R C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "R C8",
+            "cause": "DLS C7-C8"
+        }
+    ],
+    "L Little Finger Discomfort": [
+        {
+            "pattern": "L C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "L C8",
+            "cause": "DLS C7-C8"
+        }
+    ],
+    "R Little Finger Discomfort": [
+        {
+            "pattern": "R C7",
+            "cause": "DLS C6-C7"
+        },
+        {
+            "pattern": "R C8",
+            "cause": "DLS C7-C8"
+        }
+    ],
+    "L Thumb Discomfort": [
+        {
+            "pattern": "L C6",
+            "cause": "DLS C5-C6"
+        }
+    ],
+    "R Thumb Discomfort": [
+        {
+            "pattern": "R C6",
+            "cause": "DLS C5-C6"
+        }
+    ],
+    "L Lower Back Pain": [
+        {
+            "pattern": "L T7",
+            "cause": "DLS T6-T7"
+        },
+        {
+            "pattern": "L T8",
+            "cause": "DLS T7-T8"
+        },
+        {
+            "pattern": "L T9",
+            "cause": "DLS T8-T9"
+        },
+        {
+            "pattern": "L T10",
+            "cause": "DLS T9-T10"
+        },
+        {
+            "pattern": "L T11",
+            "cause": "DLS T10-T11"
+        },
+        {
+            "pattern": "L T12",
+            "cause": "DLS T11-T12"
+        }
+    ],
+    "R Lower Back Pain": [
+        {
+            "pattern": "R T7",
+            "cause": "DLS T6-T7"
+        },
+        {
+            "pattern": "R T8",
+            "cause": "DLS T7-T8"
+        },
+        {
+            "pattern": "R T9",
+            "cause": "DLS T8-T9"
+        },
+        {
+            "pattern": "R T10",
+            "cause": "DLS T9-T10"
+        },
+        {
+            "pattern": "R T11",
+            "cause": "DLS T10-T11"
+        },
+        {
+            "pattern": "R T12",
+            "cause": "DLS T11-T12"
+        }
+    ],
+    "Lateral Abdominal Discomfort": [
+        {
+            "pattern": "L T8",
+            "cause": "DLS T7-T8"
+        },
+        {
+            "pattern": "R T8",
+            "cause": "DLS T7-T8"
+        },
+        {
+            "pattern": "L T9",
+            "cause": "DLS T8-T9"
+        },
+        {
+            "pattern": "R T9",
+            "cause": "DLS T8-T9"
+        },
+        {
+            "pattern": "L T10",
+            "cause": "DLS T9-T10"
+        },
+        {
+            "pattern": "R T10",
+            "cause": "DLS T9-T10"
+        },
+        {
+            "pattern": "L T11",
+            "cause": "DLS T10-T11"
+        },
+        {
+            "pattern": "R T11",
+            "cause": "DLS T10-T11"
+        },
+        {
+            "pattern": "L T12",
+            "cause": "DLS T11-T12"
+        },
+        {
+            "pattern": "R T12",
+            "cause": "DLS T11-T12"
+        }
+    ],
+    "Upper Abdominal Discomfort": [
+        {
+            "pattern": "L T6",
+            "cause": "DLS T5-T6"
+        },
+        {
+            "pattern": "R T6",
+            "cause": "DLS T5-T6"
+        },
+        {
+            "pattern": "L T7",
+            "cause": "DLS T6-T7"
+        },
+        {
+            "pattern": "R T7",
+            "cause": "DLS T6-T7"
+        }
+    ],
+    "L Lower Abdominal Discomfort": [
+        {
+            "pattern": "L T8",
+            "cause": "DLS T7-T8"
+        },
+        {
+            "pattern": "L T9",
+            "cause": "DLS T8-T9"
+        },
+        {
+            "pattern": "L T10",
+            "cause": "DLS T9-T10"
+        },
+        {
+            "pattern": "L T11",
+            "cause": "DLS T10-T11"
+        },
+        {
+            "pattern": "L T12",
+            "cause": "DLS T11-T12"
+        },
+        {
+            "pattern": "L L1",
+            "cause": "DLS T12-L1"
+        },
+        {
+            "pattern": "L L2",
+            "cause": "DLS L1-L2"
+        }
+    ],
+    "R Lower Abdominal Discomfort": [
+        {
+            "pattern": "R T8",
+            "cause": "DLS T7-T8"
+        },
+        {
+            "pattern": "R T9",
+            "cause": "DLS T8-T9"
+        },
+        {
+            "pattern": "R T10",
+            "cause": "DLS T9-T10"
+        },
+        {
+            "pattern": "R T11",
+            "cause": "DLS T10-T11"
+        },
+        {
+            "pattern": "R T12",
+            "cause": "DLS T11-T12"
+        },
+        {
+            "pattern": "R L1",
+            "cause": "DLS T12-L1"
+        },
+        {
+            "pattern": "R L2",
+            "cause": "DLS L1-L2"
+        }
+    ],
+    "IBS": [
+        {
+            "pattern": "L T8",
+            "cause": "DLS T7-T8"
+        },
+        {
+            "pattern": "R T8",
+            "cause": "DLS T7-T8"
+        },
+        {
+            "pattern": "L T9",
+            "cause": "DLS T8-T9"
+        },
+        {
+            "pattern": "R T9",
+            "cause": "DLS T8-T9"
+        },
+        {
+            "pattern": "L T10",
+            "cause": "DLS T9-T10"
+        },
+        {
+            "pattern": "R T10",
+            "cause": "DLS T9-T10"
+        },
+        {
+            "pattern": "L T11",
+            "cause": "DLS T10-T11"
+        },
+        {
+            "pattern": "R T11",
+            "cause": "DLS T10-T11"
+        },
+        {
+            "pattern": "L T12",
+            "cause": "DLS T11-T12"
+        },
+        {
+            "pattern": "R T12",
+            "cause": "DLS T11-T12"
+        },
+        {
+            "pattern": "L L1",
+            "cause": "DLS T12-L1"
+        },
+        {
+            "pattern": "R L1",
+            "cause": "DLS T12-L1"
+        },
+        {
+            "pattern": "L L2",
+            "cause": "DLS L1-L2"
+        },
+        {
+            "pattern": "R L2",
+            "cause": "DLS L1-L2"
+        }
+    ],
+    "L Groin Discomfort": [
+        {
+            "pattern": "L L1",
+            "cause": "DLS T12-L1"
+        },
+        {
+            "pattern": "L L2",
+            "cause": "DLS L1-L2"
+        }
+    ],
+    "R Groin Discomfort": [
+        {
+            "pattern": "R L1",
+            "cause": "DLS T12-L1"
+        },
+        {
+            "pattern": "R L2",
+            "cause": "DLS L1-L2"
+        }
+    ],
+    "L Buttocks Discomfort": [
+        {
+            "pattern": "L L1",
+            "cause": "DLS T12-L1"
+        },
+        {
+            "pattern": "L L2",
+            "cause": "DLS L1-L2"
+        },
+        {
+            "pattern": "L L3",
+            "cause": "DLS L2-L3"
+        },
+        {
+            "pattern": "L L4",
+            "cause": "DLS L3-L4"
+        },
+        {
+            "pattern": "L L5",
+            "cause": "DLS L4-L5"
+        },
+        {
+            "pattern": "L S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "R Buttocks Discomfort": [
+        {
+            "pattern": "R L1",
+            "cause": "DLS T12-L1"
+        },
+        {
+            "pattern": "R L2",
+            "cause": "DLS L1-L2"
+        },
+        {
+            "pattern": "R L3",
+            "cause": "DLS L2-L3"
+        },
+        {
+            "pattern": "R L4",
+            "cause": "DLS L3-L4"
+        },
+        {
+            "pattern": "R L5",
+            "cause": "DLS L4-L5"
+        },
+        {
+            "pattern": "R S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "Tailbone Pain": [
+        {
+            "pattern": "L S1",
+            "cause": "DLS L5-S1"
+        },
+        {
+            "pattern": "R S1",
+            "cause": "DLS L5-S1"
+        },
+        {
+            "pattern": "L S2",
+            "cause": "DLS S1-S2"
+        },
+        {
+            "pattern": "R S2",
+            "cause": "DLS S1-S2"
+        }
+    ],
+    "L Hip Discomfort": [
+        {
+            "pattern": "L L2",
+            "cause": "DLS L1-L2"
+        },
+        {
+            "pattern": "L L3",
+            "cause": "DLS L2-L3"
+        },
+        {
+            "pattern": "L L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "R Hip Discomfort": [
+        {
+            "pattern": "R L2",
+            "cause": "DLS L1-L2"
+        },
+        {
+            "pattern": "R L3",
+            "cause": "DLS L2-L3"
+        },
+        {
+            "pattern": "R L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "L Hip Joint Discomfort": [
+        {
+            "pattern": "L L2",
+            "cause": "DLS L1-L2"
+        },
+        {
+            "pattern": "L L3",
+            "cause": "DLS L2-L3"
+        },
+        {
+            "pattern": "L L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "R Hip Joint Discomfort": [
+        {
+            "pattern": "R L2",
+            "cause": "DLS L1-L2"
+        },
+        {
+            "pattern": "R L3",
+            "cause": "DLS L2-L3"
+        },
+        {
+            "pattern": "R L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "L Adductor Tendon Discomfort": [
+        {
+            "pattern": "L S2",
+            "cause": "DLS S1-S2"
+        }
+    ],
+    "R Adductor Tendon Discomfort": [
+        {
+            "pattern": "R S2",
+            "cause": "DLS S1-S2"
+        }
+    ],
+    "L Anterior Thigh Discomfort": [
+        {
+            "pattern": "L L2",
+            "cause": "DLS L1-L2"
+        },
+        {
+            "pattern": "L L3",
+            "cause": "DLS L2-L3"
+        },
+        {
+            "pattern": "L L4",
+            "cause": "DLS L3-L4"
+        },
+        {
+            "pattern": "L L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "R Anterior Thigh Discomfort": [
+        {
+            "pattern": "R L2",
+            "cause": "DLS L1-L2"
+        },
+        {
+            "pattern": "R L3",
+            "cause": "DLS L2-L3"
+        },
+        {
+            "pattern": "R L4",
+            "cause": "DLS L3-L4"
+        },
+        {
+            "pattern": "R L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "L Back Thigh Discomfort": [
+        {
+            "pattern": "L L4",
+            "cause": "DLS L3-L4"
+        },
+        {
+            "pattern": "L S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "R Back Thigh Discomfort": [
+        {
+            "pattern": "R L4",
+            "cause": "DLS L3-L4"
+        },
+        {
+            "pattern": "R S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "L Anterior Knee Discomfort": [
+        {
+            "pattern": "L L4",
+            "cause": "DLS L3-L4"
+        },
+        {
+            "pattern": "L L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "R Anterior Knee Discomfort": [
+        {
+            "pattern": "R L4",
+            "cause": "DLS L3-L4"
+        },
+        {
+            "pattern": "R L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "L Medial Knee Joint Discomfort": [
+        {
+            "pattern": "L L4",
+            "cause": "DLS L3-L4"
+        }
+    ],
+    "R Medial Knee Joint Discomfort": [
+        {
+            "pattern": "R L4",
+            "cause": "DLS L3-L4"
+        }
+    ],
+    "L Dorsal Knee Joint Discomfort": [
+        {
+            "pattern": "L S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "R Dorsal Knee Joint Discomfort": [
+        {
+            "pattern": "R S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "L Lateral Knee Discomfort": [
+        {
+            "pattern": "L L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "R Lateral Knee Discomfort": [
+        {
+            "pattern": "R L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "L Shin Discomfort": [
+        {
+            "pattern": "L S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "R Shin Discomfort": [
+        {
+            "pattern": "R S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "L Medial Calf Discomfort": [
+        {
+            "pattern": "L L4",
+            "cause": "DLS L3-L4"
+        },
+        {
+            "pattern": "L S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "R Medial Calf Discomfort": [
+        {
+            "pattern": "R L4",
+            "cause": "DLS L3-L4"
+        },
+        {
+            "pattern": "R S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "L Lateral Calf Discomfort": [
+        {
+            "pattern": "L L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "R Lateral Calf Discomfort": [
+        {
+            "pattern": "R L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "L Lateral Foot Discomfort": [
+        {
+            "pattern": "L S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "R Lateral Foot Discomfort": [
+        {
+            "pattern": "R S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "L Ankle Discomfort": [
+        {
+            "pattern": "L L5",
+            "cause": "DLS L4-L5"
+        },
+        {
+            "pattern": "L S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "R Ankle Discomfort": [
+        {
+            "pattern": "R L5",
+            "cause": "DLS L4-L5"
+        },
+        {
+            "pattern": "R S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "L Arch Discomfort": [
+        {
+            "pattern": "L L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "R Arch Discomfort": [
+        {
+            "pattern": "R L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "L Toe Discomfort": [
+        {
+            "pattern": "L L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "R Toe Discomfort": [
+        {
+            "pattern": "R L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "L Toe Joint Discomfort": [
+        {
+            "pattern": "L L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "R Toe Joint Discomfort": [
+        {
+            "pattern": "R L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "L Big Toe Discomfort": [
+        {
+            "pattern": "L L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "R Big Toe Discomfort": [
+        {
+            "pattern": "R L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "L Little Toe Discomfort": [
+        {
+            "pattern": "L S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "R Little Toe Discomfort": [
+        {
+            "pattern": "R S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "R Forefoot": [
+        {
+            "pattern": "R L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "L Forefoot": [
+        {
+            "pattern": "L L5",
+            "cause": "DLS L4-L5"
+        }
+    ],
+    "L Heel Discomfort": [
+        {
+            "pattern": "L S1",
+            "cause": "DLS L5-S1"
+        }
+    ],
+    "R Heel Discomfort": [
+        {
+            "pattern": "R S1",
+            "cause": "DLS L5-S1"
+        }
+    ]
+}

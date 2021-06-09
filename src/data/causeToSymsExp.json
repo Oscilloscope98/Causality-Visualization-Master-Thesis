@@ -1,0 +1,638 @@
+{
+    "DLS C1-C2": [
+        {
+            "pattern": "L C2",
+            "symptoms": [
+                "Headache",
+                "L Forehead Headache",
+                "L Back Headache",
+                "L Eye Discomfort",
+                "L Ear Discomfort",
+                "L Tinnitus",
+                "L Jaw Discomfort",
+                "Mouth Discomfort",
+                "Pharyngeal Discomfort"
+            ]
+        },
+        {
+            "pattern": "R C2",
+            "symptoms": [
+                "Headache",
+                "R Forehead Headache",
+                "R Back Headache",
+                "R Eye Discomfort",
+                "R Ear Discomfort",
+                "R Tinnitus",
+                "R Jaw Discomfort",
+                "Mouth Discomfort",
+                "Pharyngeal Discomfort"
+            ]
+        }
+    ],
+    "DLS C2-C3": [
+        {
+            "pattern": "L C3",
+            "symptoms": [
+                "Headache",
+                "L Back Headache",
+                "L Ear Discomfort",
+                "L Tinnitus",
+                "L Jaw Discomfort",
+                "Mouth Discomfort",
+                "L Neck Discomfort",
+                "Pharyngeal Discomfort"
+            ]
+        },
+        {
+            "pattern": "R C3",
+            "symptoms": [
+                "Headache",
+                "R Back Headache",
+                "R Ear Discomfort",
+                "R Tinnitus",
+                "R Jaw Discomfort",
+                "Mouth Discomfort",
+                "R Neck Discomfort",
+                "Pharyngeal Discomfort"
+            ]
+        }
+    ],
+    "DLS C3-C4": [
+        {
+            "pattern": "L C4",
+            "symptoms": [
+                "L Neck Discomfort",
+                "L Collarbone Discomfort",
+                "L Front Axle Discomfort",
+                "L Shoulder Impingement",
+                "L Shoulder Discomfort"
+            ]
+        },
+        {
+            "pattern": "R C4",
+            "symptoms": [
+                "R Neck Discomfort",
+                "R Collarbone Discomfort",
+                "R Front Axle Discomfort",
+                "R Shoulder Impingement",
+                "R Shoulder Discomfort"
+            ]
+        }
+    ],
+    "DLS C4-C5": [
+        {
+            "pattern": "L C5",
+            "symptoms": [
+                "L Neck Discomfort",
+                "L Front Axle Discomfort",
+                "L Shoulder Impingement",
+                "L Shoulder Discomfort",
+                "L Interscapular Discomfort",
+                "L Lateral Arm Discomfort"
+            ]
+        },
+        {
+            "pattern": "R C5",
+            "symptoms": [
+                "R Neck Discomfort",
+                "R Front Axle Discomfort",
+                "R Shoulder Impingement",
+                "R Shoulder Discomfort",
+                "R Interscapular Discomfort",
+                "R Lateral Arm Discomfort"
+            ]
+        }
+    ],
+    "DLS C5-C6": [
+        {
+            "pattern": "L C6",
+            "symptoms": [
+                "L Neck Discomfort",
+                "L Front Axle Discomfort",
+                "L Shoulder Impingement",
+                "L Shoulder Discomfort",
+                "L Interscapular Discomfort",
+                "L Lateral Arm Discomfort",
+                "L Upper Elbow Discomport",
+                "L Lateral Elbow Discomfort",
+                "L Arm Bend Discomfort",
+                "L Wrist Discomfort",
+                "L Hand Discomfort",
+                "L Thumb Discomfort"
+            ]
+        },
+        {
+            "pattern": "R C6",
+            "symptoms": [
+                "R Neck Discomfort",
+                "R Front Axle Discomfort",
+                "R Shoulder Impingement",
+                "R Shoulder Discomfort",
+                "R Interscapular Discomfort",
+                "R Lateral Arm Discomfort",
+                "R Upper Elbow Discomport",
+                "R Lateral Elbow Discomfort",
+                "R Arm Bend Discomfort",
+                "R Wrist Discomfort",
+                "R Hand Discomfort",
+                "R Thumb Discomfort"
+            ]
+        }
+    ],
+    "DLS C6-C7": [
+        {
+            "pattern": "L C7",
+            "symptoms": [
+                "L Neck Discomfort",
+                "L Front Axle Discomfort",
+                "L Shoulder Impingement",
+                "L Shoulder Discomfort",
+                "L Interscapular Discomfort",
+                "L Lateral Arm Discomfort",
+                "L Upper Elbow Discomport",
+                "L Lateral Elbow Discomfort",
+                "L Arm Bend Discomfort",
+                "L Lower Arm Discomfort",
+                "L Wrist Discomfort",
+                "L Hand Discomfort",
+                "L Finger Discomfort",
+                "L Little Finger Discomfort"
+            ]
+        },
+        {
+            "pattern": "R C7",
+            "symptoms": [
+                "R Neck Discomfort",
+                "R Front Axle Discomfort",
+                "R Shoulder Impingement",
+                "R Shoulder Discomfort",
+                "R Interscapular Discomfort",
+                "R Lateral Arm Discomfort",
+                "R Upper Elbow Discomport",
+                "R Lateral Elbow Discomfort",
+                "R Arm Bend Discomfort",
+                "R Lower Arm Discomfort",
+                "R Wrist Discomfort",
+                "R Hand Discomfort",
+                "R Finger Discomfort",
+                "R Little Finger Discomfort"
+            ]
+        }
+    ],
+    "DLS C7-C8": [
+        {
+            "pattern": "L C8",
+            "symptoms": [
+                "L Neck Discomfort",
+                "L Front Axle Discomfort",
+                "L Shoulder Impingement",
+                "L Shoulder Discomfort",
+                "L Interscapular Discomfort",
+                "L Lateral Arm Discomfort",
+                "L Upper Elbow Discomport",
+                "L Lateral Elbow Discomfort",
+                "L Medial Elbow Discomfort",
+                "L Arm Bend Discomfort",
+                "L Lower Arm Discomfort",
+                "L Wrist Discomfort",
+                "L Hand Discomfort",
+                "L Finger Discomfort",
+                "L Little Finger Discomfort"
+            ]
+        },
+        {
+            "pattern": "R C8",
+            "symptoms": [
+                "R Neck Discomfort",
+                "R Front Axle Discomfort",
+                "R Shoulder Impingement",
+                "R Shoulder Discomfort",
+                "R Interscapular Discomfort",
+                "R Lateral Arm Discomfort",
+                "R Upper Elbow Discomport",
+                "R Lateral Elbow Discomfort",
+                "R Medial Elbow Discomfort",
+                "R Arm Bend Discomfort",
+                "R Lower Arm Discomfort",
+                "R Wrist Discomfort",
+                "R Hand Discomfort",
+                "R Finger Discomfort",
+                "R Little Finger Discomfort"
+            ]
+        }
+    ],
+    "DLS C8-T1": [
+        {
+            "pattern": "L T1",
+            "symptoms": [
+                "L Central Chest Discomfort",
+                "L Interscapular Discomfort",
+                "L Upper Arm Discomfort",
+                "L Upper Elbow Discomport",
+                "L Medial Elbow Discomfort",
+                "L Arm Bend Discomfort",
+                "L Lower Arm Discomfort",
+                "L Wrist Discomfort",
+                "L Hand Discomfort"
+            ]
+        },
+        {
+            "pattern": "R T1",
+            "symptoms": [
+                "R Central Chest Discomfort",
+                "R Interscapular Discomfort",
+                "R Upper Arm Discomfort",
+                "R Upper Elbow Discomport",
+                "R Medial Elbow Discomfort",
+                "R Arm Bend Discomfort",
+                "R Lower Arm Discomfort",
+                "R Wrist Discomfort",
+                "R Hand Discomfort"
+            ]
+        }
+    ],
+    "DLS T1-T2": [
+        {
+            "pattern": "L T2",
+            "symptoms": [
+                "L Central Chest Discomfort",
+                "Upper Back Discomfort",
+                "L Interscapular Discomfort"
+            ]
+        },
+        {
+            "pattern": "R T2",
+            "symptoms": [
+                "R Central Chest Discomfort",
+                "Upper Back Discomfort",
+                "R Interscapular Discomfort"
+            ]
+        }
+    ],
+    "DLS T2-T3": [
+        {
+            "pattern": "L T3",
+            "symptoms": [
+                "L Chest Discomfort",
+                "Upper Back Discomfort",
+                "L Interscapular Discomfort"
+            ]
+        },
+        {
+            "pattern": "R T3",
+            "symptoms": [
+                "R Chest Discomfort",
+                "Upper Back Discomfort",
+                "R Interscapular Discomfort"
+            ]
+        }
+    ],
+    "DLS T3-T4": [
+        {
+            "pattern": "L T4",
+            "symptoms": [
+                "L Chest Discomfort",
+                "Upper Back Discomfort",
+                "L Interscapular Discomfort"
+            ]
+        },
+        {
+            "pattern": "R T4",
+            "symptoms": [
+                "R Chest Discomfort",
+                "Upper Back Discomfort",
+                "R Interscapular Discomfort"
+            ]
+        }
+    ],
+    "DLS T4-T5": [
+        {
+            "pattern": "L T5",
+            "symptoms": [
+                "L Chest Discomfort",
+                "Upper Back Discomfort",
+                "L Interscapular Discomfort"
+            ]
+        },
+        {
+            "pattern": "R T5",
+            "symptoms": [
+                "R Chest Discomfort",
+                "Upper Back Discomfort",
+                "R Interscapular Discomfort"
+            ]
+        }
+    ],
+    "DLS T5-T6": [
+        {
+            "pattern": "L T6",
+            "symptoms": [
+                "Thoracidic Dysfunction",
+                "Upper Back Discomfort",
+                "Upper Abdominal Discomfort"
+            ]
+        },
+        {
+            "pattern": "R T6",
+            "symptoms": [
+                "Thoracidic Dysfunction",
+                "Upper Back Discomfort",
+                "Upper Abdominal Discomfort"
+            ]
+        }
+    ],
+    "DLS T6-T7": [
+        {
+            "pattern": "L T7",
+            "symptoms": [
+                "Thoracidic Dysfunction",
+                "L Lower Back Pain",
+                "Upper Abdominal Discomfort"
+            ]
+        },
+        {
+            "pattern": "R T7",
+            "symptoms": [
+                "Thoracidic Dysfunction",
+                "R Lower Back Pain",
+                "Upper Abdominal Discomfort"
+            ]
+        }
+    ],
+    "DLS T7-T8": [
+        {
+            "pattern": "L T8",
+            "symptoms": [
+                "L Lower Back Pain",
+                "Lateral Abdominal Discomfort",
+                "L Lower Abdominal Discomfort",
+                "IBS"
+            ]
+        },
+        {
+            "pattern": "R T8",
+            "symptoms": [
+                "R Lower Back Pain",
+                "Lateral Abdominal Discomfort",
+                "R Lower Abdominal Discomfort",
+                "IBS"
+            ]
+        }
+    ],
+    "DLS T8-T9": [
+        {
+            "pattern": "L T9",
+            "symptoms": [
+                "L Lower Back Pain",
+                "Lateral Abdominal Discomfort",
+                "L Lower Abdominal Discomfort",
+                "IBS"
+            ]
+        },
+        {
+            "pattern": "R T9",
+            "symptoms": [
+                "R Lower Back Pain",
+                "Lateral Abdominal Discomfort",
+                "R Lower Abdominal Discomfort",
+                "IBS"
+            ]
+        }
+    ],
+    "DLS T9-T10": [
+        {
+            "pattern": "L T10",
+            "symptoms": [
+                "L Lower Back Pain",
+                "Lateral Abdominal Discomfort",
+                "L Lower Abdominal Discomfort",
+                "IBS"
+            ]
+        },
+        {
+            "pattern": "R T10",
+            "symptoms": [
+                "R Lower Back Pain",
+                "Lateral Abdominal Discomfort",
+                "R Lower Abdominal Discomfort",
+                "IBS"
+            ]
+        }
+    ],
+    "DLS T10-T11": [
+        {
+            "pattern": "L T11",
+            "symptoms": [
+                "L Lower Back Pain",
+                "Lateral Abdominal Discomfort",
+                "L Lower Abdominal Discomfort",
+                "IBS"
+            ]
+        },
+        {
+            "pattern": "R T11",
+            "symptoms": [
+                "R Lower Back Pain",
+                "Lateral Abdominal Discomfort",
+                "R Lower Abdominal Discomfort",
+                "IBS"
+            ]
+        }
+    ],
+    "DLS T11-T12": [
+        {
+            "pattern": "L T12",
+            "symptoms": [
+                "L Lower Back Pain",
+                "Lateral Abdominal Discomfort",
+                "L Lower Abdominal Discomfort",
+                "IBS"
+            ]
+        },
+        {
+            "pattern": "R T12",
+            "symptoms": [
+                "R Lower Back Pain",
+                "Lateral Abdominal Discomfort",
+                "R Lower Abdominal Discomfort",
+                "IBS"
+            ]
+        }
+    ],
+    "DLS T12-L1": [
+        {
+            "pattern": "L L1",
+            "symptoms": [
+                "L Lower Abdominal Discomfort",
+                "IBS",
+                "L Groin Discomfort",
+                "L Buttocks Discomfort"
+            ]
+        },
+        {
+            "pattern": "R L1",
+            "symptoms": [
+                "R Lower Abdominal Discomfort",
+                "IBS",
+                "R Groin Discomfort",
+                "R Buttocks Discomfort"
+            ]
+        }
+    ],
+    "DLS L1-L2": [
+        {
+            "pattern": "L L2",
+            "symptoms": [
+                "L Lower Abdominal Discomfort",
+                "IBS",
+                "L Groin Discomfort",
+                "L Buttocks Discomfort",
+                "L Hip Discomfort",
+                "L Hip Joint Discomfort",
+                "L Anterior Thigh Discomfort"
+            ]
+        },
+        {
+            "pattern": "R L2",
+            "symptoms": [
+                "R Lower Abdominal Discomfort",
+                "IBS",
+                "R Groin Discomfort",
+                "R Buttocks Discomfort",
+                "R Hip Discomfort",
+                "R Hip Joint Discomfort",
+                "R Anterior Thigh Discomfort"
+            ]
+        }
+    ],
+    "DLS L2-L3": [
+        {
+            "pattern": "L L3",
+            "symptoms": [
+                "L Buttocks Discomfort",
+                "L Hip Discomfort",
+                "L Hip Joint Discomfort",
+                "L Anterior Thigh Discomfort"
+            ]
+        },
+        {
+            "pattern": "R L3",
+            "symptoms": [
+                "R Buttocks Discomfort",
+                "R Hip Discomfort",
+                "R Hip Joint Discomfort",
+                "R Anterior Thigh Discomfort"
+            ]
+        }
+    ],
+    "DLS L3-L4": [
+        {
+            "pattern": "L L4",
+            "symptoms": [
+                "L Buttocks Discomfort",
+                "L Anterior Thigh Discomfort",
+                "L Back Thigh Discomfort",
+                "L Anterior Knee Discomfort",
+                "L Medial Knee Joint Discomfort",
+                "L Medial Calf Discomfort"
+            ]
+        },
+        {
+            "pattern": "R L4",
+            "symptoms": [
+                "R Buttocks Discomfort",
+                "R Anterior Thigh Discomfort",
+                "R Back Thigh Discomfort",
+                "R Anterior Knee Discomfort",
+                "R Medial Knee Joint Discomfort",
+                "R Medial Calf Discomfort"
+            ]
+        }
+    ],
+    "DLS L4-L5": [
+        {
+            "pattern": "L L5",
+            "symptoms": [
+                "L Buttocks Discomfort",
+                "L Hip Discomfort",
+                "L Hip Joint Discomfort",
+                "L Anterior Thigh Discomfort",
+                "L Anterior Knee Discomfort",
+                "L Lateral Knee Discomfort",
+                "L Lateral Calf Discomfort",
+                "L Ankle Discomfort",
+                "L Arch Discomfort",
+                "L Toe Discomfort",
+                "L Toe Joint Discomfort",
+                "L Big Toe Discomfort",
+                "L Forefoot"
+            ]
+        },
+        {
+            "pattern": "R L5",
+            "symptoms": [
+                "R Buttocks Discomfort",
+                "R Hip Discomfort",
+                "R Hip Joint Discomfort",
+                "R Anterior Thigh Discomfort",
+                "R Anterior Knee Discomfort",
+                "R Lateral Knee Discomfort",
+                "R Lateral Calf Discomfort",
+                "R Ankle Discomfort",
+                "R Arch Discomfort",
+                "R Toe Discomfort",
+                "R Toe Joint Discomfort",
+                "R Big Toe Discomfort",
+                "R Forefoot"
+            ]
+        }
+    ],
+    "DLS L5-S1": [
+        {
+            "pattern": "L S1",
+            "symptoms": [
+                "L Buttocks Discomfort",
+                "Tailbone Pain",
+                "L Back Thigh Discomfort",
+                "L Dorsal Knee Joint Discomfort",
+                "L Shin Discomfort",
+                "L Medial Calf Discomfort",
+                "L Lateral Foot Discomfort",
+                "L Ankle Discomfort",
+                "L Little Toe Discomfort",
+                "L Heel Discomfort"
+            ]
+        },
+        {
+            "pattern": "R S1",
+            "symptoms": [
+                "R Buttocks Discomfort",
+                "Tailbone Pain",
+                "R Back Thigh Discomfort",
+                "R Dorsal Knee Joint Discomfort",
+                "R Shin Discomfort",
+                "R Medial Calf Discomfort",
+                "R Lateral Foot Discomfort",
+                "R Ankle Discomfort",
+                "R Little Toe Discomfort",
+                "R Heel Discomfort"
+            ]
+        }
+    ],
+    "DLS S1-S2": [
+        {
+            "pattern": "L S2",
+            "symptoms": [
+                "Tailbone Pain",
+                "L Adductor Tendon Discomfort"
+            ]
+        },
+        {
+            "pattern": "R S2",
+            "symptoms": [
+                "Tailbone Pain",
+                "R Adductor Tendon Discomfort"
+            ]
+        }
+    ]
+}
