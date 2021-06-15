@@ -227,11 +227,11 @@ class App extends React.Component {
                         className='tiny-font info-tooltip' backgroundColor='rgba(0,0,0,0.8)' textColor='white'>
                         This part demonstrates spinal cord segments which could possibly be the original cause of the discomforts. DLS refers to discoligamentous injury, which is the most common cause of neuropathic pain diagnosis.
                     </ReactTooltip>
-                    <ReactTooltip id='middeReasonInfo' place="bottom" className='small-font info-tooltip'
+                    <ReactTooltip id='middeReasonInfo' place="bottom"
                         className='tiny-font info-tooltip' backgroundColor='rgba(0,0,0,0.8)' textColor='white'>
                         This part presents the possible pattern of spinal nerves that may be affected. This condition is often referred to as a radiculopathy.
                     </ReactTooltip>
-                    <ReactTooltip id='effectInfo' place="bottom" className='small-font info-tooltip'
+                    <ReactTooltip id='effectInfo' place="bottom"
                         className='tiny-font info-tooltip' backgroundColor='rgba(0,0,0,0.8)' textColor='white'>
                         This part includes a body template for selecting areas of discomfort for symptoms.
                     </ReactTooltip>

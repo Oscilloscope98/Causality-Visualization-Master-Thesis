@@ -1129,7 +1129,7 @@ export const DamageToNerveStemDescription = ({ causeName = "DLS XX-XX", ifHide =
                         transform="translate(-72.8 -103.29)" style={{ fill: "#333" }} />
                 </g>
                 <g className={arrowClass}>
-                    <line x1="3.18" x2="3.18" y2="51.51" style={{ fill: "none", strokeWidth: "1.25px", stroke: "url(#linear-gradient)" }} />
+                    <line x1="3.18" x2="3.18" y2="51.51" style={{ fill: "none", strokeWidth: "2px", stroke: "url(#linear-gradient)" }} />
                     <polygon points="0.07 50.6 3.19 56 6.3 50.6 0.07 50.6" style={{ fill: "url(#linear-gradient-2)" }} />
                 </g>
             </svg>
