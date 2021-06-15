@@ -14,17 +14,45 @@ body {
   font-size: 2vmin !important;
 }
 
-.main-title{
-  margin-top: 1vh;
-  height:3vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.tiny-font{
+  font-size: 1.6vmin !important;
 }
 
-.main-title .explain{
+/* for data-switch and arrows */
+.flex-data-switch-arrow{
+  margin-top: 1vh;
+  height:3vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-data-switch-arrow > .empty-left{
+  width: 16.4%;
+}
+
+.flex-data-switch-arrow > .arrow-left{
+  width: 30%;
+  padding-right: 2%;
+}
+
+.flex-data-switch-arrow > .arrow-right{
+  padding-left: 2%;
+  width: 30%; /*33.6%;*/
+}
+
+.flex-data-switch-arrow > .data-switch{
+  display: flex;
+  justify-content: flex-end;
+  width: 23.6%;
+}
+
+.flex-data-switch-arrow > .data-switch > .explain{
   padding-right: 1vmin;
 }
+
+/* for main layout below arrow and data switch */
 
   .flex-container {
     display: flex;
@@ -84,7 +112,7 @@ body {
  left: 0;
 }
 
-.front-back-body path {
+.front-back-body .path-initial {
   fill: none;
   stroke:rgba(255, 255, 255, 0);
   stroke-miterlimit:10;
@@ -92,7 +120,7 @@ body {
   cursor: pointer;
 }
 
-.front-back-body path:hover {
+.front-back-body .path-initial:hover {
   fill: rgba(255, 0, 0, 0.2);
 }
 
@@ -187,7 +215,6 @@ body {
   height: 2.2vmin;
   width: 2.2vmin;
   border-radius: 0.4vmin;
-  background-color: grey;
   font-size: 1.2vmin;
   display: flex;
   align-items: center;
@@ -238,7 +265,6 @@ body {
   justify-content: center;
   position: absolute;
   left: 5vmin;
-  transition: all 0.3s ease;
 }
 
 .disabled {
@@ -247,3 +273,74 @@ body {
   left: 0;
 }
 
+/*arrow*/
+.flex-arrow{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flex-arrow > .arrow-svg{
+  height: 50%;
+}
+
+.flex-arrow > .description{
+  height: 50%;
+}
+
+/* damage to nerve stem description*/
+.flex-info-box{
+  position: absolute;
+  bottom: 1vh;
+  width: 16.4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  z-index: 10;
+}
+
+.flex-info-box > .info{
+  width:70%;
+  padding: 1vmin;
+}
+
+  /*color: rgb(178, 178, 255);  rgb color of rgba(0,0,255,0.3) on white background*/
+  /*color: rgb(229, 229, 255);*/
+
+.flex-info-box > .diagram{
+  align-self: stretch; /* make the border with the same hight as the flex box*/
+  width:30%;
+}
+
+.spine-path-des{
+  fill:rgb(0,0,255);
+  stroke:#333;
+  stroke-width:1.25px
+}
+
+.high{
+  fill-opacity:0.5;
+}
+
+.middle{
+  fill-opacity:0.3;
+}
+
+.low{
+  fill-opacity:0.1;
+}
+
+/* more general css */
+.fading{
+  transition: all 0.3s ease;
+}
+
+.hide{
+  visibility: hidden;
+}
+
+.trans-text{
+  color:rgba(0, 0, 0, 0);
+}

@@ -29,7 +29,7 @@ function BodyPath({pathId, d, transform, onClick, potentialSyms, selectedSyms}) 
     return (
         <path id={pathId} d={d} transform={transform} 
             onClick={onClick} 
-            className={getClassName()}
+            className={"path-initial "+ getClassName()}
             data-tip={tempSymName}
             data-for="symSvgs"
             />

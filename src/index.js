@@ -4,7 +4,7 @@ import './style.css';
 import BodyTemplate from './bodyComponents/BodyTemplate';
 import SpinalNerves from './bodyComponents/SpinalNerves';
 import Patterns from './causalGraph/Patterns';
-import { Legend, ColorScale, ToggleButton} from './common/commonComponents'
+import { Legend, ColorScale, ToggleButton, CausalDirectionArrow, DamageToNerveStemDescription } from './common/commonComponents'
 import ReactTooltip from 'react-tooltip';
 
 const symsData = require('./data/symsToCause.json');
@@ -43,7 +43,7 @@ function getPotentialSyms(causeData, selectedCauses, patternData, selectedPatter
 }
 
 //get pattern & cause str from selected symptoms and hovered cause
-function getStr(symsData, selectedSyms, patternData, selectedPatterns, causeData, selectedCauses){
+function getStr(symsData, selectedSyms, patternData, selectedPatterns, causeData, selectedCauses) {
     //initialization
     var unifiedSyms = [];
     var patternStr = {};
@@ -55,11 +55,11 @@ function getStr(symsData, selectedSyms, patternData, selectedPatterns, causeData
         causeStr[c] = { fromSym: 0, fromPattern: 0 };
     });
     //deal with each part
-    selectedSyms.forEach(sraw=>{
+    selectedSyms.forEach(sraw => {
         var s = simplifySymName(sraw);
-        if (!unifiedSyms.includes(s)){
+        if (!unifiedSyms.includes(s)) {
             unifiedSyms.push(s);
-            symsData[s].forEach(r =>{
+            symsData[s].forEach(r => {
                 patternStr[r.pattern].normal++;
                 causeStr[r.cause].fromSym++;
             });
@@ -76,7 +76,7 @@ function getStr(symsData, selectedSyms, patternData, selectedPatterns, causeData
         });
     });
 
-    return {patternStr, causeStr};
+    return { patternStr, causeStr };
 }
 
 class App extends React.Component {
@@ -93,9 +93,9 @@ class App extends React.Component {
         };
     }
 
-    changeData(){
+    changeData() {
         let tempBool = this.state.isML;
-        this.setState({isML: !tempBool});
+        this.setState({ isML: !tempBool });
     }
 
     //delect symptoms on body template
@@ -179,13 +179,42 @@ class App extends React.Component {
             currentCauseData, this.state.causes);
         //console.log(str);
 
+        //deal with interactive descriptive info
+        var ifNoSyms = this.state.symptoms.length === 0;
+        var ifNoPatterns = this.state.patterns.length === 0;
+        var ifNoCauses = this.state.causes.length === 0;
+
+        var ifHideArrow = ifNoSyms && ifNoPatterns && ifNoCauses;
+        var ifRightL;
+        var ifRightR;
+        if (!ifNoPatterns){
+            ifRightL = false;
+            ifRightR = true;
+        }
+        if (!ifNoCauses){
+            ifRightL = true;
+            ifRightR = true;
+        }
+        if (!ifNoSyms && ifNoPatterns && ifNoCauses){
+            ifRightL = false;
+            ifRightR = false;
+        }
+
+
         return (
             <div>
-                <div className="main-title small-font">
-                    <div className="explain">Dataset: </div>
-                    <ToggleButton isSelected={!this.state.isML} 
+                <DamageToNerveStemDescription causeName={this.state.causes[0]} ifHide={ifNoCauses || this.state.causes[0] === "DLS S1-S2"}/>
+                <div className="flex-data-switch-arrow small-font">
+                    <div className="empty-left"></div>
+                    <div className="arrow-left">
+                        <CausalDirectionArrow ifRight={ifRightL} ifHide={ifHideArrow}/> </div>
+                    <div className="arrow-right">
+                        <CausalDirectionArrow ifRight={ifRightR} ifHide={ifHideArrow}/> </div>
+                    <div className="data-switch">
+                        <div className="explain">Dataset: </div>
+                        <ToggleButton isSelected={!this.state.isML}
                             onToggle={() => this.changeData()}
-                            nonSelectText="ML" selectText="Exp"/>
+                            nonSelectText="V1" selectText="V2" /></div>
                 </div>
                 <div className="flex-container title">
                     <div className="cause middle-font"
@@ -194,13 +223,16 @@ class App extends React.Component {
                         data-tip data-for="middeReasonInfo"> Middle Reason: Pattern Diagnosis </div>
                     <div className="effect middle-font"
                         data-tip data-for="effectInfo"> Effect: Symptom diagnosis </div>
-                    <ReactTooltip id='causeInfo' place="bottom" className='small-font info-tooltip'>
+                    <ReactTooltip id='causeInfo' place="bottom" 
+                        className='tiny-font info-tooltip' backgroundColor='rgba(0,0,0,0.8)' textColor='white'>
                         This part demonstrates spinal cord segments which could possibly be the original cause of the discomforts. DLS refers to discoligamentous injury, which is the most common cause of neuropathic pain diagnosis.
                     </ReactTooltip>
-                    <ReactTooltip id='middeReasonInfo' place="bottom" className='small-font info-tooltip'>
+                    <ReactTooltip id='middeReasonInfo' place="bottom" className='small-font info-tooltip'
+                        className='tiny-font info-tooltip' backgroundColor='rgba(0,0,0,0.8)' textColor='white'>
                         This part presents the possible pattern of spinal nerves that may be affected. This condition is often referred to as a radiculopathy.
                     </ReactTooltip>
-                    <ReactTooltip id='effectInfo' place="bottom" className='small-font info-tooltip'>
+                    <ReactTooltip id='effectInfo' place="bottom" className='small-font info-tooltip'
+                        className='tiny-font info-tooltip' backgroundColor='rgba(0,0,0,0.8)' textColor='white'>
                         This part includes a body template for selecting areas of discomfort for symptoms.
                     </ReactTooltip>
                 </div>
@@ -210,24 +242,26 @@ class App extends React.Component {
                             baseColor={{ r: 255, g: 0, b: 0 }}
                             increaseFactor={0.2}
                             colorNum={5}
-                        />
+                            ifHide={ifNoSyms} />
                         <Legend id="related to middle reason"
                             bkgColor="rgba(255,0,0,0)"
                             borderColor="0px 0px 0px 0.15vw rgb(0,0,255) inset"
-                            ifLeft={true} />
+                            ifLeft={true}
+                            ifHide={ifNoPatterns} />
                     </div>
                     <div className="middle-reason flex-container">
                         <ColorScale id="related to symptom"
                             baseColor={{ r: 255, g: 0, b: 0 }}
                             increaseFactor={0.2}
                             colorNum={5}
-                        />
+                            ifHide={ifNoSyms} />
                         <Legend id="related to cause"
                             bkgColor="rgba(255,0,0,0)"
                             borderColor="0px 0px 0px 0.15vw rgba(0,0,255,0.5) inset"
                             inText="T"
-                            textColor="rgba(0,0,255,0.5)"
-                            ifLeft={true} />
+                            textColorIn="rgba(0,0,255,0.5)"
+                            ifLeft={true}
+                            ifHide={ifNoCauses} />
                     </div>
                     <div className="effect flex-container">
                         <Legend id="selected" bkgColor="rgba(255,0,0,0.2)" />

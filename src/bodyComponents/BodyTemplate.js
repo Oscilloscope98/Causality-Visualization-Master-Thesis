@@ -546,7 +546,8 @@ class BodyTemplate extends React.Component {
                             transform="translate(-108.06 -42.73)" />
                     </g>
                 </svg>
-                <ReactTooltip id='symSvgs' className="small-font" place="right" />
+                <ReactTooltip id='symSvgs' className="small-font" place="right"
+                    backgroundColor='rgba(0,0,0,0.8)' textColor='white'/>
             </div>
         );
     }

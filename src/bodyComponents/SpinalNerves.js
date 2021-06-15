@@ -1584,10 +1584,17 @@ class SpinalNerves extends React.Component {
                             transform="translate(-31.03 -18.52)" style={{ fill: "#333" }} />
                     </g>
                 </svg>
-                <ReactTooltip id='spineSvgs' className="small-font" place="right" />
+                <ReactTooltip id='spineSvgs' className="small-font" place="right"
+                    backgroundColor='rgba(0,0,0,0.8)' textColor='white'/>
             </div>
         )
     }
 }
 
 export default SpinalNerves;
+
+/*
+<ReactTooltip id='spineSvgs' className="small-font" place="left" style={{width: "20%"}}
+                    getContent={(dataTip) =>
+                        <DamageToNerveStemDescription/>} />
+ */
