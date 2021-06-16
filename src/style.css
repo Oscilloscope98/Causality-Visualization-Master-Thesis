@@ -33,11 +33,13 @@ body {
 }
 
 .flex-data-switch-arrow > .arrow-left{
+  height: 100%;
   width: 30%;
   padding-right: 2%;
 }
 
 .flex-data-switch-arrow > .arrow-right{
+  height: 100%;
   padding-left: 2%;
   width: 30%; /*33.6%;*/
 }
@@ -295,7 +297,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
   z-index: 10;
 }
 
@@ -309,7 +310,7 @@ body {
   /*color: rgb(229, 229, 255);*/
 
 .flex-info-box > .diagram{
-  align-self: stretch; /* make the border with the same hight as the flex box*/
+  /*align-self: stretch;*/ /* make the border with the same hight as the flex box*/
   width:30%;
   border-radius: 3px 0 0 3px;
 }

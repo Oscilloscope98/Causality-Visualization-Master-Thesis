@@ -123,9 +123,9 @@ export const DamageToNerveStemDescription = ({ causeName = "DLS XX-XX", ifHide =
     }
 
     return (
-        <div className={"flex-info-box"}>
+        <div className={"flex-info-box"} style={{ backgroundColor: bkgColorSvg }}>
             <svg id="Spine_Des_Diagram" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 60 56" className={"diagram fading"} style={{ backgroundColor: bkgColorSvg }}>
+                viewBox="0 0 60 56" className={"diagram fading"} >
                 <defs>
                     <linearGradient id="linear-gradient" x1="3.18" y1="56" x2="3.18" gradientUnits="userSpaceOnUse">
                         <stop offset="0" stopColor="blue" stopOpacity="0.1" />
