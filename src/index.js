@@ -187,15 +187,15 @@ class App extends React.Component {
         var ifHideArrow = ifNoSyms && ifNoPatterns && ifNoCauses;
         var ifRightL;
         var ifRightR;
-        if (!ifNoPatterns){
+        if (!ifNoPatterns) {
             ifRightL = false;
             ifRightR = true;
         }
-        if (!ifNoCauses){
+        if (!ifNoCauses) {
             ifRightL = true;
             ifRightR = true;
         }
-        if (!ifNoSyms && ifNoPatterns && ifNoCauses){
+        if (!ifNoSyms && ifNoPatterns && ifNoCauses) {
             ifRightL = false;
             ifRightR = false;
         }
@@ -203,13 +203,13 @@ class App extends React.Component {
 
         return (
             <div>
-                <DamageToNerveStemDescription causeName={this.state.causes[0]} ifHide={ifNoCauses || this.state.causes[0] === "DLS S1-S2"}/>
+                <DamageToNerveStemDescription causeName={this.state.causes[0]} ifHide={ifNoCauses || this.state.causes[0] === "DLS S1-S2"} />
                 <div className="flex-data-switch-arrow small-font">
                     <div className="empty-left"></div>
                     <div className="arrow-left">
-                        <CausalDirectionArrow ifRight={ifRightL} ifHide={ifHideArrow}/> </div>
+                        <CausalDirectionArrow ifRight={ifRightL} ifHide={ifHideArrow} ifMiddleReason={!ifNoPatterns} /> </div>
                     <div className="arrow-right">
-                        <CausalDirectionArrow ifRight={ifRightR} ifHide={ifHideArrow}/> </div>
+                        <CausalDirectionArrow ifRight={ifRightR} ifHide={ifHideArrow} ifMiddleReason={!ifNoPatterns} /> </div>
                     <div className="data-switch">
                         <div className="explain">Dataset: </div>
                         <ToggleButton isSelected={!this.state.isML}
@@ -223,7 +223,7 @@ class App extends React.Component {
                         data-tip data-for="middeReasonInfo"> Middle Reason: Pattern Diagnosis </div>
                     <div className="effect middle-font"
                         data-tip data-for="effectInfo"> Effect: Symptom diagnosis </div>
-                    <ReactTooltip id='causeInfo' place="bottom" 
+                    <ReactTooltip id='causeInfo' place="bottom"
                         className='tiny-font info-tooltip' backgroundColor='rgba(0,0,0,0.8)' textColor='white'>
                         This part demonstrates spinal cord segments which could possibly be the original cause of the discomforts. DLS refers to discoligamentous injury, which is the most common cause of neuropathic pain diagnosis.
                     </ReactTooltip>
@@ -265,10 +265,14 @@ class App extends React.Component {
                     </div>
                     <div className="effect flex-container">
                         <Legend id="selected" bkgColor="rgba(255,0,0,0.2)" />
-                        <Legend id="potential" bkgColor="rgba(0,0,255,0.2)" />
-                        <Legend id="selected & potential" bkgColor="rgba(255,0,0,0.2)"
-                            borderColor="0px 0px 0px 0.15vw rgba(0,0,255,0.5) inset"
-                            ifLeft={true} />
+                        <Legend id="potential"
+                            bkgColor="repeating-linear-gradient(
+                                -45deg,
+                                rgba(0, 0, 255, 1),
+                                rgba(0, 0, 255, 1) 0.15vmin,
+                                rgba(0, 0, 0, 0) 0.15vmin,
+                                rgba(0, 0, 0, 0) 0.525vmin)" 
+                                ifLeft={true} />
                     </div>
                 </div>
                 <div className="flex-container visual">

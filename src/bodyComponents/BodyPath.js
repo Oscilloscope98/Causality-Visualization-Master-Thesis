@@ -15,12 +15,12 @@ function BodyPath({pathId, d, transform, onClick, potentialSyms, selectedSyms}) 
                 return 'path-selected';
             }
             else{
-                return 'path-selected potential';
+                return 'path-potential-selected';
             }
         }
         else{
             if (potentialSyms.includes(tempSymName0)){
-                return 'path-potential';
+                return 'path-potential-not-selected';
             }
             else return '';
         }
@@ -37,3 +37,6 @@ function BodyPath({pathId, d, transform, onClick, potentialSyms, selectedSyms}) 
 }
 
 export default BodyPath;
+
+/*style={{fill: "url(#stripedBKGSelected)", stroke: "rgba(0,0,255,0.5)",
+            strokeWidth: "8px"}}*/

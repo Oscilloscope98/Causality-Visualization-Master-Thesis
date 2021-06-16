@@ -5,13 +5,15 @@ export const Legend = ({ id, inText = "", textColorIn = "rgba(0,0,0,0)",
     bkgColor = "rgba(0,0,0,0)", borderColor = "none", ifLeft = false, ifHide = false }) => {
     //textColorIn is for text color inside the legend
 
+    console.log(bkgColor);
+
     var updateStyle = {};
     if (ifHide) {
         updateStyle.color = "rgba(0,0,0,0)";
     }
     else {
         updateStyle.color = textColorIn;
-        updateStyle.backgroundColor = bkgColor;
+        updateStyle.background = bkgColor;
         updateStyle.boxShadow = borderColor;
     }
 
@@ -65,8 +67,10 @@ export const ToggleButton = ({ isSelected, onToggle, selectText, nonSelectText }
     );
 }
 
-export const CausalDirectionArrow = ({ ifRight = true, ifHide = false }) => {
+export const CausalDirectionArrow = ({ ifRight = true, ifHide = false, ifMiddleReason = false }) => {
     //if ifRight is true, the arrow pointing to the left
+    //if the arrows are for middle reasons, it will be still blue even if it is pointing to the left
+
     var text = (ifHide) ? "      " : ((ifRight) ? "Causal Direction" : "Inference Direction");
     var x1 = (ifRight) ? "0" : "40";
     var x2 = (ifRight) ? "38.5" : "1.5";
@@ -75,9 +79,11 @@ export const CausalDirectionArrow = ({ ifRight = true, ifHide = false }) => {
 
     var causalColor = "rgba(0,0,255,0.5)";
     var inferenceColor = "rgba(255,0,0,0.6)";
-    var textOrStrokeColor = (ifHide) ? "rgba(0,0,0,0)" : ((ifRight) ? causalColor : inferenceColor);
+    var textOrStrokeColor = (ifHide) ? "rgba(0,0,0,0)" : ((ifRight) ? causalColor 
+        : ((ifMiddleReason) ? causalColor: inferenceColor));
     var arrowHeadColorR = (ifHide && ifRight) ? "rgba(0,0,0,0)" : causalColor;
-    var arrowHeadColorL = (ifHide && (!ifRight)) ? "rgba(0,0,0,0)" : inferenceColor;
+    var arrowHeadColorL = (ifHide && (!ifRight)) ? "rgba(0,0,0,0)" 
+        : ((ifMiddleReason) ? causalColor: inferenceColor);
     //console.log(ifHide && (!ifRight))
 
     return (

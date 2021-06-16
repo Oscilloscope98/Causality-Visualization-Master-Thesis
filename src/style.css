@@ -133,18 +133,16 @@ body {
   fill: rgba(255, 0, 0, 0.4);
 }
 
-.front-back-body .potential{
+/*strip reference: http://thenewcode.com/1048/Using-SVG-in-Web-Page-Backgrounds-Diagonals-and-Patterns*/
+.front-back-body .path-potential-selected{
+  fill: url(#stripedBKGSelected);
+  /*
   stroke: rgba(0,0,255,0.5);
-  stroke-width: 8px;
-  /*fill: rgba(51, 0, 204, 0.2);*/
+  stroke-width: 8px;*/
 }
 
-.front-back-body .path-potential{
-  fill: rgba(0, 0, 255, 0.2);
-}
-
-.front-back-body .path-potential:hover{
-  fill:rgba(0, 0, 255, 0.4);
+.front-back-body .path-potential-not-selected{
+  fill: url(#stripedBKGNonSelected)
 }
 
 /*Spinal Path*/
@@ -297,13 +295,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 3px;
+  
   z-index: 10;
 }
 
 .flex-info-box > .info{
   width:70%;
   padding: 1vmin;
+  border-radius: 0 3px 3px 0;
 }
 
   /*color: rgb(178, 178, 255);  rgb color of rgba(0,0,255,0.3) on white background*/
@@ -312,6 +311,7 @@ body {
 .flex-info-box > .diagram{
   align-self: stretch; /* make the border with the same hight as the flex box*/
   width:30%;
+  border-radius: 3px 0 0 3px;
 }
 
 .spine-path-des{

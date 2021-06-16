@@ -29,6 +29,15 @@ class BodyTemplate extends React.Component {
                 <svg className='front-back-body'
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2699.9 2909.13">
+                    <defs>
+                        <pattern id="stripedBKGSelected" patternUnits="userSpaceOnUse" width="20" height="50" patternTransform="rotate(45)">
+                            <line x1="0" y="0" x2="0" y2="50" stroke="rgba(0,0,255,1)" strokeWidth="8" />
+                            <rect width="100%" height="100%" fill="rgba(255,0,0,0.2)"/>
+                        </pattern>
+                        <pattern id="stripedBKGNonSelected" patternUnits="userSpaceOnUse" width="20" height="50" patternTransform="rotate(45)">
+                            <line x1="0" y="0" x2="0" y2="50" stroke="rgba(0,0,255,1)" strokeWidth="8" />
+                        </pattern>
+                    </defs>
                     <g id="F_Head">
                         <BodyPath pathId="F_Headache" onClick={this.handleClick} potentialSyms={this.props.potentialSyms} selectedSyms={this.props.selectedSyms}
                             d="M918.74,130.16C884.59,36.08,785.67,44.42,785.67,44.42c-82.17.81-128.7,62.08-133.79,85.74-5.1,20.1-3.6,49.79-.44,81.63,1.41,11.83,13.16,25.48,20.73,51.47a502.67,502.67,0,0,1,13.05,57.84h0a210.36,210.36,0,0,0,57,20,14.46,14.46,0,0,1-.09-1.45c0-10.53,17.82-13.67,20.29-14.79s5.83-6.73,23.81-6.73,21.35,5.6,23.81,6.73,20.29,4.26,20.29,14.79a12,12,0,0,1-.08,1.33h0a209.14,209.14,0,0,0,59.47-21.55c.37-3,.68-5.79.91-8.21,1.53-16.31.14-24.57,6.71-52.43s17.62-35.6,21.38-47S934.16,170.82,918.74,130.16ZM884.67,211.8h0c0,21.67-21.73,39.24-48.55,39.24-26,0-33.24-7.31-49.82-7.31S760.63,251,737.12,251c-26.81,0-48.54-17.57-48.54-39.24h-.14V163.32c0-41.42,42.81-80.37,97.81-80.37s98.42,39,98.42,80.37Z"
@@ -547,7 +556,7 @@ class BodyTemplate extends React.Component {
                     </g>
                 </svg>
                 <ReactTooltip id='symSvgs' className="small-font" place="right"
-                    backgroundColor='rgba(0,0,0,0.8)' textColor='white'/>
+                    backgroundColor='rgba(0,0,0,0.8)' textColor='white' />
             </div>
         );
     }
