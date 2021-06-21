@@ -241,8 +241,7 @@ class App extends React.Component {
                         <ColorScale id="related to symptom"
                             baseColor={{ r: 255, g: 0, b: 0 }}
                             increaseFactor={0.2}
-                            colorNum={5}
-                            ifHide={ifNoSyms} />
+                            colorNum={5} />
                         <Legend id="related to middle reason"
                             bkgColor="rgba(255,0,0,0)"
                             borderColor="0px 0px 0px 0.15vw rgb(0,0,255) inset"
@@ -253,8 +252,7 @@ class App extends React.Component {
                         <ColorScale id="related to symptom"
                             baseColor={{ r: 255, g: 0, b: 0 }}
                             increaseFactor={0.2}
-                            colorNum={5}
-                            ifHide={ifNoSyms} />
+                            colorNum={5}/>
                         <Legend id="related to cause"
                             bkgColor="rgba(255,0,0,0)"
                             borderColor="0px 0px 0px 0.15vw rgba(0,0,255,0.5) inset"

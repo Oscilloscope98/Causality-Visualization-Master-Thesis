@@ -247,8 +247,9 @@ body {
 /*toggle*/
 .toggle-container {
   width: 10vmin;
-  height: 3vmin;
-  background-color: rgba(160, 160, 160, 0.2);
+  height: 2.4vmin;
+  /*box-shadow: 0px 0px 0px 0.3vmin rgba(160, 160, 160, 0.4) inset;*/
+  border: 0.3vmin solid rgba(160, 160, 160, 0.5);
   border-radius: 3vmin;
   cursor: pointer;
   position: relative;
@@ -256,9 +257,9 @@ body {
 
 .dialog-button {
   width:5vmin;
-  height: 3vmin;
+  height: 2.4vmin;
   border-radius: 0 3vmin 3vmin 0;
-  background-color: rgba(255,0,0,0.2);
+  background-color: rgba(160, 160, 160, 0.5);
   color: white;
   display: flex;
   align-items: center;
@@ -269,7 +270,6 @@ body {
 
 .disabled {
   border-radius: 3vmin 0 0 3vmin;
-  background-color: rgba(0,0,255,0.2);
   left: 0;
 }
 

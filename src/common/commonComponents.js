@@ -1141,7 +1141,7 @@ export const DamageToNerveStemDescription = ({ causeName = "DLS XX-XX", ifHide =
             </svg>
             <div className="info tiny-font fading" style={{ color: textColor, backgroundColor: bkgColor }}>
                 Note that <span style={{ color: keywordColor }}> {causeName} </span>
-                could cause damage to the nerve stem, leading to the possibility of problems in nerve segments below
+                could cause damage to the nerve stem, leading to the possibility of problems in spinal cord segments below
                 <span style={{ color: keywordColor }}> {causeName.split("-")[1]}</span>.
             </div>
         </div>
