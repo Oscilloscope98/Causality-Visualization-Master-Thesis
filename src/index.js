@@ -177,7 +177,6 @@ class App extends React.Component {
         var potentialSyms = getPotentialSyms(currentCauseData, this.state.causes, currentPatternData, this.state.patterns);
         var str = getStr(currentSymsData, this.state.symptoms, currentPatternData, this.state.patterns,
             currentCauseData, this.state.causes);
-        //console.log(str);
 
         //deal with interactive descriptive info
         var ifNoSyms = this.state.symptoms.length === 0;

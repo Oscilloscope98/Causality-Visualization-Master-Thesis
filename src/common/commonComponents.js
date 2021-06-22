@@ -5,8 +5,6 @@ export const Legend = ({ id, inText = "", textColorIn = "rgba(0,0,0,0)",
     bkgColor = "rgba(0,0,0,0)", borderColor = "none", ifLeft = false, ifHide = false }) => {
     //textColorIn is for text color inside the legend
 
-    console.log(bkgColor);
-
     var updateStyle = {};
     if (ifHide) {
         updateStyle.color = "rgba(0,0,0,0)";

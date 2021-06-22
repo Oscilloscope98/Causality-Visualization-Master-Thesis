@@ -283,6 +283,7 @@ body {
 }
 .flex-arrow > .arrow-svg{
   height: 50%;
+  max-width: 100%;
 }
 
 .flex-arrow > .description{
